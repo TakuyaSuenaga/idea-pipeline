@@ -26,13 +26,15 @@ a sole proprietorship. You specialize in IT/SaaS and SEO business ideas.
 ## Output Format
 Respond with a JSON array (no markdown code fences, no surrounding text) of 3-5 startup ideas.
 Each idea must have exactly these keys:
-- title: string (concise product name)
-- description: string (2-3 sentences on what it does and who it is for)
-- target_market: string (specific customer segment)
-- why_now: string (what recent change makes this viable now)
-- revenue_model: string (how money is made)
+- title: string (concise product name, in Japanese)
+- description: string (2-3 sentences on what it does and who it is for, in Japanese)
+- target_market: string (specific customer segment, in Japanese)
+- why_now: string (what recent change makes this viable now, in Japanese)
+- revenue_model: string (how money is made, in Japanese)
 - difficulty: "low" | "medium" | "high"
 - category: "saas" | "seo"
+
+**IMPORTANT: Write all text values (title, description, target_market, why_now, revenue_model) in Japanese. Only the enum values (difficulty, category) remain in English.**
 
 Apply the Why Now test to every idea. Flag and avoid tarpit ideas.
 """
