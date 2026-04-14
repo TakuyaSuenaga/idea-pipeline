@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "startup-ideation": {
+      "source": "refoundai/lenny-skills",
+      "sourceType": "github",
+      "computedHash": "ecd430a8166195b19024f26b802c86adc8306858fd995a11987eb1540cbf80f9"
+    }
+  }
+}

@@ -1,0 +1,177 @@
+:root {
+  --bg: #ffffff;
+  --surface: #f5f5f5;
+  --surface2: #ebebeb;
+  --text: #1a1a1a;
+  --text-muted: #666;
+  --accent: #0070f3;
+  --border: #e0e0e0;
+  --badge-saas-bg: #dbeafe;
+  --badge-saas-text: #1d4ed8;
+  --badge-seo-bg: #d1fae5;
+  --badge-seo-text: #065f46;
+  --badge-low-bg: #d1fae5;
+  --badge-low-text: #065f46;
+  --badge-medium-bg: #fef3c7;
+  --badge-medium-text: #92400e;
+  --badge-high-bg: #fee2e2;
+  --badge-high-text: #991b1b;
+  --radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --surface2: #21262d;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+    --accent: #58a6ff;
+    --border: #30363d;
+    --badge-saas-bg: #1d3461;
+    --badge-saas-text: #93c5fd;
+    --badge-seo-bg: #064e3b;
+    --badge-seo-text: #6ee7b7;
+    --badge-low-bg: #064e3b;
+    --badge-low-text: #6ee7b7;
+    --badge-medium-bg: #78350f;
+    --badge-medium-text: #fcd34d;
+    --badge-high-bg: #7f1d1d;
+    --badge-high-text: #fca5a5;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+header {
+  padding: 2rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 { font-size: 1.6rem; font-weight: 700; }
+
+.subtitle { color: var(--text-muted); font-size: 0.875rem; margin-top: 0.25rem; }
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.filter-btn {
+  padding: 0.35rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+
+section { margin-bottom: 2.5rem; }
+
+section h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#ideas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.idea-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.card-header { display: flex; align-items: flex-start; gap: 0.5rem; flex-wrap: wrap; }
+
+.card-header h3 { font-size: 1rem; font-weight: 600; flex: 1 1 100%; }
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge-saas { background: var(--badge-saas-bg); color: var(--badge-saas-text); }
+.badge-seo  { background: var(--badge-seo-bg);  color: var(--badge-seo-text); }
+.badge-difficulty-low    { background: var(--badge-low-bg);    color: var(--badge-low-text); }
+.badge-difficulty-medium { background: var(--badge-medium-bg); color: var(--badge-medium-text); }
+.badge-difficulty-high   { background: var(--badge-high-bg);   color: var(--badge-high-text); }
+
+.description { font-size: 0.9rem; }
+
+.details {
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2rem 0.75rem;
+}
+.details dt { color: var(--text-muted); font-weight: 600; white-space: nowrap; }
+.details dd { color: var(--text); }
+
+.generated-at { font-size: 0.75rem; color: var(--text-muted); margin-top: auto; }
+
+.table-wrap { overflow-x: auto; }
+
+#research-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.825rem;
+}
+
+#research-table th,
+#research-table td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+#research-table th {
+  color: var(--text-muted);
+  font-weight: 600;
+  background: var(--surface2);
+}
+
+#research-table tbody tr:hover { background: var(--surface2); }
+
+#research-table a { color: var(--accent); text-decoration: none; }
+#research-table a:hover { text-decoration: underline; }
+
+.error { color: #e53e3e; padding: 1rem; }
+
+p.empty { color: var(--text-muted); padding: 1rem 0; }
