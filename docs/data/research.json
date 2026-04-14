@@ -1,7 +1,507 @@
 {
-  "exported_at": "2026-04-14T19:26:17.458034+00:00",
-  "count": 100,
+  "exported_at": "2026-04-14T21:57:17.798779+00:00",
+  "count": 150,
   "items": [
+    {
+      "id": 101,
+      "source": "hackernews",
+      "title": "Claude Code Routines",
+      "url": "https://code.claude.com/docs/en/routines",
+      "content": null,
+      "score": 270,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 102,
+      "source": "hackernews",
+      "title": "Rare concert recordings are landing on the Internet Archive",
+      "url": "https://techcrunch.com/2026/04/13/thousands-of-rare-concert-recordings-are-landing-on-the-internet-archive-listen-now/",
+      "content": null,
+      "score": 435,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 103,
+      "source": "hackernews",
+      "title": "The Orange Pi 6 Plus",
+      "url": "https://taoofmac.com/space/reviews/2026/04/11/1900",
+      "content": null,
+      "score": 61,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 104,
+      "source": "hackernews",
+      "title": "Trusted access for the next era of cyber defense",
+      "url": "https://openai.com/index/scaling-trusted-access-for-cyber-defense/",
+      "content": null,
+      "score": 24,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 105,
+      "source": "hackernews",
+      "title": "5NF and Database Design",
+      "url": "https://kb.databasedesignbook.com/posts/5nf/",
+      "content": null,
+      "score": 104,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 106,
+      "source": "hackernews",
+      "title": "Turn your best AI prompts into one-click tools in Chrome",
+      "url": "https://blog.google/products-and-platforms/products/chrome/skills-in-chrome/",
+      "content": null,
+      "score": 62,
+      "category": "saas",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 107,
+      "source": "hackernews",
+      "title": "I wrote to Flock's privacy contact to opt out of their domestic spying program",
+      "url": "https://honeypot.net/2026/04/14/i-wrote-to-flocks-privacy.html",
+      "content": null,
+      "score": 406,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 108,
+      "source": "hackernews",
+      "title": "Let's talk space toilets",
+      "url": "https://mceglowski.substack.com/p/lets-talk-space-toilets",
+      "content": null,
+      "score": 99,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 109,
+      "source": "hackernews",
+      "title": "guide.world: A compendium of travel guides",
+      "url": "https://guide.world/",
+      "content": null,
+      "score": 44,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 110,
+      "source": "hackernews",
+      "title": "Show HN: Plain – The full-stack Python framework designed for humans and agents",
+      "url": "https://github.com/dropseed/plain",
+      "content": null,
+      "score": 35,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 111,
+      "source": "hackernews",
+      "title": "OpenSSL 4.0.0",
+      "url": "https://github.com/openssl/openssl/releases/tag/openssl-4.0.0",
+      "content": null,
+      "score": 143,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 112,
+      "source": "hackernews",
+      "title": "The dangers of California's legislation to censor 3D printing",
+      "url": "https://www.eff.org/deeplinks/2026/04/dangers-californias-legislation-censor-3d-printing",
+      "content": null,
+      "score": 53,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 113,
+      "source": "hackernews",
+      "title": "Tell HN: Fiverr left customer files public and searchable",
+      "url": null,
+      "content": "Fiverr (gig work&#x2F;task platform, competitor to Upwork) uses a service called Cloudinary to process PDF&#x2F;images in messaging, including work products from the worker to client.<p>Besides the PDF processing value add, Cloudinary effectively acts like S3 here, serving assets directly to the web client. Like S3, it has support for signed&#x2F;expiring URLs. However, Fiverr opted to use public URLs, not signed ones, for sensitive client-worker communication.<p>Moreover, it seems like they may",
+      "score": 134,
+      "category": "seo",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 114,
+      "source": "hackernews",
+      "title": "Show HN: LangAlpha – what if Claude Code was built for Wall Street?",
+      "url": "https://github.com/ginlix-ai/langalpha",
+      "content": "Some technical context on what we ran into building this.<p>MCP tools don&#x27;t really work for financial data at scale. One tool call for five years of daily prices dumps tens of thousands of tokens into the context window. And data vendors pack dozens of tools into a single MCP server, schemas alone can eat 50k+ tokens before the agent does anything useful. So we auto-generate typed Python modules from the MCP schemas at workspace init and upload them into the sandbox. The agent just imports ",
+      "score": 80,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 115,
+      "source": "hackernews",
+      "title": "Gas Town: From Clown Show to v1.0",
+      "url": "https://steve-yegge.medium.com/gas-town-from-clown-show-to-v1-0-c239d9a407ec",
+      "content": null,
+      "score": 52,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 116,
+      "source": "hackernews",
+      "title": "Troubleshooting Email Delivery to Microsoft Users",
+      "url": "https://rozumem.xyz/posts/14",
+      "content": null,
+      "score": 8,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 117,
+      "source": "hackernews",
+      "title": "Backblaze has stopped backing up OneDrive and Dropbox folders and maybe others",
+      "url": "https://rareese.com/posts/backblaze/",
+      "content": null,
+      "score": 869,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 118,
+      "source": "hackernews",
+      "title": "jj – the CLI for Jujutsu",
+      "url": "https://steveklabnik.github.io/jujutsu-tutorial/introduction/what-is-jj-and-why-should-i-care.html",
+      "content": null,
+      "score": 457,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 119,
+      "source": "hackernews",
+      "title": "The Mouse Programming Language on CP/M (2020)",
+      "url": "https://techtinkering.com/articles/the-mouse-programming-language-on-cpm/",
+      "content": null,
+      "score": 40,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 120,
+      "source": "hackernews",
+      "title": "YouTube now world's largest media company, topping Disney",
+      "url": "https://www.hollywoodreporter.com/business/digital/youtube-worlds-largest-media-company-2025-tops-disney-1236525130/",
+      "content": null,
+      "score": 218,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 121,
+      "source": "hackernews",
+      "title": "Introspective Diffusion Language Models",
+      "url": "https://introspective-diffusion.github.io/",
+      "content": null,
+      "score": 212,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 122,
+      "source": "hackernews",
+      "title": "Carol's Causal Conundrum: a zine intro to causally ordered message delivery",
+      "url": "https://decomposition.al/zines/",
+      "content": null,
+      "score": 37,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 123,
+      "source": "hackernews",
+      "title": "Show HN: A memory database that forgets, consolidates, and detects contradiction",
+      "url": "https://github.com/yantrikos/yantrikdb-server",
+      "content": "Vector databases store memories. They don&#x27;t manage them. After 10k memories, recall quality degrades because there&#x27;s no consolidation, no forgetting, no conflict resolution. Your AI agent just gets noisier.<p>YantrikDB is a cognitive memory engine — embed it, run it as a server, or connect via MCP. It thinks about what it stores: consolidation collapses duplicate memories, contradiction detection flags incompatible facts, temporal decay with configurable half-life lets unimportant memo",
+      "score": 40,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 124,
+      "source": "hackernews",
+      "title": "DaVinci Resolve – Photo",
+      "url": "https://www.blackmagicdesign.com/products/davinciresolve/photo",
+      "content": null,
+      "score": 1022,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 125,
+      "source": "hackernews",
+      "title": "Nucleus Nouns",
+      "url": "https://ben-mini.com/2026/nucleus-nouns",
+      "content": null,
+      "score": 52,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 126,
+      "source": "hackernews",
+      "title": "The M×N problem of tool calling and open-source models",
+      "url": "https://www.thetypicalset.com/blog/grammar-parser-maintenance-contract",
+      "content": null,
+      "score": 119,
+      "category": "saas",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 127,
+      "source": "hackernews",
+      "title": "A new spam policy for “back button hijacking”",
+      "url": "https://developers.google.com/search/blog/2026/04/back-button-hijacking",
+      "content": null,
+      "score": 798,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 128,
+      "source": "hackernews",
+      "title": "Lean proved this program correct; then I found a bug",
+      "url": "https://kirancodes.me/posts/log-who-watches-the-watchers.html",
+      "content": null,
+      "score": 373,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 129,
+      "source": "hackernews",
+      "title": "Show HN: Kontext CLI – Credential broker for AI coding agents in Go",
+      "url": "https://github.com/kontext-dev/kontext-cli",
+      "content": "We built the Kontext CLI because AI coding agents need access to GitHub, Stripe, databases, and dozens of other services — and right now most teams handle this by copy-pasting long-lived API keys into .env files, or the actual chat interface, whilst hoping for the best.<p>The problem isn&#x27;t just secret sprawl. It&#x27;s that there&#x27;s no lineage of access. You don&#x27;t know which developer launched which agent, what it accessed, or whether it should have been allowed to. The moment you ",
+      "score": 57,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 130,
+      "source": "hackernews",
+      "title": "Distributed DuckDB Instance",
+      "url": "https://github.com/citguru/openduck",
+      "content": null,
+      "score": 146,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 131,
+      "source": "techcrunch_rss",
+      "title": "AI datacenter startup Fluidstack in talks for $1B round at $18B valuation months after hitting $7.5B, says report",
+      "url": "https://techcrunch.com/2026/04/14/ai-datacenter-startup-fluidstack-in-talks-for-1b-round-at-18b-valuation-months-after-hitting-7-5b-says-report/",
+      "content": "Fundraising is reportedly flowing for Fluidstack after it secured a $50 billion deal to build data centers for Anthropic.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 132,
+      "source": "techcrunch_rss",
+      "title": "Someone planted backdoors in dozens of WordPress plug-ins used in thousands of websites",
+      "url": "https://techcrunch.com/2026/04/14/someone-planted-backdoors-in-dozens-of-wordpress-plugins-used-in-thousands-of-websites/",
+      "content": "Dozens of WordPress plug-ins were allegedly hijacked to push malware after they were sold to a new corporate owner.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 133,
+      "source": "techcrunch_rss",
+      "title": "Anthropic co-founder confirms the company briefed the Trump administration on Mythos",
+      "url": "https://techcrunch.com/2026/04/14/anthropic-co-founder-confirms-the-company-briefed-the-trump-administration-on-mythos/",
+      "content": "In an interview at the Semafor World Economy summit this week, Anthropic co-founder Jack Clark explained why the company was still engaged with the U.S. government while simultaneously suing them.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 134,
+      "source": "techcrunch_rss",
+      "title": "London gets closer to its first robotaxi service as Waymo begins testing",
+      "url": "https://techcrunch.com/2026/04/14/london-gets-closer-to-its-first-robotaxi-service-as-waymo-begins-testing/",
+      "content": "Waymo's commercial service will eventually follow testing if the U.K. government approves.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 135,
+      "source": "techcrunch_rss",
+      "title": "YouTube livestreams will now hold back ads during peak engagement to protect the vibe",
+      "url": "https://techcrunch.com/2026/04/14/youtube-livestreams-will-now-hold-back-ads-during-peak-engagement-to-protect-the-vibe/",
+      "content": "Until now, the only way to avoid seeing ads was by paying for a YouTube Premium subscription.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 136,
+      "source": "techcrunch_rss",
+      "title": "Max Hodak’s Science Corp. is preparing to place its first sensor in a human brain",
+      "url": "https://techcrunch.com/2026/04/14/max-hodaks-science-corp-is-preparing-to-place-its-first-sensor-in-a-human-brain/",
+      "content": "The device could help address multiple neurological conditions if it proves successful. One early use could be delivering gentle electrical stimulation to damaged brain or spinal cord cells to encourage healing.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 137,
+      "source": "techcrunch_rss",
+      "title": "Google adds AI Skills to Chrome to help you save favorite workflows",
+      "url": "https://techcrunch.com/2026/04/14/google-adds-ai-skills-to-chrome-to-help-you-save-favorite-workflows/",
+      "content": "Google is adding “Skills” to Chrome, letting users save and reuse AI prompts across websites. The feature builds on Gemini’s browser integration.",
+      "score": null,
+      "category": "seo",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 138,
+      "source": "techcrunch_rss",
+      "title": "How the rewards app Freecash scammed its way to the top of the app stores",
+      "url": "https://techcrunch.com/2026/04/14/how-the-rewards-app-freecash-scammed-its-way-to-the-top-of-the-app-stores/",
+      "content": "Freecash was removed from Apple's App Store after TechCrunch reached out for comment.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 139,
+      "source": "techcrunch_rss",
+      "title": "Financial risk management platform Pillar raises $20M seed in round led by a16z",
+      "url": "https://techcrunch.com/2026/04/14/financial-risk-management-platform-pillar-raises-20m-seed-in-round-led-by-a16z/",
+      "content": "Pillar hopes to offer sophisticated, institutional-grade tools to small and medium-sized enterprises. \"Our goal is to make hedging as accessible and ubiquitous as payments or accounting software,\" he said.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 140,
+      "source": "techcrunch_rss",
+      "title": "In just a couple weeks, StrictlyVC San Francisco brings leaders from TDK Ventures, Replit, and more together",
+      "url": "https://techcrunch.com/2026/04/14/join-the-first-strictlyvc-of-2026-in-sf-with-leaders-from-tdk-ventures-and-replits-co-founder/",
+      "content": "The first StrictlyVC of the year will be coming to San Francisco before you know it.\n\nThere are still a few tickets available to join us and our stacked speaker lineup April 30, so register today!",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 141,
+      "source": "techcrunch_rss",
+      "title": "Google brings its Gemini Personal Intelligence feature to India",
+      "url": "https://techcrunch.com/2026/04/14/google-brings-its-gemini-personal-intelligence-feature-to-india/",
+      "content": "The feature lets users connect Google accounts like Gmail and Photos to get personalized answers.",
+      "score": null,
+      "category": "seo",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 142,
+      "source": "techcrunch_rss",
+      "title": "Adobe fixes PDF zero-day security bug that hackers have exploited for months",
+      "url": "https://techcrunch.com/2026/04/14/adobe-fixes-pdf-zero-day-security-bug-that-hackers-have-exploited-for-months/",
+      "content": "It's not clear how many people were compromised by this hacking campaign, but a security researcher said the hackers were targeting victims since at least November 2025.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 143,
+      "source": "techcrunch_rss",
+      "title": "Tesla adds ‘streaks,’ other stats to track how often drivers use Full Self-Driving software",
+      "url": "https://techcrunch.com/2026/04/14/tesla-adds-streaks-and-other-stats-to-track-how-often-drivers-use-full-self-driving-software/",
+      "content": "Tesla has also made it easy to subscribe to the advanced driver assistance system.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 144,
+      "source": "techcrunch_rss",
+      "title": "Instacart acquires Instaleap to expand its enterprise platform internationally",
+      "url": "https://techcrunch.com/2026/04/14/instacart-acquires-instaleap-to-expand-its-enterprise-platform-internationally/",
+      "content": "The acquisition will allow the company to expand its business into international markets without needing to launch a delivery network in those regions.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 145,
+      "source": "techcrunch_rss",
+      "title": "How vibe-coding app Anything is rebuilding after getting booted from the App Store twice",
+      "url": "https://techcrunch.com/2026/04/14/how-vibe-coding-app-anything-is-rebuilding-after-getting-booted-from-the-app-store-twice/",
+      "content": "Anything is planning to launch a desktop companion app to aid mobile app development after its App Store removal.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 146,
+      "source": "techcrunch_rss",
+      "title": "Amazon to buy Globalstar for $11.57B in bid to flesh out its satellite biz",
+      "url": "https://techcrunch.com/2026/04/14/amazon-to-buy-globalstar-for-11-57b-in-bid-to-flesh-out-its-satellite-biz/",
+      "content": "Amazon on Tuesday agreed to buy satellite company Globalstar, known for powering Apple's \"Emergency SOS\" feature, for $11.57 billion in cash.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 147,
+      "source": "techcrunch_rss",
+      "title": "Lucid Motors names new CEO, lands more money from Uber and Saudis",
+      "url": "https://techcrunch.com/2026/04/14/lucid-motors-names-new-ceo-lands-more-money-from-uber-and-saudis/",
+      "content": "The search for a new CEO, which lasted over a year following the sudden resignation of Peter Rawlinson, is finally over.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 148,
+      "source": "techcrunch_rss",
+      "title": "Inertia moves to commercialize one of the world’s most elaborate science experiments",
+      "url": "https://techcrunch.com/2026/04/14/inertia-moves-to-commercialize-one-of-the-worlds-most-elaborate-science-experiments/",
+      "content": "Inertia has signed three agreements with the Lawrence Livermore National Lab, paving the way for the company to bring its pioneering fusion reactor to market.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 149,
+      "source": "techcrunch_rss",
+      "title": "An Amazon warehouse worker died on the job at Oregon facility",
+      "url": "https://techcrunch.com/2026/04/13/an-amazon-warehouse-worker-died-on-the-job-at-oregon-facility/",
+      "content": "Though Amazon has faced issues with warehouse safety, the company said that the death was not work related.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
+    {
+      "id": 150,
+      "source": "techcrunch_rss",
+      "title": "OpenAI has bought AI personal finance startup Hiro",
+      "url": "https://techcrunch.com/2026/04/13/openai-has-bought-ai-personal-finance-startup-hiro/",
+      "content": "The acquisition indicates a capability that OpenAI is building into ChatGPT: financial planning.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-14 21:56:29"
+    },
     {
       "id": 51,
       "source": "hackernews",
