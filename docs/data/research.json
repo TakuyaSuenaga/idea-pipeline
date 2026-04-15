@@ -1,7 +1,497 @@
 {
-  "exported_at": "2026-04-15T14:18:26.570810+00:00",
-  "count": 396,
+  "exported_at": "2026-04-15T16:10:45.912641+00:00",
+  "count": 445,
   "items": [
+    {
+      "id": 397,
+      "source": "hackernews",
+      "title": "God Sleeps in the Minerals",
+      "url": "https://wchambliss.wordpress.com/2026/03/03/god-sleeps-in-the-minerals/",
+      "content": null,
+      "score": 190,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 398,
+      "source": "hackernews",
+      "title": "Want to Write a Compiler? Just Read These Two Papers (2008)",
+      "url": "https://prog21.dadgum.com/30.html",
+      "content": null,
+      "score": 312,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 399,
+      "source": "hackernews",
+      "title": "Good Sleep, Good Learning (2012)",
+      "url": "https://super-memory.com/articles/sleep.htm",
+      "content": null,
+      "score": 228,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 400,
+      "source": "hackernews",
+      "title": "The Future of Everything Is Lies, I Guess: New Jobs",
+      "url": "https://aphyr.com/posts/419-the-future-of-everything-is-lies-i-guess-new-jobs",
+      "content": null,
+      "score": 127,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 401,
+      "source": "hackernews",
+      "title": "Gemini Robotics-ER 1.6",
+      "url": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
+      "content": null,
+      "score": 87,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 402,
+      "source": "hackernews",
+      "title": "Costasiella kuroshimae – Solar Powered animals, that do indirect photosynthesis",
+      "url": "https://en.wikipedia.org/wiki/Costasiella_kuroshimae",
+      "content": null,
+      "score": 97,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 403,
+      "source": "hackernews",
+      "title": "Your Backpack Got Worse on Purpose",
+      "url": "https://www.worseonpurpose.com/p/your-backpack-got-worse-on-purpose",
+      "content": null,
+      "score": 181,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 404,
+      "source": "hackernews",
+      "title": "Wacli – WhatsApp CLI",
+      "url": "https://github.com/steipete/wacli",
+      "content": null,
+      "score": 176,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 405,
+      "source": "hackernews",
+      "title": "We ran Doom on a 40 year old printer controller (Agfa Compugraphic 9000PS) [video]",
+      "url": "https://www.youtube.com/watch?v=cltnlks2-uU",
+      "content": null,
+      "score": 27,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 406,
+      "source": "hackernews",
+      "title": "Fixing a 20-year-old bug in Enlightenment E16",
+      "url": "https://iczelia.net/posts/e16-20-year-old-bug/",
+      "content": null,
+      "score": 218,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 407,
+      "source": "hackernews",
+      "title": "Show HN: Every CEO and CFO change at US public companies, live from SEC",
+      "url": "https://tracksuccession.com/explore",
+      "content": "Built this solo. It watches SEC filings for executive and board changes, extracts the data, and shows it in real time. 2,100+ changes in the last 30 days. The comp data is interesting: average new CEO total comp is $8.4M across 284 appointments. The &#x2F;explore page is fully open, no login needed.",
+      "score": 115,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 408,
+      "source": "hackernews",
+      "title": "Metro stop is Ancient Rome's new attraction",
+      "url": "https://www.bbc.com/travel/article/20260408-a-150-metro-ticket-to-ancient-rome",
+      "content": null,
+      "score": 72,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 409,
+      "source": "hackernews",
+      "title": "Google Gemma 4 Runs Natively on iPhone with Full Offline AI Inference",
+      "url": "https://www.gizmoweek.com/gemma-4-runs-iphone/",
+      "content": null,
+      "score": 193,
+      "category": "seo",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 410,
+      "source": "hackernews",
+      "title": "Do you even need a database?",
+      "url": "https://www.dbpro.app/blog/do-you-even-need-a-database",
+      "content": null,
+      "score": 44,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 411,
+      "source": "hackernews",
+      "title": "Pretty Fish: A better mermaid diagram editor",
+      "url": "https://pretty.fish/",
+      "content": null,
+      "score": 60,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 412,
+      "source": "hackernews",
+      "title": "Allbirds, Inc. Announces Expansion into AI Compute Infrastructure",
+      "url": "https://ir.allbirds.com/news-releases/news-release-details/allbirds-inc-executes-50m-convertible-financing-facility",
+      "content": null,
+      "score": 41,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 413,
+      "source": "hackernews",
+      "title": "Forcing an Inversion of Control on the SaaS Stack",
+      "url": "https://www.100x.bot/a/client-side-injection-inversion-of-control-saas",
+      "content": null,
+      "score": 7,
+      "category": "saas",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 414,
+      "source": "hackernews",
+      "title": "US v. Heppner (S.D.N.Y. 2026) no attorney-client privilege for AI chats [pdf]",
+      "url": "https://fingfx.thomsonreuters.com/gfx/legaldocs/xmvjyjekkpr/Rakoff%20-%20order%20-%20AI.pdf",
+      "content": null,
+      "score": 57,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 415,
+      "source": "hackernews",
+      "title": "Elevated errors on Claude.ai, API, Claude Code",
+      "url": "https://claudestatus.com/",
+      "content": null,
+      "score": 173,
+      "category": "saas",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 416,
+      "source": "hackernews",
+      "title": "Academic fraud may be the symptom of a more systemic problem",
+      "url": "https://www.voxweb.nl/en/academic-fraud-may-be-the-symptom-of-a-much-more-systemic-problem",
+      "content": null,
+      "score": 31,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 417,
+      "source": "hackernews",
+      "title": "MCP as Observability Interface: Connecting AI Agents to Kernel Tracepoints",
+      "url": "https://ingero.io/mcp-observability-interface-ai-agents-kernel-tracepoints/",
+      "content": null,
+      "score": 32,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 418,
+      "source": "hackernews",
+      "title": "AI ruling prompts warnings from US lawyers: Your chats could be used against you",
+      "url": "https://www.reuters.com/legal/government/ai-ruling-prompts-warnings-us-lawyers-your-chats-could-be-used-against-you-2026-04-15/",
+      "content": null,
+      "score": 70,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 419,
+      "source": "hackernews",
+      "title": "Anna's Archive loses $322M Spotify piracy case without a fight",
+      "url": "https://torrentfreak.com/annas-archive-loses-322-million-spotify-piracy-case-without-a-fight/",
+      "content": null,
+      "score": 72,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 420,
+      "source": "hackernews",
+      "title": "Study: Back-to-basics approach can match or outperform AI in language analysis",
+      "url": "https://www.manchester.ac.uk/about/news/back-to-basics-approach-can-match-or-outperform-ai/",
+      "content": null,
+      "score": 12,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 421,
+      "source": "hackernews",
+      "title": "New Modern Greek",
+      "url": "https://redas.dev/NewModernGreek/",
+      "content": null,
+      "score": 6,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 422,
+      "source": "hackernews",
+      "title": "Dependency cooldowns turn you into a free-rider",
+      "url": "https://calpaterson.com/deps.html",
+      "content": null,
+      "score": 162,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 423,
+      "source": "hackernews",
+      "title": "H.R.8250 – To require operating system providers to verify the age of any user",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/8250/all-info",
+      "content": null,
+      "score": 144,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 424,
+      "source": "hackernews",
+      "title": "MIT Radiation Laboratory",
+      "url": "https://www.ll.mit.edu/about/history/mit-radiation-laboratory",
+      "content": null,
+      "score": 29,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 425,
+      "source": "hackernews",
+      "title": "My adventure in designing API keys",
+      "url": "https://vjay15.github.io/blog/apikeys/",
+      "content": null,
+      "score": 94,
+      "category": "saas",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 426,
+      "source": "techcrunch_rss",
+      "title": "Motorola sues social platforms and creators over posts, raising speech concerns in India",
+      "url": "https://techcrunch.com/2026/04/15/motorola-sues-social-platforms-and-creators-over-posts-raising-speech-concerns-in-india/",
+      "content": "Motorola is suing dozens of content creators and social media platforms including Instagram, X, and YouTube over posts it alleges are defamatory.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 427,
+      "source": "techcrunch_rss",
+      "title": "Airwallex is about to take on Stripe and the rest of the payments industry — in the physical world",
+      "url": "https://techcrunch.com/2026/04/15/airwallex-is-about-to-take-on-stripe-and-the-rest-of-the-payments-industry-in-the-physical-world/",
+      "content": "Airwallex, valued at $8 billion, is launching a point-of-sale product that lets businesses accept in-person payments in multiple countries via a single platform.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 428,
+      "source": "techcrunch_rss",
+      "title": "After sale of its shoe business, Allbirds pivots to AI",
+      "url": "https://techcrunch.com/2026/04/15/after-sale-of-its-shoe-business-allbirds-pivots-to-ai/",
+      "content": "Allbirds is ditching wool sneakers for AI servers, rebranding as NewBird AI after locking in a $50M convertible financing facility.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 429,
+      "source": "techcrunch_rss",
+      "title": "Sweden blames Russian hackers for attempting ‘destructive’ cyberattack on thermal plant",
+      "url": "https://techcrunch.com/2026/04/15/sweden-blames-russian-hackers-for-attempting-destructive-cyberattack-on-thermal-plant/",
+      "content": "Sweden's minister for civil defense said Russian hackers are \"now attempting destructive cyber attacks against organizations in Europe.\"",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 430,
+      "source": "techcrunch_rss",
+      "title": "Snap is cutting 1,000 jobs, 16% of its workforce",
+      "url": "https://techcrunch.com/2026/04/15/snap-is-cutting-1000-jobs-16-of-its-workforce/",
+      "content": "The company cites advancements in AI for the cuts.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 431,
+      "source": "techcrunch_rss",
+      "title": "Reid Hoffman weighs in on the ‘tokenmaxxing’ debate",
+      "url": "https://techcrunch.com/2026/04/15/reid-hoffman-weighs-in-on-the-tokenmaxxing-debate/",
+      "content": "Reid Hoffman says tracking AI token use can gauge adoption, but cautions it should be paired with context and not treated as a direct productivity metric.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 432,
+      "source": "techcrunch_rss",
+      "title": "Adobe’s new Firefly AI assistant can use Creative Cloud apps to complete tasks",
+      "url": "https://techcrunch.com/2026/04/15/adobes-new-firefly-ai-assistant-can-use-creative-cloud-apps-to-complete-tasks/",
+      "content": "Adobe says the assistant can work across apps like Firefly, Photoshop, Premiere, Lightroom, Express,  Illustrator and its other apps to do tasks for you.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 433,
+      "source": "techcrunch_rss",
+      "title": "This energy startup’s bet on 100-year-old grid tech is paying off",
+      "url": "https://techcrunch.com/2026/04/15/this-energy-startups-bet-on-100-year-old-grid-tech-is-paying-off/",
+      "content": "Ayr Energy is using a shortage of power conversion equipment to break open a decades-old market.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 434,
+      "source": "techcrunch_rss",
+      "title": "Gitar, a startup that uses agents to secure code, emerges from stealth with $9 million",
+      "url": "https://techcrunch.com/2026/04/15/gitar-a-startup-that-uses-agents-to-secure-code-emerges-from-stealth-with-9-million/",
+      "content": "The company uses AI to review code that, more often than not these days, has also been generated by AI.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 435,
+      "source": "techcrunch_rss",
+      "title": "This startup is betting tokenmaxxing will create the next compute giant",
+      "url": "https://techcrunch.com/2026/04/15/parasail-raises-32m-to-feed-tokenmaxxing-ai-developers/",
+      "content": "Parasail raised $32 million in a Series A, signaling a fractured future of models and compute.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 436,
+      "source": "techcrunch_rss",
+      "title": "Amazon unveils a slimmer Fire TV Stick HD, opens Ember Artline TVs for preorder",
+      "url": "https://techcrunch.com/2026/04/15/amazon-unveils-a-slimmer-fire-tv-stick-hd-opens-ember-artline-tvs-for-preorder/",
+      "content": "On Wednesday, Amazon announced the launch of its new Fire TV Stick HD and Ember Artline televisions, both now available for preorder.&#160; Following the initial release of the first-generation Fire TV Stick HD two years ago, Amazon has created a new model that is its thinnest streaming device to date, the company says. Launched in [&#8230;]",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 437,
+      "source": "techcrunch_rss",
+      "title": "Chipmakers AMD, Arm, and Qualcomm are all investing in this buzzy self-driving tech startup",
+      "url": "https://techcrunch.com/2026/04/15/chipmakers-amd-arm-and-qualcomm-are-all-investing-in-this-buzzy-self-driving-tech-startup/",
+      "content": "Wayve's $1.2 billion Series D round, which was announced in February, keeps growing.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 438,
+      "source": "techcrunch_rss",
+      "title": "HBO Max comes to India via exclusive JioHotstar deal",
+      "url": "https://techcrunch.com/2026/04/15/hbo-max-comes-to-india-via-exclusive-jiohotstar-deal/",
+      "content": "HBO Max will be available to JioHotstar subscribers as an add-on starting at ₹49 (about $0.50) per month, and would feature content from HBO, Max Originals, Warner Bros. Pictures, Warner Bros. Television, and DC Studios.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 439,
+      "source": "techcrunch_rss",
+      "title": "Fathom adds a bot-less meeting mode in a bid to take on Granola",
+      "url": "https://techcrunch.com/2026/04/15/fathom-adds-a-bot-less-meeting-mode-in-a-bid-to-take-on-granola/",
+      "content": "Fathom will allow you to choose between video, audio-only, and transcription modes.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 440,
+      "source": "techcrunch_rss",
+      "title": "Spotify launches the ability to purchase physical books in the US and UK",
+      "url": "https://techcrunch.com/2026/04/15/spotify-launches-the-ability-to-purchase-physical-books-in-the-us-and-uk/",
+      "content": "Spotify users in the US and UK can officially purchase physical books through the Android app. iOS users will get the feature next week.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 441,
+      "source": "techcrunch_rss",
+      "title": "Anthropic’s rise is giving some OpenAI investors second thoughts",
+      "url": "https://techcrunch.com/2026/04/14/anthropics-rise-is-giving-some-openai-investors-second-thoughts/",
+      "content": "One investor who has backed both companies told the FT that justifying OpenAI's recent round required assuming an IPO valuation of $1.2 trillion or more — making Anthropic's current $380 billion valuation look like the relative bargain.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 442,
+      "source": "techcrunch_rss",
+      "title": "AI data center startup Fluidstack in talks for $1B round at $18B valuation months after hitting $7.5B, says report",
+      "url": "https://techcrunch.com/2026/04/14/ai-datacenter-startup-fluidstack-in-talks-for-1b-round-at-18b-valuation-months-after-hitting-7-5b-says-report/",
+      "content": "Fundraising is reportedly flowing for Fluidstack after it secured a $50 billion deal to build data centers for Anthropic.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 443,
+      "source": "techcrunch_rss",
+      "title": "Someone planted backdoors in dozens of WordPress plug-ins used in thousands of websites",
+      "url": "https://techcrunch.com/2026/04/14/someone-planted-backdoors-in-dozens-of-wordpress-plugins-used-in-thousands-of-websites/",
+      "content": "Dozens of WordPress plug-ins were allegedly hijacked to push malware after they were sold to a new corporate owner.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 444,
+      "source": "techcrunch_rss",
+      "title": "Anthropic co-founder confirms the company briefed the Trump administration on Mythos",
+      "url": "https://techcrunch.com/2026/04/14/anthropic-co-founder-confirms-the-company-briefed-the-trump-administration-on-mythos/",
+      "content": "In an interview at the Semafor World Economy summit this week, Anthropic co-founder Jack Clark explained why the company was still engaged with the U.S. government while simultaneously suing them.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
+    {
+      "id": 445,
+      "source": "techcrunch_rss",
+      "title": "London gets closer to its first robotaxi service as Waymo begins testing",
+      "url": "https://techcrunch.com/2026/04/14/london-gets-closer-to-its-first-robotaxi-service-as-waymo-begins-testing/",
+      "content": "Waymo's commercial service will eventually follow testing if the U.K. government approves.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-15 16:09:44"
+    },
     {
       "id": 348,
       "source": "hackernews",
