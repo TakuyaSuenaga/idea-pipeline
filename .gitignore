@@ -158,3 +158,6 @@ data/*.db-shm
 
 # Allow the tracked DB
 !data/ideas.db
+
+# Vite public data (copied at build time, not committed)
+public/data/
