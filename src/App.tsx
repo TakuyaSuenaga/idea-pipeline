@@ -19,6 +19,7 @@ export default function App() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
+  const [activeTab, setActiveTab] = useState<'ideas' | 'research'>('ideas')
   const [category, setCategory] = useState<CategoryFilter>('all')
   const [difficulty, setDifficulty] = useState<DifficultyFilter>('all')
   const [ideasPage, setIdeasPage] = useState(1)
@@ -97,65 +98,83 @@ export default function App() {
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 py-8 space-y-12">
-        <section>
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-              アイデア一覧
-            </h2>
-            <span className="text-sm text-gray-500 dark:text-gray-400">{filtered.length}件</span>
-          </div>
+      <main className="max-w-7xl mx-auto px-4 py-8">
+        {/* Tab bar */}
+        <div className="flex gap-1 border-b border-gray-200 dark:border-gray-700 mb-6">
+          {(['ideas', 'research'] as const).map((tab) => {
+            const label = tab === 'ideas'
+              ? `アイデア一覧 (${filtered.length})`
+              : `リサーチソース (${research.length})`
+            return (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`px-4 py-2 text-sm font-medium border-b-2 transition-colors ${
+                  activeTab === tab
+                    ? 'border-indigo-600 text-indigo-600 dark:text-indigo-400 dark:border-indigo-400'
+                    : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
+                }`}
+              >
+                {label}
+              </button>
+            )
+          })}
+        </div>
 
-          <FilterBar
-            category={category}
-            difficulty={difficulty}
-            onCategory={setCategory}
-            onDifficulty={setDifficulty}
-          />
+        {/* Ideas tab */}
+        {activeTab === 'ideas' && (
+          <section>
+            <FilterBar
+              category={category}
+              difficulty={difficulty}
+              onCategory={setCategory}
+              onDifficulty={setDifficulty}
+            />
 
-          {loading && (
-            <p className="text-center text-gray-500 dark:text-gray-400 py-20">読み込み中...</p>
-          )}
-          {error && <p className="text-center text-red-500 py-20">{error}</p>}
-          {!loading && !error && filtered.length === 0 && (
-            <p className="text-center text-gray-500 dark:text-gray-400 py-20">
-              条件に合うアイデアがありません。
-            </p>
-          )}
-          {!loading && !error && filtered.length > 0 && (
-            <>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-                {pagedIdeas.map((idea) => (
-                  <IdeaCard key={idea.id} idea={idea} />
-                ))}
-              </div>
-              <div className="mt-6">
-                <Pagination current={ideasPage} total={totalIdeasPages} onChange={setIdeasPage} />
-              </div>
-            </>
-          )}
-        </section>
+            {loading && (
+              <p className="text-center text-gray-500 dark:text-gray-400 py-20">読み込み中...</p>
+            )}
+            {error && <p className="text-center text-red-500 py-20">{error}</p>}
+            {!loading && !error && filtered.length === 0 && (
+              <p className="text-center text-gray-500 dark:text-gray-400 py-20">
+                条件に合うアイデアがありません。
+              </p>
+            )}
+            {!loading && !error && filtered.length > 0 && (
+              <>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                  {pagedIdeas.map((idea) => (
+                    <IdeaCard key={idea.id} idea={idea} />
+                  ))}
+                </div>
+                <div className="mt-6">
+                  <Pagination current={ideasPage} total={totalIdeasPages} onChange={setIdeasPage} />
+                </div>
+              </>
+            )}
+          </section>
+        )}
 
-        <section>
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-              リサーチソース
-            </h2>
-            <span className="text-sm text-gray-500 dark:text-gray-400">{research.length}件</span>
-          </div>
-          {!loading && (
-            <>
-              <ResearchTable items={pagedResearch} />
-              <div className="mt-4">
-                <Pagination
-                  current={researchPage}
-                  total={totalResearchPages}
-                  onChange={setResearchPage}
-                />
-              </div>
-            </>
-          )}
-        </section>
+        {/* Research tab */}
+        {activeTab === 'research' && (
+          <section>
+            {loading && (
+              <p className="text-center text-gray-500 dark:text-gray-400 py-20">読み込み中...</p>
+            )}
+            {!loading && (
+              <>
+                <ResearchTable items={pagedResearch} />
+                <div className="mt-4">
+                  <Pagination
+                    current={researchPage}
+                    total={totalResearchPages}
+                    onChange={setResearchPage}
+                  />
+                </div>
+              </>
+            )}
+          </section>
+        )}
       </main>
     </div>
   )
