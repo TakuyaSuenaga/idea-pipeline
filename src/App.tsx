@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import type { Idea, ResearchItem } from './types'
-import FilterBar from './components/FilterBar'
+import FilterBar, { type SortOrder } from './components/FilterBar'
 import IdeaCard from './components/IdeaCard'
 import Pagination from './components/Pagination'
 import ResearchTable from './components/ResearchTable'
@@ -22,6 +22,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<'ideas' | 'research'>('ideas')
   const [category, setCategory] = useState<CategoryFilter>('all')
   const [difficulty, setDifficulty] = useState<DifficultyFilter>('all')
+  const [sort, setSort] = useState<SortOrder>('date_desc')
   const [ideasPage, setIdeasPage] = useState(1)
   const [researchPage, setResearchPage] = useState(1)
 
@@ -49,17 +50,35 @@ export default function App() {
       })
   }, [])
 
-  const filtered = useMemo(
-    () =>
-      ideas.filter(
-        (i) =>
-          (category === 'all' || i.category === category) &&
-          (difficulty === 'all' || i.difficulty === difficulty),
-      ),
-    [ideas, category, difficulty],
-  )
+  const DIFF_RANK: Record<string, number> = { low: 1, medium: 2, high: 3 }
 
-  useEffect(() => setIdeasPage(1), [category, difficulty])
+  const filtered = useMemo(() => {
+    const base = ideas.filter(
+      (i) =>
+        (category === 'all' || i.category === category) &&
+        (difficulty === 'all' || i.difficulty === difficulty),
+    )
+    return [...base].sort((a, b) => {
+      switch (sort) {
+        case 'date_desc':
+          return new Date(b.generated_at).getTime() - new Date(a.generated_at).getTime()
+        case 'date_asc':
+          return new Date(a.generated_at).getTime() - new Date(b.generated_at).getTime()
+        case 'diff_high':
+          return (DIFF_RANK[b.difficulty] ?? 0) - (DIFF_RANK[a.difficulty] ?? 0)
+        case 'diff_low':
+          return (DIFF_RANK[a.difficulty] ?? 0) - (DIFF_RANK[b.difficulty] ?? 0)
+        case 'score_high':
+          return (b.eval_total ?? -1) - (a.eval_total ?? -1)
+        case 'score_low':
+          return (a.eval_total ?? Infinity) - (b.eval_total ?? Infinity)
+        default:
+          return 0
+      }
+    })
+  }, [ideas, category, difficulty, sort])
+
+  useEffect(() => setIdeasPage(1), [category, difficulty, sort])
 
   const totalIdeasPages = Math.max(1, Math.ceil(filtered.length / IDEAS_PER_PAGE))
   const pagedIdeas = filtered.slice(
@@ -136,8 +155,10 @@ export default function App() {
             <FilterBar
               category={category}
               difficulty={difficulty}
+              sort={sort}
               onCategory={setCategory}
               onDifficulty={setDifficulty}
+              onSort={setSort}
             />
 
             {loading && (
