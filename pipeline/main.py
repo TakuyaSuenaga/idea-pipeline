@@ -68,7 +68,7 @@ def main() -> None:
         )
 
     print("Exporting to docs/data/ ...")
-    all_ideas = fetch_all_ideas(conn)
+    all_ideas = fetch_all_ideas(conn, limit=10_000)
     export_ideas(all_ideas)
     export_research(recent_research)
 
