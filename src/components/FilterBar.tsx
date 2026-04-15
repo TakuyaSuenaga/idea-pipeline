@@ -21,40 +21,55 @@ const DIFFICULTIES: { value: DifficultyFilter; label: string }[] = [
   { value: 'high', label: '高' },
 ]
 
-const btnBase = 'px-3 py-1.5 text-sm transition-colors'
-const btnActive = 'bg-indigo-600 text-white'
-const btnInactive =
-  'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
+function Pill({
+  active,
+  onClick,
+  children,
+}: {
+  active: boolean
+  onClick: () => void
+  children: React.ReactNode
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className="text-xs px-3 py-1 rounded-full transition-colors"
+      style={{
+        color: active ? 'var(--amber)' : 'var(--text-muted)',
+        background: active ? 'var(--amber-bg)' : 'transparent',
+        border: `1px solid ${active ? 'var(--amber)' : 'var(--border)'}`,
+      }}
+    >
+      {children}
+    </button>
+  )
+}
 
 export default function FilterBar({ category, difficulty, onCategory, onDifficulty }: Props) {
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="flex flex-wrap items-center gap-4 mb-2">
       <div className="flex items-center gap-2">
-        <span className="text-sm text-gray-500 dark:text-gray-400">カテゴリ</span>
-        <div className="flex rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700">
+        <span className="text-[10px] uppercase tracking-widest font-bold" style={{ color: 'var(--text-muted)' }}>
+          カテゴリ
+        </span>
+        <div className="flex gap-1.5">
           {CATEGORIES.map((c) => (
-            <button
-              key={c.value}
-              onClick={() => onCategory(c.value)}
-              className={`${btnBase} ${category === c.value ? btnActive : btnInactive}`}
-            >
+            <Pill key={c.value} active={category === c.value} onClick={() => onCategory(c.value)}>
               {c.label}
-            </button>
+            </Pill>
           ))}
         </div>
       </div>
 
       <div className="flex items-center gap-2">
-        <span className="text-sm text-gray-500 dark:text-gray-400">難易度</span>
-        <div className="flex rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700">
+        <span className="text-[10px] uppercase tracking-widest font-bold" style={{ color: 'var(--text-muted)' }}>
+          難易度
+        </span>
+        <div className="flex gap-1.5">
           {DIFFICULTIES.map((d) => (
-            <button
-              key={d.value}
-              onClick={() => onDifficulty(d.value)}
-              className={`${btnBase} ${difficulty === d.value ? btnActive : btnInactive}`}
-            >
+            <Pill key={d.value} active={difficulty === d.value} onClick={() => onDifficulty(d.value)}>
               {d.label}
-            </button>
+            </Pill>
           ))}
         </div>
       </div>

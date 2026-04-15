@@ -2,8 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Dark Editorial (default) ─────────────────── */
+html.dark {
+  --bg: #0a0a0f;
+  --surface: #111119;
+  --elevated: #1b1b28;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.13);
+  --text: #e8e8f2;
+  --text-sub: #72728c;
+  --text-muted: #3c3c52;
+  --amber: #f59e0b;
+  --amber-bg: rgba(245, 158, 11, 0.08);
+  --indigo: #818cf8;
+  --saas-fg: #818cf8;
+  --saas-bg: rgba(129, 140, 248, 0.12);
+  --seo-fg: #4ade80;
+  --seo-bg: rgba(74, 222, 128, 0.10);
+  --diff-low: #34d399;
+  --diff-med: #fbbf24;
+  --diff-high: #f87171;
+}
+
+/* ── Light ────────────────────────────────────── */
+html:not(.dark) {
+  --bg: #f7f7f4;
+  --surface: #ffffff;
+  --elevated: #efefe8;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.15);
+  --text: #111118;
+  --text-sub: #56566e;
+  --text-muted: #aaaabc;
+  --amber: #d97706;
+  --amber-bg: rgba(217, 119, 6, 0.07);
+  --indigo: #4f46e5;
+  --saas-fg: #4f46e5;
+  --saas-bg: rgba(79, 70, 229, 0.08);
+  --seo-fg: #16a34a;
+  --seo-bg: rgba(22, 163, 74, 0.08);
+  --diff-low: #059669;
+  --diff-med: #d97706;
+  --diff-high: #dc2626;
+}
+
 @layer base {
   html {
     font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
 }

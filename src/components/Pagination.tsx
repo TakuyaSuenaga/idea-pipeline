@@ -21,31 +21,32 @@ export default function Pagination({ current, total, onChange }: Props) {
     pages.push(total)
   }
 
-  const btnBase =
-    'text-sm rounded-lg transition-colors border border-gray-200 dark:border-gray-700 dark:text-gray-300'
-
   return (
     <div className="flex items-center justify-center gap-1">
       <button
         onClick={() => onChange(current - 1)}
         disabled={current === 1}
-        className={`${btnBase} px-3 py-1.5 disabled:opacity-40 hover:bg-gray-50 dark:hover:bg-gray-700`}
+        className="text-xs px-3 py-1.5 rounded transition-colors disabled:opacity-30"
+        style={{ color: 'var(--text-sub)', border: '1px solid var(--border)' }}
       >
         前へ
       </button>
 
       {pages.map((p, i) =>
         p === '...' ? (
-          <span key={`e${i}`} className="px-2 text-gray-400">…</span>
+          <span key={`e${i}`} className="px-2 text-xs" style={{ color: 'var(--text-muted)' }}>
+            …
+          </span>
         ) : (
           <button
             key={p}
             onClick={() => onChange(p)}
-            className={`w-9 h-9 ${btnBase} ${
+            className="w-8 h-8 text-xs rounded transition-colors"
+            style={
               p === current
-                ? 'bg-indigo-600 text-white border-indigo-600'
-                : 'hover:bg-gray-50 dark:hover:bg-gray-700'
-            }`}
+                ? { color: 'var(--amber)', background: 'var(--amber-bg)', border: '1px solid var(--amber)' }
+                : { color: 'var(--text-sub)', border: '1px solid var(--border)' }
+            }
           >
             {p}
           </button>
@@ -55,7 +56,8 @@ export default function Pagination({ current, total, onChange }: Props) {
       <button
         onClick={() => onChange(current + 1)}
         disabled={current === total}
-        className={`${btnBase} px-3 py-1.5 disabled:opacity-40 hover:bg-gray-50 dark:hover:bg-gray-700`}
+        className="text-xs px-3 py-1.5 rounded transition-colors disabled:opacity-30"
+        style={{ color: 'var(--text-sub)', border: '1px solid var(--border)' }}
       >
         次へ
       </button>

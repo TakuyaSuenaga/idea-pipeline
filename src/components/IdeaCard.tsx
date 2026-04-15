@@ -1,84 +1,129 @@
 import { useState } from 'react'
 import type { Idea } from '../types'
 
-const CATEGORY_STYLES: Record<string, string> = {
-  saas: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
-  seo: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
-}
-
-const DIFFICULTY_STYLES: Record<string, string> = {
-  low: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200',
-  medium: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200',
-  high: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200',
-}
-
-const DIFFICULTY_LABELS: Record<string, string> = {
-  low: '低',
-  medium: '中',
-  high: '高',
-}
+const DIFF_LABELS: Record<string, string> = { low: '低', medium: '中', high: '高' }
 
 interface Props {
   idea: Idea
+  index: number
 }
 
-export default function IdeaCard({ idea }: Props) {
+export default function IdeaCard({ idea, index }: Props) {
   const [expanded, setExpanded] = useState(false)
 
-  return (
-    <article className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-5 flex flex-col gap-3 hover:shadow-md transition-shadow">
-      <div className="flex items-start gap-2">
-        <h3 className="font-semibold text-sm leading-snug flex-1 text-gray-900 dark:text-white">
-          {idea.title}
-        </h3>
-        <div className="flex gap-1 shrink-0 flex-wrap justify-end">
-          <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${CATEGORY_STYLES[idea.category] ?? ''}`}>
-            {idea.category.toUpperCase()}
-          </span>
-          <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${DIFFICULTY_STYLES[idea.difficulty] ?? ''}`}>
-            難易度{DIFFICULTY_LABELS[idea.difficulty] ?? idea.difficulty}
-          </span>
-        </div>
-      </div>
+  const catFg = idea.category === 'saas' ? 'var(--saas-fg)' : 'var(--seo-fg)'
+  const catBg = idea.category === 'saas' ? 'var(--saas-bg)' : 'var(--seo-bg)'
+  const diffColor =
+    idea.difficulty === 'low'
+      ? 'var(--diff-low)'
+      : idea.difficulty === 'medium'
+        ? 'var(--diff-med)'
+        : 'var(--diff-high)'
 
-      <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-        {idea.description}
-      </p>
+  return (
+    <li style={{ borderBottom: '1px solid var(--border)' }}>
+      <button
+        className="w-full text-left flex items-start gap-4 py-5 group"
+        onClick={() => setExpanded((e) => !e)}
+      >
+        {/* Number */}
+        <span
+          className="text-xs font-mono tabular-nums mt-0.5 shrink-0 w-6 text-right"
+          style={{ color: 'var(--text-muted)' }}
+        >
+          {String(index).padStart(2, '0')}
+        </span>
+
+        {/* Content */}
+        <div className="flex-1 min-w-0">
+          <div className="flex items-start gap-2 flex-wrap">
+            <h3
+              className="font-medium text-[15px] leading-snug flex-1 min-w-0 group-hover:opacity-80 transition-opacity"
+              style={{ color: 'var(--text)' }}
+            >
+              {idea.title}
+            </h3>
+            <div className="flex items-center gap-2 shrink-0 mt-0.5">
+              <span
+                className="text-[10px] px-1.5 py-0.5 font-semibold rounded tracking-wide"
+                style={{ color: catFg, background: catBg }}
+              >
+                {idea.category.toUpperCase()}
+              </span>
+              <span className="text-[11px] font-medium tabular-nums" style={{ color: diffColor }}>
+                難易度{DIFF_LABELS[idea.difficulty] ?? idea.difficulty}
+              </span>
+              <time className="text-[11px]" style={{ color: 'var(--text-muted)' }}>
+                {new Date(idea.generated_at).toLocaleDateString('ja-JP', {
+                  month: 'numeric',
+                  day: 'numeric',
+                })}
+              </time>
+              <span
+                className="text-xs transition-transform duration-200"
+                style={{
+                  color: 'var(--text-muted)',
+                  display: 'inline-block',
+                  transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)',
+                }}
+              >
+                ▾
+              </span>
+            </div>
+          </div>
+          <p className="text-sm mt-1.5 leading-relaxed" style={{ color: 'var(--text-sub)' }}>
+            {idea.description}
+          </p>
+        </div>
+      </button>
 
       {expanded && (
-        <dl className="text-sm space-y-2 border-t border-gray-100 dark:border-gray-700 pt-3">
-          {idea.target_market && (
-            <>
-              <dt className="font-medium text-gray-700 dark:text-gray-300">ターゲット市場</dt>
-              <dd className="text-gray-600 dark:text-gray-400">{idea.target_market}</dd>
-            </>
-          )}
+        <div className="pl-10 pb-5 space-y-4">
           {idea.why_now && (
-            <>
-              <dt className="font-medium text-gray-700 dark:text-gray-300 mt-2">Why Now</dt>
-              <dd className="text-gray-600 dark:text-gray-400">{idea.why_now}</dd>
-            </>
+            <div
+              className="border-l-2 pl-4 py-2 rounded-r"
+              style={{ borderColor: 'var(--amber)', background: 'var(--amber-bg)' }}
+            >
+              <p
+                className="text-[10px] font-bold uppercase tracking-widest mb-1.5"
+                style={{ color: 'var(--amber)' }}
+              >
+                Why Now
+              </p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--text)' }}>
+                {idea.why_now}
+              </p>
+            </div>
           )}
-          {idea.revenue_model && (
-            <>
-              <dt className="font-medium text-gray-700 dark:text-gray-300 mt-2">収益モデル</dt>
-              <dd className="text-gray-600 dark:text-gray-400">{idea.revenue_model}</dd>
-            </>
-          )}
-        </dl>
-      )}
 
-      <div className="flex items-center justify-between mt-auto pt-1">
-        <time className="text-xs text-gray-400 dark:text-gray-500">
-          {new Date(idea.generated_at).toLocaleDateString('ja-JP')}
-        </time>
-        <button
-          onClick={() => setExpanded((e) => !e)}
-          className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline"
-        >
-          {expanded ? '閉じる' : '詳細を見る'}
-        </button>
-      </div>
-    </article>
+          {(idea.target_market || idea.revenue_model) && (
+            <dl className="grid grid-cols-[5rem_1fr] gap-x-4 gap-y-2 text-sm">
+              {idea.target_market && (
+                <>
+                  <dt
+                    className="text-[10px] font-bold uppercase tracking-widest pt-0.5"
+                    style={{ color: 'var(--text-muted)' }}
+                  >
+                    市場
+                  </dt>
+                  <dd style={{ color: 'var(--text-sub)' }}>{idea.target_market}</dd>
+                </>
+              )}
+              {idea.revenue_model && (
+                <>
+                  <dt
+                    className="text-[10px] font-bold uppercase tracking-widest pt-0.5"
+                    style={{ color: 'var(--text-muted)' }}
+                  >
+                    収益
+                  </dt>
+                  <dd style={{ color: 'var(--text-sub)' }}>{idea.revenue_model}</dd>
+                </>
+              )}
+            </dl>
+          )}
+        </div>
+      )}
+    </li>
   )
 }

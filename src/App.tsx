@@ -6,8 +6,8 @@ import Pagination from './components/Pagination'
 import ResearchTable from './components/ResearchTable'
 
 const BASE = import.meta.env.BASE_URL
-const IDEAS_PER_PAGE = 12
-const RESEARCH_PER_PAGE = 20
+const IDEAS_PER_PAGE = 20
+const RESEARCH_PER_PAGE = 30
 
 type CategoryFilter = 'all' | 'saas' | 'seo'
 type DifficultyFilter = 'all' | 'low' | 'medium' | 'high'
@@ -25,9 +25,7 @@ export default function App() {
   const [ideasPage, setIdeasPage] = useState(1)
   const [researchPage, setResearchPage] = useState(1)
 
-  const [dark, setDark] = useState(
-    () => window.matchMedia('(prefers-color-scheme: dark)').matches,
-  )
+  const [dark, setDark] = useState(true)
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark)
@@ -76,44 +74,55 @@ export default function App() {
   )
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
-      <header className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div>
+      {/* Header */}
+      <header
+        className="sticky top-0 z-10 backdrop-blur-sm"
+        style={{ background: 'rgba(10,10,15,0.85)', borderBottom: '1px solid var(--border)' }}
+      >
+        <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
           <div>
-            <h1 className="text-xl font-bold text-gray-900 dark:text-white">
+            <h1 className="text-sm font-semibold tracking-widest uppercase" style={{ color: 'var(--text-sub)' }}>
               Startup Idea Pipeline
             </h1>
             {exportedAt && (
-              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-                最終更新: {new Date(exportedAt).toLocaleString('ja-JP')} — {ideas.length}件
+              <p className="text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>
+                更新 {new Date(exportedAt).toLocaleString('ja-JP')} — {ideas.length} 件
               </p>
             )}
           </div>
           <button
             onClick={() => setDark((d) => !d)}
-            className="px-3 py-1.5 text-sm rounded-lg border border-gray-200 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            className="text-xs px-2.5 py-1 rounded transition-colors"
+            style={{
+              color: 'var(--text-muted)',
+              border: '1px solid var(--border)',
+            }}
           >
-            {dark ? 'ライト' : 'ダーク'}
+            {dark ? '☀' : '◑'}
           </button>
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 py-8">
+      <main className="max-w-4xl mx-auto px-6 py-8">
         {/* Tab bar */}
-        <div className="flex gap-1 border-b border-gray-200 dark:border-gray-700 mb-6">
+        <div className="flex gap-0 mb-8" style={{ borderBottom: '1px solid var(--border)' }}>
           {(['ideas', 'research'] as const).map((tab) => {
-            const label = tab === 'ideas'
-              ? `アイデア一覧 (${filtered.length})`
-              : `リサーチソース (${research.length})`
+            const label =
+              tab === 'ideas'
+                ? `アイデア (${filtered.length})`
+                : `リサーチ (${research.length})`
+            const isActive = activeTab === tab
             return (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`px-4 py-2 text-sm font-medium border-b-2 transition-colors ${
-                  activeTab === tab
-                    ? 'border-indigo-600 text-indigo-600 dark:text-indigo-400 dark:border-indigo-400'
-                    : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
-                }`}
+                className="px-4 py-3 text-sm font-medium transition-colors"
+                style={{
+                  color: isActive ? 'var(--amber)' : 'var(--text-muted)',
+                  borderBottom: isActive ? '2px solid var(--amber)' : '2px solid transparent',
+                  marginBottom: '-1px',
+                }}
               >
                 {label}
               </button>
@@ -132,22 +141,32 @@ export default function App() {
             />
 
             {loading && (
-              <p className="text-center text-gray-500 dark:text-gray-400 py-20">読み込み中...</p>
+              <p className="text-center py-20 text-sm" style={{ color: 'var(--text-muted)' }}>
+                読み込み中...
+              </p>
             )}
-            {error && <p className="text-center text-red-500 py-20">{error}</p>}
+            {error && (
+              <p className="text-center py-20 text-sm" style={{ color: 'var(--diff-high)' }}>
+                {error}
+              </p>
+            )}
             {!loading && !error && filtered.length === 0 && (
-              <p className="text-center text-gray-500 dark:text-gray-400 py-20">
+              <p className="text-center py-20 text-sm" style={{ color: 'var(--text-muted)' }}>
                 条件に合うアイデアがありません。
               </p>
             )}
             {!loading && !error && filtered.length > 0 && (
               <>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-                  {pagedIdeas.map((idea) => (
-                    <IdeaCard key={idea.id} idea={idea} />
+                <ol className="mt-6" style={{ borderTop: '1px solid var(--border)' }}>
+                  {pagedIdeas.map((idea, i) => (
+                    <IdeaCard
+                      key={idea.id}
+                      idea={idea}
+                      index={(ideasPage - 1) * IDEAS_PER_PAGE + i + 1}
+                    />
                   ))}
-                </div>
-                <div className="mt-6">
+                </ol>
+                <div className="mt-8">
                   <Pagination current={ideasPage} total={totalIdeasPages} onChange={setIdeasPage} />
                 </div>
               </>
@@ -159,12 +178,14 @@ export default function App() {
         {activeTab === 'research' && (
           <section>
             {loading && (
-              <p className="text-center text-gray-500 dark:text-gray-400 py-20">読み込み中...</p>
+              <p className="text-center py-20 text-sm" style={{ color: 'var(--text-muted)' }}>
+                読み込み中...
+              </p>
             )}
             {!loading && (
               <>
                 <ResearchTable items={pagedResearch} />
-                <div className="mt-4">
+                <div className="mt-6">
                   <Pagination
                     current={researchPage}
                     total={totalResearchPages}
