@@ -1,7 +1,7 @@
 # Startup Idea Pipeline
 
 スタートアップアイデアを自動収集・生成し、ブラウザで閲覧できるパイプライン。  
-GitHub Actions が 3 時間ごとに市場調査を行い、Claude API でアイデアを生成。結果を GitHub Pages でリアルタイム公開する。
+GitHub Actions が 12 時間ごとに市場調査を行い、Claude API でアイデアを生成。結果を GitHub Pages でリアルタイム公開する。
 
 ![Screenshot](docs/assets/images/screenshot.png)
 
@@ -23,7 +23,7 @@ GitHub Actions が 3 時間ごとに市場調査を行い、Claude API でアイ
 ## アーキテクチャ
 
 ```
-GitHub Actions (cron: 毎 3 時間)
+GitHub Actions (cron: 毎 12 時間)
   └── 1. 市場調査 (HN API / Reddit JSON / TechCrunch RSS)
   └── 2. Claude API でアイデア生成 (claude-opus-4-6)
   └── 3. SQLite に保存 → JSON エクスポート
@@ -34,7 +34,7 @@ GitHub Actions (cron: 毎 3 時間)
 ```
 idea-pipeline/
 ├── .github/workflows/
-│   ├── pipeline.yml   # 3 時間ごとの収集・生成ワークフロー
+│   ├── pipeline.yml   # 12 時間ごとの収集・生成ワークフロー
 │   └── deploy.yml     # GitHub Pages デプロイ (main push 時)
 ├── pipeline/
 │   ├── db.py          # SQLite CRUD
