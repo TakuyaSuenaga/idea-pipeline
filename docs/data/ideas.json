@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-04-15T07:58:30.160880+00:00",
+  "exported_at": "2026-04-15T10:06:06.138362+00:00",
   "count": 25,
   "ideas": [
     {
@@ -33,7 +33,13 @@
         219,
         220
       ],
-      "generated_at": "2026-04-15 07:58:30"
+      "generated_at": "2026-04-15 07:58:30",
+      "eval_why_now": 6,
+      "eval_differentiation": 3,
+      "eval_feasibility": 6,
+      "eval_market_size": 6,
+      "eval_comment": "軽量CRMは典型的なtarpit ideaで、Attio、Folk、Close、Streak等の競合が既に多数存在する超激戦領域。AI自動更新の切り口は良いが、CRMのネットワーク効果やスイッチングコストの低さから、ソロファウンダー向けのニッチだけでは成長が難しい。",
+      "eval_total": 5.2
     },
     {
       "id": 24,
@@ -66,7 +72,13 @@
         219,
         220
       ],
-      "generated_at": "2026-04-15 07:58:30"
+      "generated_at": "2026-04-15 07:58:30",
+      "eval_why_now": 6,
+      "eval_differentiation": 7,
+      "eval_feasibility": 8,
+      "eval_market_size": 4,
+      "eval_comment": "AI活用でコンテンツ量産可能な点とロングテールSEO戦略は現実的だが、ニッチすぎてトラフィック規模に限界がありマネタイズが弱い。著作権やアーカイブ利用規約の確認も必要で、広告収益だけでは収益性が低い可能性が高い。",
+      "eval_total": 6.2
     },
     {
       "id": 23,
@@ -99,7 +111,13 @@
         219,
         220
       ],
-      "generated_at": "2026-04-15 07:58:30"
+      "generated_at": "2026-04-15 07:58:30",
+      "eval_why_now": 8,
+      "eval_differentiation": 7,
+      "eval_feasibility": 6,
+      "eval_market_size": 5,
+      "eval_comment": "xz事件後のサプライチェーンセキュリティ意識の高まりは追い風で、既存ツールが脆弱性特化な中でメンテナンス持続性・フリーライダーリスクという独自切り口は差別化要素として強い。ただしスコアリングの信頼性確立と市場がニッチな点が課題。",
+      "eval_total": 6.5
     },
     {
       "id": 22,
@@ -132,7 +150,13 @@
         219,
         220
       ],
-      "generated_at": "2026-04-15 07:58:30"
+      "generated_at": "2026-04-15 07:58:30",
+      "eval_why_now": 7,
+      "eval_differentiation": 6,
+      "eval_feasibility": 4,
+      "eval_market_size": 5,
+      "eval_comment": "AIエージェント時代のAPIキー管理という課題は確かに増大しているが、GitGuardian・Vault・既存シークレット管理ツールとの競合が激しく、セキュリティ製品はソロ開発者では信頼性の担保が困難。エンタープライズ向け販売にはセールス体制が必要。",
+      "eval_total": 5.5
     },
     {
       "id": 21,
@@ -165,7 +189,13 @@
         219,
         220
       ],
-      "generated_at": "2026-04-15 07:58:30"
+      "generated_at": "2026-04-15 07:58:30",
+      "eval_why_now": 7,
+      "eval_differentiation": 4,
+      "eval_feasibility": 7,
+      "eval_market_size": 6,
+      "eval_comment": "プロンプト管理ツールは既にTypingMind、PromptLayer、Langfuse等が多数存在するレッドオーシャン領域。非エンジニア向けの切り口は良いが、LLMプラットフォーム自体がプロンプト管理機能を内蔵し始めており、独立ツールとしての持続性に懸念がある。",
+      "eval_total": 6.0
     },
     {
       "id": 20,
@@ -198,7 +228,13 @@
         169,
         170
       ],
-      "generated_at": "2026-04-15 03:19:31"
+      "generated_at": "2026-04-15 03:19:31",
+      "eval_why_now": 7,
+      "eval_differentiation": 7,
+      "eval_feasibility": 3,
+      "eval_market_size": 5,
+      "eval_comment": "Pi-holeの発展版としてコンセプトは魅力的だが、ネットワークパケット解析・IoTプロトコル対応・デバイス識別のエンジニアリング負荷が非常に高い。ハードウェア依存もありソロ開発での品質維持は困難。",
+      "eval_total": 5.5
     },
     {
       "id": 19,
@@ -231,7 +267,13 @@
         169,
         170
       ],
-      "generated_at": "2026-04-15 03:19:31"
+      "generated_at": "2026-04-15 03:19:31",
+      "eval_why_now": 5,
+      "eval_differentiation": 6,
+      "eval_feasibility": 9,
+      "eval_market_size": 3,
+      "eval_comment": "ソロ開発の実現性は非常に高いが、市場が極めてニッチ。アフィリエイト単価も低く、ロングテールSEOでトラフィックは取れても収益化が難しい趣味プロジェクトに近い。",
+      "eval_total": 5.8
     },
     {
       "id": 18,
@@ -264,7 +306,13 @@
         169,
         170
       ],
-      "generated_at": "2026-04-15 03:19:31"
+      "generated_at": "2026-04-15 03:19:31",
+      "eval_why_now": 8,
+      "eval_differentiation": 4,
+      "eval_feasibility": 6,
+      "eval_market_size": 7,
+      "eval_comment": "ID11とほぼ同じ領域であり、差別化が不明瞭。ノーコードでChrome拡張やSlackボットに変換する部分の技術的完成度が鍵だが、各プラットフォームの審査・保守コストがソロ開発者には厳しい。",
+      "eval_total": 6.2
     },
     {
       "id": 17,
@@ -297,7 +345,13 @@
         169,
         170
       ],
-      "generated_at": "2026-04-15 03:19:31"
+      "generated_at": "2026-04-15 03:19:31",
+      "eval_why_now": 7,
+      "eval_differentiation": 5,
+      "eval_feasibility": 4,
+      "eval_market_size": 5,
+      "eval_comment": "セルフホスト管理パネルはCasaOS、Coolify、Umbrel等の既存OSSが充実しておりレッドオーシャン。VPS管理・暗号化バックアップの信頼性担保はソロ開発では重い責任を伴う。",
+      "eval_total": 5.2
     },
     {
       "id": 16,
@@ -330,7 +384,13 @@
         169,
         170
       ],
-      "generated_at": "2026-04-15 03:19:31"
+      "generated_at": "2026-04-15 03:19:31",
+      "eval_why_now": 7,
+      "eval_differentiation": 7,
+      "eval_feasibility": 5,
+      "eval_market_size": 5,
+      "eval_comment": "パスキーの普及タイミングとシニア市場の成長は合致しているが、認証SDKはAuth0/Clerk等の大手と競合する領域。シニア特化のUXリサーチに深く入り込めれば差別化は可能だが、販売先がB2B2Cで営業難易度が高い。",
+      "eval_total": 6.0
     },
     {
       "id": 15,
@@ -363,7 +423,13 @@
         119,
         120
       ],
-      "generated_at": "2026-04-14 21:57:17"
+      "generated_at": "2026-04-14 21:57:17",
+      "eval_why_now": 6,
+      "eval_differentiation": 5,
+      "eval_feasibility": 8,
+      "eval_market_size": 5,
+      "eval_comment": "プライバシーオプトアウト手順のDB化は社会的意義が高いが、SEOメディアとしてはDeleteMe等の類似サービスが存在する。月額$3のSaaSは単価が低すぎてスケールしにくい。",
+      "eval_total": 6.0
     },
     {
       "id": 14,
@@ -396,7 +462,13 @@
         119,
         120
       ],
-      "generated_at": "2026-04-14 21:57:17"
+      "generated_at": "2026-04-14 21:57:17",
+      "eval_why_now": 8,
+      "eval_differentiation": 8,
+      "eval_feasibility": 4,
+      "eval_market_size": 7,
+      "eval_comment": "金融データのコンテキスト圧縮というミドルウェアレイヤーは独自性が高く、LLMエージェント時代のインフラとして筋が良い。しかし金融データソースの調達コスト・精度保証が重く、ソロ開発での実現難易度は非常に高い。",
+      "eval_total": 6.8
     },
     {
       "id": 13,
@@ -429,7 +501,13 @@
         119,
         120
       ],
-      "generated_at": "2026-04-14 21:57:17"
+      "generated_at": "2026-04-14 21:57:17",
+      "eval_why_now": 6,
+      "eval_differentiation": 5,
+      "eval_feasibility": 8,
+      "eval_market_size": 4,
+      "eval_comment": "SEOコンテンツ＋簡易SaaSの組み合わせはソロ開発向きだが、バックアップポリシー変更の監視は地味でニッチすぎる。アフィリエイト単価も低く、収益規模に限界がありそう。",
+      "eval_total": 5.8
     },
     {
       "id": 12,
@@ -462,7 +540,13 @@
         119,
         120
       ],
-      "generated_at": "2026-04-14 21:57:17"
+      "generated_at": "2026-04-14 21:57:17",
+      "eval_why_now": 8,
+      "eval_differentiation": 7,
+      "eval_feasibility": 6,
+      "eval_market_size": 6,
+      "eval_comment": "Fiverrの事件が具体的なペインを証明しており、タイミングが良い。ただし各SaaSのURLパターン調査・維持コストが高く、ソロ開発では対応サービスの網羅性確保が課題になる。",
+      "eval_total": 6.8
     },
     {
       "id": 11,
@@ -495,7 +579,13 @@
         119,
         120
       ],
-      "generated_at": "2026-04-14 21:57:17"
+      "generated_at": "2026-04-14 21:57:17",
+      "eval_why_now": 8,
+      "eval_differentiation": 4,
+      "eval_feasibility": 7,
+      "eval_market_size": 7,
+      "eval_comment": "プロンプト管理SaaSは既にPromptLayer、Langfuse等の競合が多いタルピットアイデアに近い。ただしChrome拡張でのワンクリック実行という切り口は実用的で、SMB向けに絞れば勝機はある。",
+      "eval_total": 6.5
     },
     {
       "id": 10,
@@ -528,7 +618,13 @@
         69,
         70
       ],
-      "generated_at": "2026-04-14 19:26:17"
+      "generated_at": "2026-04-14 19:26:17",
+      "eval_why_now": 8,
+      "eval_differentiation": 6,
+      "eval_feasibility": 4,
+      "eval_market_size": 6,
+      "eval_comment": "ID3のMCPスキーマ最適化ツールと大きく重複しており、金融特化にすることで差別化を図っているが、フィンテック向けは規制・データライセンスの壁が高く、ソロ開発者には負担が大きい。",
+      "eval_total": 6.0
     },
     {
       "id": 9,
@@ -561,7 +657,13 @@
         69,
         70
       ],
-      "generated_at": "2026-04-14 19:26:17"
+      "generated_at": "2026-04-14 19:26:17",
+      "eval_why_now": 6,
+      "eval_differentiation": 7,
+      "eval_feasibility": 8,
+      "eval_market_size": 4,
+      "eval_comment": "ニッチなSEOメディアとしてはソロ開発者に適しているが、規制情報の収集・翻訳・更新コストが継続的にかかる。VPN企業へのスポンサー収入が主な現実的収益源になりそう。",
+      "eval_total": 6.2
     },
     {
       "id": 8,
@@ -594,7 +696,13 @@
         69,
         70
       ],
-      "generated_at": "2026-04-14 19:26:17"
+      "generated_at": "2026-04-14 19:26:17",
+      "eval_why_now": 5,
+      "eval_differentiation": 7,
+      "eval_feasibility": 7,
+      "eval_market_size": 4,
+      "eval_comment": "ニッチだが空白市場を狙う面白いアプローチ。ただし5NFまでの正規化診断を必要とするユーザーは非常に限定的で、教育ツール寄りになりがち。継続課金を正当化する頻度の問題がある。",
+      "eval_total": 5.8
     },
     {
       "id": 7,
@@ -627,7 +735,13 @@
         69,
         70
       ],
-      "generated_at": "2026-04-14 19:26:17"
+      "generated_at": "2026-04-14 19:26:17",
+      "eval_why_now": 7,
+      "eval_differentiation": 6,
+      "eval_feasibility": 6,
+      "eval_market_size": 6,
+      "eval_comment": "プロンプトの商品化・ツール化は需要があるが、PromptBase等の既存マーケットプレイスや各LLMプロバイダの公式機能拡張と競合する。「ツール化」の付加価値をどこまで出せるかが鍵。",
+      "eval_total": 6.2
     },
     {
       "id": 6,
@@ -660,7 +774,13 @@
         69,
         70
       ],
-      "generated_at": "2026-04-14 19:26:17"
+      "generated_at": "2026-04-14 19:26:17",
+      "eval_why_now": 6,
+      "eval_differentiation": 5,
+      "eval_feasibility": 5,
+      "eval_market_size": 5,
+      "eval_comment": "Backblazeの問題は一時的なトリガーとしては弱く、クラウド間バックアップは既存サービス（rclone、MultCloud等）との差別化が難しい。ストレージ転送コストの問題もある。",
+      "eval_total": 5.2
     },
     {
       "id": 5,
@@ -693,7 +813,13 @@
         19,
         20
       ],
-      "generated_at": "2026-04-14 17:40:04"
+      "generated_at": "2026-04-14 17:40:04",
+      "eval_why_now": 6,
+      "eval_differentiation": 5,
+      "eval_feasibility": 7,
+      "eval_market_size": 5,
+      "eval_comment": "OSSメンテナーの課題は実在するが、支払い意欲が低いターゲット層が中心。GitHub Copilot自体がIssue管理機能を拡張する可能性もあり、プラットフォームリスクが高い。",
+      "eval_total": 5.8
     },
     {
       "id": 4,
@@ -726,7 +852,13 @@
         19,
         20
       ],
-      "generated_at": "2026-04-14 17:40:04"
+      "generated_at": "2026-04-14 17:40:04",
+      "eval_why_now": 7,
+      "eval_differentiation": 7,
+      "eval_feasibility": 9,
+      "eval_market_size": 4,
+      "eval_comment": "ソロ開発に最適な低難度・ニッチSEOツール。ただしバックボタンハイジャック検出は一過性の需要で終わる可能性があり、長期的な収益の柱にするには機能拡張が必要。",
+      "eval_total": 6.8
     },
     {
       "id": 3,
@@ -759,7 +891,13 @@
         19,
         20
       ],
-      "generated_at": "2026-04-14 17:40:04"
+      "generated_at": "2026-04-14 17:40:04",
+      "eval_why_now": 8,
+      "eval_differentiation": 7,
+      "eval_feasibility": 5,
+      "eval_market_size": 5,
+      "eval_comment": "MCPエコシステムの成熟度次第でマーケットが大きく変動するリスクがある。技術的には面白いが、MCPプロトコル自体がまだ流動的で、標準側の変更で不要になる可能性も。",
+      "eval_total": 6.2
     },
     {
       "id": 2,
@@ -792,7 +930,13 @@
         19,
         20
       ],
-      "generated_at": "2026-04-14 17:40:04"
+      "generated_at": "2026-04-14 17:40:04",
+      "eval_why_now": 9,
+      "eval_differentiation": 8,
+      "eval_feasibility": 6,
+      "eval_market_size": 6,
+      "eval_comment": "AIエージェントのシークレット管理は6ヶ月前には存在しなかった新しい課題で、まだ明確な競合がいない。セキュリティ系SaaSは信頼構築が重要だがニッチを先に押さえる価値がある。",
+      "eval_total": 7.2
     },
     {
       "id": 1,
@@ -825,7 +969,13 @@
         19,
         20
       ],
-      "generated_at": "2026-04-14 17:40:04"
+      "generated_at": "2026-04-14 17:40:04",
+      "eval_why_now": 9,
+      "eval_differentiation": 5,
+      "eval_feasibility": 5,
+      "eval_market_size": 8,
+      "eval_comment": "LLM監視は明確な需要があるが、Datadog、LangSmith、Arize等の既存プレイヤーが多く差別化が難しい。Keletとの直接競合になるためタイミングは良いがレッドオーシャン化リスクが高い。",
+      "eval_total": 6.8
     }
   ]
 }

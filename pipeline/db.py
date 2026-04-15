@@ -21,18 +21,42 @@ CREATE TABLE IF NOT EXISTS market_research (
 
 _CREATE_STARTUP_IDEAS = """
 CREATE TABLE IF NOT EXISTS startup_ideas (
-    id            INTEGER PRIMARY KEY AUTOINCREMENT,
-    title         TEXT NOT NULL,
-    description   TEXT NOT NULL,
-    target_market TEXT,
-    why_now       TEXT,
-    revenue_model TEXT,
-    difficulty    TEXT,
-    category      TEXT,
-    research_ids  TEXT,
-    generated_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    id                   INTEGER PRIMARY KEY AUTOINCREMENT,
+    title                TEXT NOT NULL,
+    description          TEXT NOT NULL,
+    target_market        TEXT,
+    why_now              TEXT,
+    revenue_model        TEXT,
+    difficulty           TEXT,
+    category             TEXT,
+    research_ids         TEXT,
+    generated_at         TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    eval_why_now         INTEGER,
+    eval_differentiation INTEGER,
+    eval_feasibility     INTEGER,
+    eval_market_size     INTEGER,
+    eval_comment         TEXT,
+    eval_total           REAL
 );
 """
+
+_EVAL_COLUMNS = [
+    ("eval_why_now", "INTEGER"),
+    ("eval_differentiation", "INTEGER"),
+    ("eval_feasibility", "INTEGER"),
+    ("eval_market_size", "INTEGER"),
+    ("eval_comment", "TEXT"),
+    ("eval_total", "REAL"),
+]
+
+
+def _migrate_db(conn: sqlite3.Connection) -> None:
+    """Add eval columns to startup_ideas if they are missing (forward-only migration)."""
+    existing = {row[1] for row in conn.execute("PRAGMA table_info(startup_ideas)")}
+    for col_name, col_type in _EVAL_COLUMNS:
+        if col_name not in existing:
+            conn.execute(f"ALTER TABLE startup_ideas ADD COLUMN {col_name} {col_type}")
+    conn.commit()
 
 
 def init_db(db_path: str | Path = DB_PATH) -> sqlite3.Connection:
@@ -42,6 +66,7 @@ def init_db(db_path: str | Path = DB_PATH) -> sqlite3.Connection:
     conn.execute("PRAGMA journal_mode=WAL")
     conn.execute(_CREATE_MARKET_RESEARCH)
     conn.execute(_CREATE_STARTUP_IDEAS)
+    _migrate_db(conn)
     conn.commit()
     return conn
 
@@ -90,6 +115,14 @@ def cleanup_old_research(conn: sqlite3.Connection, days: int = 7) -> int:
     return cursor.rowcount
 
 
+def _compute_eval_total(scores: list[int | None]) -> float | None:
+    """Return the average of non-None scores, rounded to 1 decimal. None if all missing."""
+    valid = [s for s in scores if s is not None]
+    if not valid:
+        return None
+    return round(sum(valid) / len(valid), 1)
+
+
 def insert_idea(
     conn: sqlite3.Connection,
     title: str,
@@ -100,14 +133,22 @@ def insert_idea(
     difficulty: str | None = None,
     category: str | None = None,
     research_ids: list[int] | None = None,
+    eval_why_now: int | None = None,
+    eval_differentiation: int | None = None,
+    eval_feasibility: int | None = None,
+    eval_market_size: int | None = None,
+    eval_comment: str | None = None,
 ) -> int:
     """Insert a startup idea and return its row id."""
+    eval_total = _compute_eval_total([eval_why_now, eval_differentiation, eval_feasibility, eval_market_size])
     cursor = conn.execute(
         """
         INSERT INTO startup_ideas
             (title, description, target_market, why_now, revenue_model,
-             difficulty, category, research_ids)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+             difficulty, category, research_ids,
+             eval_why_now, eval_differentiation, eval_feasibility, eval_market_size,
+             eval_comment, eval_total)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             title,
@@ -118,6 +159,12 @@ def insert_idea(
             difficulty,
             category,
             json.dumps(research_ids or []),
+            eval_why_now,
+            eval_differentiation,
+            eval_feasibility,
+            eval_market_size,
+            eval_comment,
+            eval_total,
         ),
     )
     conn.commit()

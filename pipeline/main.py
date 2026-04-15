@@ -65,6 +65,11 @@ def main() -> None:
             difficulty=idea.get("difficulty"),
             category=idea.get("category"),
             research_ids=[r["id"] for r in recent_research[:20]],
+            eval_why_now=idea.get("eval_why_now"),
+            eval_differentiation=idea.get("eval_differentiation"),
+            eval_feasibility=idea.get("eval_feasibility"),
+            eval_market_size=idea.get("eval_market_size"),
+            eval_comment=idea.get("eval_comment"),
         )
 
     print("Exporting to docs/data/ ...")

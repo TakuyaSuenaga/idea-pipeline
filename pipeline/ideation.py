@@ -33,10 +33,16 @@ Each idea must have exactly these keys:
 - revenue_model: string (how money is made, in Japanese)
 - difficulty: "low" | "medium" | "high"
 - category: "saas" | "seo"
+- evaluation: object with exactly these keys:
+  - why_now_score: integer 1-10 (strength of the Why Now angle)
+  - differentiation_score: integer 1-10 (how unique / off the beaten path)
+  - feasibility_score: integer 1-10 (how feasible for a solo developer)
+  - market_size_score: integer 1-10 (market size potential)
+  - comment: string (brief evaluation summary in Japanese, 1-2 sentences)
 
-**IMPORTANT: Write all text values (title, description, target_market, why_now, revenue_model) in Japanese. Only the enum values (difficulty, category) remain in English.**
+**IMPORTANT: Write all text values (title, description, target_market, why_now, revenue_model, evaluation.comment) in Japanese. Only the enum values (difficulty, category) and integer scores remain in English/numeric.**
 
-Apply the Why Now test to every idea. Flag and avoid tarpit ideas.
+Apply the Why Now test to every idea. Flag and avoid tarpit ideas. Score honestly — most ideas should score 5-8; reserve 9-10 for exceptional ideas.
 """
 
 
@@ -74,6 +80,15 @@ def _parse_ideas_json(text: str) -> list[dict]:
     return []
 
 
+def _clamp_score(value) -> int | None:
+    """Return value clamped to 1–10 if castable to int, else None."""
+    try:
+        v = int(value)
+        return max(1, min(10, v))
+    except (TypeError, ValueError):
+        return None
+
+
 def _validate_idea(idea: dict) -> dict | None:
     """Validate and normalise a single idea dict. Returns None if invalid."""
     if not isinstance(idea, dict):
@@ -84,6 +99,16 @@ def _validate_idea(idea: dict) -> dict | None:
         idea["difficulty"] = "medium"
     if idea.get("category") not in ("saas", "seo"):
         idea["category"] = "saas"
+
+    # Flatten nested evaluation object into top-level eval_* keys
+    eval_data = idea.pop("evaluation", None) or {}
+    idea["eval_why_now"] = _clamp_score(eval_data.get("why_now_score"))
+    idea["eval_differentiation"] = _clamp_score(eval_data.get("differentiation_score"))
+    idea["eval_feasibility"] = _clamp_score(eval_data.get("feasibility_score"))
+    idea["eval_market_size"] = _clamp_score(eval_data.get("market_size_score"))
+    comment = eval_data.get("comment")
+    idea["eval_comment"] = comment if isinstance(comment, str) else None
+
     return idea
 
 

@@ -31,6 +31,13 @@ def _sample_ideas_json() -> str:
             "revenue_model": "Monthly subscription $29/mo",
             "difficulty": "low",
             "category": "saas",
+            "evaluation": {
+                "why_now_score": 8,
+                "differentiation_score": 7,
+                "feasibility_score": 9,
+                "market_size_score": 6,
+                "comment": "実現可能性が高く、市場機会も存在する。",
+            },
         }
     ])
 
@@ -104,6 +111,55 @@ def test_validate_idea_normalizes_invalid_difficulty():
 def test_validate_idea_normalizes_invalid_category():
     idea = {"title": "T", "description": "D", "category": "unknown"}
     assert _validate_idea(idea)["category"] == "saas"
+
+
+def test_validate_idea_flattens_evaluation_scores():
+    idea = {
+        "title": "T", "description": "D", "category": "saas",
+        "evaluation": {
+            "why_now_score": 8,
+            "differentiation_score": 7,
+            "feasibility_score": 9,
+            "market_size_score": 6,
+            "comment": "良いアイデア。",
+        },
+    }
+    result = _validate_idea(idea)
+    assert result["eval_why_now"] == 8
+    assert result["eval_differentiation"] == 7
+    assert result["eval_feasibility"] == 9
+    assert result["eval_market_size"] == 6
+    assert result["eval_comment"] == "良いアイデア。"
+    assert "evaluation" not in result
+
+
+def test_validate_idea_clamps_eval_scores():
+    idea = {
+        "title": "T", "description": "D", "category": "saas",
+        "evaluation": {
+            "why_now_score": 15,   # should clamp to 10
+            "differentiation_score": 0,  # should clamp to 1
+            "feasibility_score": "bad",  # should become None
+            "market_size_score": 5,
+            "comment": None,
+        },
+    }
+    result = _validate_idea(idea)
+    assert result["eval_why_now"] == 10
+    assert result["eval_differentiation"] == 1
+    assert result["eval_feasibility"] is None
+    assert result["eval_market_size"] == 5
+    assert result["eval_comment"] is None
+
+
+def test_validate_idea_handles_missing_evaluation():
+    idea = {"title": "T", "description": "D", "category": "saas"}
+    result = _validate_idea(idea)
+    assert result["eval_why_now"] is None
+    assert result["eval_differentiation"] is None
+    assert result["eval_feasibility"] is None
+    assert result["eval_market_size"] is None
+    assert result["eval_comment"] is None
 
 
 # ---------------------------------------------------------------------------

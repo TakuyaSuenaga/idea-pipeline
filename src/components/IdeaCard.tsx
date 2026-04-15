@@ -3,6 +3,12 @@ import type { Idea } from '../types'
 
 const DIFF_LABELS: Record<string, string> = { low: '低', medium: '中', high: '高' }
 
+function scoreColor(v: number): string {
+  if (v >= 8) return 'var(--diff-low)'
+  if (v >= 5) return 'var(--amber)'
+  return 'var(--diff-high)'
+}
+
 interface Props {
   idea: Idea
   index: number
@@ -53,6 +59,14 @@ export default function IdeaCard({ idea, index }: Props) {
               <span className="text-[11px] font-medium tabular-nums" style={{ color: diffColor }}>
                 難易度{DIFF_LABELS[idea.difficulty] ?? idea.difficulty}
               </span>
+              {idea.eval_total != null && (
+                <span
+                  className="text-[11px] font-mono tabular-nums"
+                  style={{ color: scoreColor(idea.eval_total) }}
+                >
+                  ★{idea.eval_total.toFixed(1)}
+                </span>
+              )}
               <time className="text-[11px]" style={{ color: 'var(--text-muted)' }}>
                 {new Date(idea.generated_at).toLocaleDateString('ja-JP', {
                   month: 'numeric',
@@ -121,6 +135,60 @@ export default function IdeaCard({ idea, index }: Props) {
                 </>
               )}
             </dl>
+          )}
+
+          {(idea.eval_why_now != null || idea.eval_differentiation != null ||
+            idea.eval_feasibility != null || idea.eval_market_size != null) && (
+            <div>
+              <p
+                className="text-[10px] font-bold uppercase tracking-widest mb-2"
+                style={{ color: 'var(--text-muted)' }}
+              >
+                評価
+              </p>
+              <div className="space-y-1.5">
+                {([
+                  { label: 'Why Now', value: idea.eval_why_now },
+                  { label: '差別化', value: idea.eval_differentiation },
+                  { label: '実現可能性', value: idea.eval_feasibility },
+                  { label: '市場規模', value: idea.eval_market_size },
+                ] as { label: string; value: number | null }[]).map(({ label, value }) =>
+                  value != null ? (
+                    <div key={label} className="flex items-center gap-2">
+                      <span
+                        className="text-[10px] w-16 shrink-0"
+                        style={{ color: 'var(--text-muted)' }}
+                      >
+                        {label}
+                      </span>
+                      <div
+                        className="flex-1 h-1 rounded-full"
+                        style={{ background: 'var(--border)' }}
+                      >
+                        <div
+                          className="h-1 rounded-full transition-all"
+                          style={{
+                            width: `${value * 10}%`,
+                            background: scoreColor(value),
+                          }}
+                        />
+                      </div>
+                      <span
+                        className="text-[10px] tabular-nums w-4 text-right font-mono"
+                        style={{ color: scoreColor(value) }}
+                      >
+                        {value}
+                      </span>
+                    </div>
+                  ) : null
+                )}
+              </div>
+              {idea.eval_comment && (
+                <p className="text-xs mt-2 leading-relaxed" style={{ color: 'var(--text-sub)' }}>
+                  {idea.eval_comment}
+                </p>
+              )}
+            </div>
           )}
         </div>
       )}

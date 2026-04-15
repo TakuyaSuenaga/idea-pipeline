@@ -48,6 +48,11 @@ def _idea_kwargs(**overrides):
         difficulty="low",
         category="saas",
         research_ids=[1, 2],
+        eval_why_now=8,
+        eval_differentiation=7,
+        eval_feasibility=9,
+        eval_market_size=6,
+        eval_comment="市場規模は中程度だが、実現可能性が高い。",
     )
     base.update(overrides)
     return base
@@ -73,6 +78,29 @@ def test_init_db_is_idempotent(tmp_path):
     conn1.close()
     conn2 = init_db(db_path)
     conn2.close()
+
+
+def test_init_db_migrates_eval_columns(tmp_path):
+    """init_db on a DB lacking eval columns must add them without error."""
+    db_path = tmp_path / "old.db"
+    conn = sqlite3.connect(str(db_path))
+    conn.execute("""
+        CREATE TABLE startup_ideas (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            title TEXT NOT NULL,
+            description TEXT NOT NULL,
+            category TEXT,
+            generated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+    """)
+    conn.commit()
+    conn.close()
+
+    conn = init_db(db_path)
+    cols = {row[1] for row in conn.execute("PRAGMA table_info(startup_ideas)")}
+    for expected in ("eval_why_now", "eval_differentiation", "eval_feasibility", "eval_market_size", "eval_comment", "eval_total"):
+        assert expected in cols, f"Missing column: {expected}"
+    conn.close()
 
 
 # ---------------------------------------------------------------------------
@@ -221,4 +249,39 @@ def test_fetch_all_ideas_respects_limit(tmp_path):
         insert_idea(conn, **_idea_kwargs(title=f"Idea {i}"))
     ideas = fetch_all_ideas(conn, limit=3)
     assert len(ideas) == 3
+    conn.close()
+
+
+def test_insert_idea_saves_eval_fields(tmp_path):
+    conn = _make_conn(tmp_path)
+    insert_idea(conn, **_idea_kwargs())
+    ideas = fetch_all_ideas(conn)
+    idea = ideas[0]
+    assert idea["eval_why_now"] == 8
+    assert idea["eval_differentiation"] == 7
+    assert idea["eval_feasibility"] == 9
+    assert idea["eval_market_size"] == 6
+    assert idea["eval_comment"] == "市場規模は中程度だが、実現可能性が高い。"
+    conn.close()
+
+
+def test_insert_idea_computes_eval_total(tmp_path):
+    """eval_total should be the average of the 4 score fields (rounded to 1 decimal)."""
+    conn = _make_conn(tmp_path)
+    insert_idea(conn, **_idea_kwargs())  # scores: 8, 7, 9, 6 → avg 7.5
+    ideas = fetch_all_ideas(conn)
+    assert ideas[0]["eval_total"] == 7.5
+    conn.close()
+
+
+def test_insert_idea_eval_total_none_when_no_scores(tmp_path):
+    """eval_total should be None when all eval scores are None."""
+    conn = _make_conn(tmp_path)
+    insert_idea(conn, **_idea_kwargs(
+        eval_why_now=None, eval_differentiation=None,
+        eval_feasibility=None, eval_market_size=None,
+        eval_comment=None,
+    ))
+    ideas = fetch_all_ideas(conn)
+    assert ideas[0]["eval_total"] is None
     conn.close()

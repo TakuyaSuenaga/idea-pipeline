@@ -8,6 +8,12 @@ export interface Idea {
   difficulty: 'low' | 'medium' | 'high'
   category: 'saas' | 'seo'
   generated_at: string
+  eval_why_now: number | null
+  eval_differentiation: number | null
+  eval_feasibility: number | null
+  eval_market_size: number | null
+  eval_comment: string | null
+  eval_total: number | null
 }
 
 export interface ResearchItem {
