@@ -1,7 +1,497 @@
 {
-  "exported_at": "2026-04-16T01:21:27.894288+00:00",
-  "count": 494,
+  "exported_at": "2026-04-16T21:51:17.981483+00:00",
+  "count": 543,
   "items": [
+    {
+      "id": 495,
+      "source": "hackernews",
+      "title": "Codex for almost everything",
+      "url": "https://openai.com/index/codex-for-almost-everything/",
+      "content": null,
+      "score": 544,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 496,
+      "source": "hackernews",
+      "title": "Claude Opus 4.7",
+      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "content": null,
+      "score": 1252,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 497,
+      "source": "hackernews",
+      "title": "A Better R Programming Experience Thanks to Tree-sitter",
+      "url": "https://ropensci.org/blog/2026/04/02/tree-sitter-overview/",
+      "content": null,
+      "score": 17,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 498,
+      "source": "hackernews",
+      "title": "PCI Express over Fiber [video]",
+      "url": "https://www.youtube.com/watch?v=XaDa9bBucEI",
+      "content": null,
+      "score": 103,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 499,
+      "source": "hackernews",
+      "title": "TigerBeetle: A Trillion Transactions [video]",
+      "url": "https://www.youtube.com/watch?v=y2_BqkKTbD8",
+      "content": null,
+      "score": 59,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 500,
+      "source": "hackernews",
+      "title": "The Beginning of Scarcity in AI",
+      "url": "https://tomtunguz.com/ai-compute-crisis-2026/",
+      "content": null,
+      "score": 15,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 501,
+      "source": "hackernews",
+      "title": "Android CLI: Build Android apps 3x faster using any agent",
+      "url": "https://android-developers.googleblog.com/2026/04/build-android-apps-3x-faster-using-any-agent.html",
+      "content": null,
+      "score": 35,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 502,
+      "source": "hackernews",
+      "title": "Qwen3.6-35B-A3B: Agentic coding power, now open to all",
+      "url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "content": null,
+      "score": 796,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 503,
+      "source": "hackernews",
+      "title": "Qwen3.6-35B-A3B on my laptop drew me a better pelican than Claude Opus 4.7",
+      "url": "https://simonwillison.net/2026/Apr/16/qwen-beats-opus/",
+      "content": null,
+      "score": 192,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 504,
+      "source": "hackernews",
+      "title": "Cloudflare's AI Platform: an inference layer designed for agents",
+      "url": "https://blog.cloudflare.com/ai-platform/",
+      "content": null,
+      "score": 214,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 505,
+      "source": "hackernews",
+      "title": "Put your SSH keys in your TPM chip",
+      "url": "https://raymii.org/s/tutorials/Put_your_SSH_keys_in_your_TPM_chip.html",
+      "content": null,
+      "score": 92,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 506,
+      "source": "hackernews",
+      "title": "Official Clojure Documentary page with Video, Shownotes, and Links",
+      "url": "https://clojure.org/about/documentary",
+      "content": null,
+      "score": 20,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 507,
+      "source": "hackernews",
+      "title": "The \"Passive Income\" trap ate a generation of entrepreneurs",
+      "url": "https://www.joanwestenberg.com/the-passive-income-trap-ate-a-generation-of-entrepreneurs/",
+      "content": null,
+      "score": 52,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 508,
+      "source": "hackernews",
+      "title": "Launch HN: Kampala (YC W26) – Reverse-Engineer Apps into APIs",
+      "url": "https://www.zatanna.ai/kampala",
+      "content": "Hey! I am Alex and together with my co-founder Tarun built Kampala (<a href=\"https:&#x2F;&#x2F;www.zatanna.ai&#x2F;kampala\">https:&#x2F;&#x2F;www.zatanna.ai&#x2F;kampala</a>). It’s a man-in-the-middle (MITM) style proxy that allows you to agentically reverse engineer existing workflows without brittle browser automation or computer use agents. It works for websites, mobile apps, desktop apps.<p>Demo: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=z_PeostC-b4\" rel=\"nofollow\">https:&#x2F;",
+      "score": 57,
+      "category": "saas",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 509,
+      "source": "hackernews",
+      "title": "The future of everything is lies, I guess: Where do we go from here?",
+      "url": "https://aphyr.com/posts/420-the-future-of-everything-is-lies-i-guess-where-do-we-go-from-here",
+      "content": null,
+      "score": 432,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 510,
+      "source": "hackernews",
+      "title": "Circuit Transformations, Loop Fusion, and Inductive Proof",
+      "url": "https://natetyoung.github.io/carry_save_fusion/",
+      "content": null,
+      "score": 11,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 511,
+      "source": "hackernews",
+      "title": "How the Roll Function Works (In APL\\360 and Its Descendants)",
+      "url": "https://www.jsoftware.com/papers/roll.htm",
+      "content": null,
+      "score": 7,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 512,
+      "source": "hackernews",
+      "title": "Show HN: Marky – A lightweight Markdown viewer for agentic coding",
+      "url": "https://github.com/GRVYDEV/marky",
+      "content": "Hey HN,<p>In this age of agentic coding I&#x27;ve found myself spending a lot of time reviewing markdown files. Whether it&#x27;s plans or documentation that I&#x27;ve asked my agent to generate for me, it seems that I spend more time reading markdown than code.<p>I&#x27;ve tried a few different solutions to make it easier to read such as Obsidian however I&#x27;ve found their Vault system to be quite limiting for this use case and I&#x27;ve found TUI solutions to not quite be as friendly to rea",
+      "score": 4,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 513,
+      "source": "hackernews",
+      "title": "Show HN: CodeBurn – Analyze Claude Code token usage by task",
+      "url": "https://github.com/AgentSeal/codeburn",
+      "content": "Built this after realizing I was spending ~$1400&#x2F;week on Claude Code with almost no visibility into what was actually consuming tokens.<p>Tools like ccusage give a cost breakdown per model and per day, but I wanted to understand usage at the task level.<p>CodeBurn reads the JSONL session transcripts that Claude Code stores locally (~&#x2F;.claude&#x2F;projects&#x2F;) and classifies each turn into 13 categories based on tool usage patterns (no LLM calls involved).<p>One surprising result: ab",
+      "score": 63,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 514,
+      "source": "hackernews",
+      "title": "IPv6 traffic crosses the 50% mark",
+      "url": "https://www.google.com/intl/en/ipv6/statistics.html?yzh=28197",
+      "content": null,
+      "score": 752,
+      "category": "seo",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 515,
+      "source": "hackernews",
+      "title": "Artifacts: Versioned storage that speaks Git",
+      "url": "https://blog.cloudflare.com/artifacts-git-for-agents-beta/",
+      "content": null,
+      "score": 118,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 516,
+      "source": "hackernews",
+      "title": "Six Characters",
+      "url": "https://ajitem.com/blog/iron-core-part-2-six-characters/",
+      "content": null,
+      "score": 73,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 517,
+      "source": "hackernews",
+      "title": "Show HN: MacMind – A transformer neural network in HyperCard on a 1989 Macintosh",
+      "url": "https://github.com/SeanFDZ/macmind",
+      "content": "I trained a transformer in HyperCard.  1,216 parameters.  1989 Macintosh.  And yes, it took a while.<p>MacMind is a complete transformer neural network, embeddings, positional encoding, self-attention, backpropagation, and gradient descent, implemented entirely in HyperTalk, the scripting language Apple shipped with HyperCard in 1987.  Every line of code is readable inside HyperCard&#x27;s script editor.  Option-click any button and read the actual math.<p>The task: learn the bit-reversal permut",
+      "score": 98,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 518,
+      "source": "hackernews",
+      "title": "European civil servants are being forced off WhatsApp",
+      "url": "https://www.politico.eu/article/european-civil-servants-new-messaging-services/",
+      "content": null,
+      "score": 54,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 519,
+      "source": "hackernews",
+      "title": "GPT‑Rosalind for life sciences research",
+      "url": "https://openai.com/index/introducing-gpt-rosalind/",
+      "content": null,
+      "score": 20,
+      "category": "seo",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 520,
+      "source": "hackernews",
+      "title": "Cloudflare Email Service",
+      "url": "https://blog.cloudflare.com/email-for-agents/",
+      "content": null,
+      "score": 373,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 521,
+      "source": "hackernews",
+      "title": "Codex Hacked a Samsung TV",
+      "url": "https://blog.calif.io/p/codex-hacked-a-samsung-tv",
+      "content": null,
+      "score": 185,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 522,
+      "source": "hackernews",
+      "title": "AI cybersecurity is not proof of work",
+      "url": "https://antirez.com/news/163",
+      "content": "Recent and related: <i>Cybersecurity looks like proof of work now</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47769089\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47769089</a> - (198 comments)",
+      "score": 180,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 523,
+      "source": "hackernews",
+      "title": "Japan implements language proficiency requirements for certain visa applicants",
+      "url": "https://www.japantimes.co.jp/news/2026/04/15/japan/society/jlpt-visa-requirement/",
+      "content": null,
+      "score": 106,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 524,
+      "source": "techcrunch_rss",
+      "title": "Netflix co-founder and chair Reed Hastings to leave board",
+      "url": "https://techcrunch.com/2026/04/16/netflix-co-founder-and-chair-reed-hastings-to-leave-board/",
+      "content": "Hastings helped to transform the video rental industry — first with physical, then digital, delivery.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 525,
+      "source": "techcrunch_rss",
+      "title": "Upscale AI in talks to raise at $2B valuation, says report",
+      "url": "https://techcrunch.com/2026/04/16/upscale-ai-in-talks-to-raise-at-2b-valuation-says-report/",
+      "content": "AI infrastructure company Upscale AI is reportedly in talks to raise its third funding round since launching just seven months ago.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 526,
+      "source": "techcrunch_rss",
+      "title": "Physical Intelligence, a hot robotics startup, says its new robot brain can figure out tasks it was never taught",
+      "url": "https://techcrunch.com/2026/04/16/physical-intelligence-a-hot-robotics-startup-says-its-new-robot-brain-can-figure-out-tasks-it-was-never-taught/",
+      "content": "The new model, called π0.7, represents what the company describes as an early but meaningful step toward the long-sought goal of a general-purpose robot brain.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 527,
+      "source": "techcrunch_rss",
+      "title": "From the Startup Battlefield stage to the International Space Station: geCKo Materials built a sticky product",
+      "url": "https://techcrunch.com/2026/04/16/from-the-startup-battlefield-stage-to-the-international-space-station-gecko-materials-built-a-sticky-product/",
+      "content": "This week on Build Mode, Isabelle Johannessen speaks with Capella Kerst, founder and CEO of geCKo Materials.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 528,
+      "source": "techcrunch_rss",
+      "title": "Slash, a Ramp competitor founded by teenagers, raises $100M at $1.4B valuation",
+      "url": "https://techcrunch.com/2026/04/16/slash-a-ramp-competitor-founded-by-teenagers-raises-100m-at-1-4b-valuation/",
+      "content": "Five years later the founders, now 24 years old, say their startup has achieved $300 million in annualized revenue.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 529,
+      "source": "techcrunch_rss",
+      "title": "OpenAI takes aim at Anthropic with beefed-up Codex that gives it more power over your desktop",
+      "url": "https://techcrunch.com/2026/04/16/openai-takes-aim-at-anthropic-with-beefed-up-codex-that-gives-it-more-power-over-your-desktop/",
+      "content": "OpenAI's agentic coding tool has gotten a major makeover, with a variety of new powers and abilities.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 530,
+      "source": "techcrunch_rss",
+      "title": "European police email 75,000 people asking them to stop DDoS attacks",
+      "url": "https://techcrunch.com/2026/04/16/european-police-email-75000-people-asking-them-to-stop-ddos-attacks/",
+      "content": "Europol coordinated an operation against for-hire distributed denial-of-service (DDoS) services, including the arrest of four people and the takedown of 53 domains.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 531,
+      "source": "techcrunch_rss",
+      "title": "Anthropic CPO leaves Figma’s board after reports he will offer a competing product",
+      "url": "https://techcrunch.com/2026/04/16/anthropic-cpo-leaves-figmas-board-after-reports-he-will-offer-a-competing-product/",
+      "content": "Krieger's departure and any forthcoming design tools will be another data point for investors who fear the SaaSpocalypse — that the largest AI labs will come to dominate software businesses, a thesis that has rocked public markets at times this year.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 532,
+      "source": "techcrunch_rss",
+      "title": "It’s not just you — Bluesky is (sorta) down",
+      "url": "https://techcrunch.com/2026/04/16/its-not-just-you-bluesky-is-sorta-down/",
+      "content": "Bluesky has been experiencing ongoing service disruptions since just before 3 a.m. ET.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 533,
+      "source": "techcrunch_rss",
+      "title": "Everything we like is a psyop",
+      "url": "https://techcrunch.com/2026/04/16/everything-we-like-is-a-psyop/",
+      "content": "If culture is shaped by TikTok's algorithmic feed, then it's time for us to decide where we draw the line between necessary marketing and inauthentic growth hacking.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 534,
+      "source": "techcrunch_rss",
+      "title": "Google now lets you explore the web side-by-side with AI Mode",
+      "url": "https://techcrunch.com/2026/04/16/google-now-lets-you-explore-the-web-side-by-side-with-ai-mode/",
+      "content": "Now, when you're using AI Mode on Chrome desktop, clicking a link will open the web page side-by-side with AI Mode.",
+      "score": null,
+      "category": "seo",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 535,
+      "source": "techcrunch_rss",
+      "title": "Two Americans sentenced for helping North Korea steal $5 million in fake IT worker scheme",
+      "url": "https://techcrunch.com/2026/04/16/two-americans-sentenced-for-helping-north-korea-steal-5-million-in-fake-it-worker-scheme/",
+      "content": "The U.S. Department of Justice announced that two Americans were sentenced to years in prison for helping the North Korean government place fake IT workers in U.S. companies.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 536,
+      "source": "techcrunch_rss",
+      "title": "InsightFinder raises $15M to help companies figure out where AI agents go wrong",
+      "url": "https://techcrunch.com/2026/04/16/insightfinder-raises-15m-to-help-companies-figure-out-where-ai-agents-go-wrong/",
+      "content": "According to CEO Helen Gu, the biggest problem facing the industry today is not just monitoring and diagnosing where AI models go wrong — it's also diagnosing how the entire tech stack operates now that AI is part of it.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 537,
+      "source": "techcrunch_rss",
+      "title": "AI traffic to US retailers rose 393% in Q1, and it’s boosting their revenue too",
+      "url": "https://techcrunch.com/2026/04/16/ai-traffic-to-us-retailers-rose-393-in-q1-and-its-boosting-their-revenue-too/",
+      "content": "Adobe says AI traffic to U.S. retail sites also jumped 269% in March, with visitors converting better and generating more revenue than non-AI shoppers.",
+      "score": null,
+      "category": "seo",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 538,
+      "source": "techcrunch_rss",
+      "title": "Roblox’s AI assistant gets new agentic tools to plan, build, and test games",
+      "url": "https://techcrunch.com/2026/04/16/robloxs-ai-assistant-gets-new-agentic-tools-to-plan-build-and-test-games/",
+      "content": "The new tools are designed to help creators throughout the entire development process.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 539,
+      "source": "techcrunch_rss",
+      "title": "Google adds Nano Banana-powered image generation to Gemini’s Personal Intelligence",
+      "url": "https://techcrunch.com/2026/04/16/google-adds-nano-banana-powered-image-generation-to-geminis-personal-intelligence/",
+      "content": "That means its AI images can be created using Gemini's understanding of your likes and interests, without those having to be explicitly noted in the prompt.",
+      "score": null,
+      "category": "seo",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 540,
+      "source": "techcrunch_rss",
+      "title": "Google is now targeting bad ads over bad actors",
+      "url": "https://techcrunch.com/2026/04/16/google-blocked-more-ads-but-banned-fewer-advertisers-as-ai-reshapes-enforcement/",
+      "content": "Google blocked 8.3 billion ads in 2025 but suspended fewer advertisers.",
+      "score": null,
+      "category": "seo",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 541,
+      "source": "techcrunch_rss",
+      "title": "You’ve heard of hybrid cars. Now meet a hybrid cement plant.",
+      "url": "https://techcrunch.com/2026/04/16/youve-heard-of-hybrid-cars-now-meet-a-hybrid-cement-plant/",
+      "content": "Why choose fossil fuels or electricity when you can have both? NOC Energy has figured out how to hybridize heavy industry.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 542,
+      "source": "techcrunch_rss",
+      "title": "Runway CEO says AI could help Hollywood make 50 films instead of one $100M blockbuster",
+      "url": "https://techcrunch.com/2026/04/16/runway-ceo-says-ai-could-help-hollywood-make-50-films-instead-of-one-100m-blockbuster/",
+      "content": "Runway’s CEO says AI could help studios make dozens of films for the cost of one, betting volume will boost hit-making odds.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
+    {
+      "id": 543,
+      "source": "techcrunch_rss",
+      "title": "Meta raises Quest 3 and Quest 3S prices due to RAM shortage",
+      "url": "https://techcrunch.com/2026/04/16/meta-raises-quest-3-and-quest-3s-prices-due-to-ram-shortage/",
+      "content": "Starting April 19, the price of the Meta Quest 3S (128GB) and Meta Quest 3S (256GB) will go up by $50 to $349.99 and $449.99, respectively. The price of the Meta Quest 3 is going up by $100 to $599.99.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 21:50:19"
+    },
     {
       "id": 446,
       "source": "hackernews",
