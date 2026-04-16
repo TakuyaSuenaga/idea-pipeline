@@ -16,6 +16,23 @@ export interface Idea {
   eval_total: number | null
 }
 
+export interface MeetingMessage {
+  agent_role: 'ceo' | 'planning' | 'sales' | 'marketing' | 'dev' | 'ops'
+  turn: number
+  content: string
+  created_at: string
+}
+
+export interface MeetingSession {
+  id: number
+  idea_id: number
+  idea_title: string
+  held_at: string
+  conclusion: '採用' | '見送り' | null
+  github_issue_url: string | null
+  messages: MeetingMessage[]
+}
+
 export interface ResearchItem {
   id: number
   source: string

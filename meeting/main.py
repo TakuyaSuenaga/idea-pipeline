@@ -16,6 +16,7 @@ from meeting.db import (
     get_ideas_for_meeting,
     update_meeting_conclusion,
 )
+from meeting.export import export_meetings
 from meeting.github_issue import create_github_issue
 
 MIN_SCORE = 7.0
@@ -122,6 +123,9 @@ def run_meeting() -> None:
             _run_idea_meeting(conn, idea, repo, token)
         except Exception as exc:
             print(f"[meeting] ERROR processing idea {idea.get('id')}: {exc}")
+
+    export_meetings(conn)
+    print("[meeting] Exported meetings.json.")
 
 
 if __name__ == "__main__":

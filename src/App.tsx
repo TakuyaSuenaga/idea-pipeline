@@ -1,9 +1,10 @@
 import { useState, useEffect, useMemo } from 'react'
-import type { Idea, ResearchItem } from './types'
+import type { Idea, ResearchItem, MeetingSession } from './types'
 import FilterBar, { type SortOrder } from './components/FilterBar'
 import IdeaCard from './components/IdeaCard'
 import Pagination from './components/Pagination'
 import ResearchTable from './components/ResearchTable'
+import MeetingTab from './components/MeetingTab'
 
 const BASE = import.meta.env.BASE_URL
 const IDEAS_PER_PAGE = 10
@@ -19,7 +20,7 @@ export default function App() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
-  const [activeTab, setActiveTab] = useState<'ideas' | 'research'>('ideas')
+  const [activeTab, setActiveTab] = useState<'ideas' | 'research' | 'meeting'>('ideas')
   const [category, setCategory] = useState<CategoryFilter>('all')
   const [difficulty, setDifficulty] = useState<DifficultyFilter>('all')
   const [sort, setSort] = useState<SortOrder>('date_desc')
@@ -27,6 +28,8 @@ export default function App() {
   const [researchPage, setResearchPage] = useState(1)
 
   const [dark, setDark] = useState(false)
+  const [meetings, setMeetings] = useState<MeetingSession[]>([])
+  const [meetingsLoading, setMeetingsLoading] = useState(false)
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark)
@@ -49,6 +52,18 @@ export default function App() {
         setLoading(false)
       })
   }, [])
+
+  useEffect(() => {
+    if (activeTab !== 'meeting' || meetingsLoading || meetings.length > 0) return
+    setMeetingsLoading(true)
+    fetch(`${BASE}data/meetings.json`)
+      .then((r) => r.json())
+      .then((data) => {
+        setMeetings(data.sessions ?? [])
+        setMeetingsLoading(false)
+      })
+      .catch(() => setMeetingsLoading(false))
+  }, [activeTab])
 
   const DIFF_RANK: Record<string, number> = { low: 1, medium: 2, high: 3 }
 

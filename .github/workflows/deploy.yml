@@ -28,7 +28,10 @@ jobs:
           cache: npm
 
       - name: Copy data files for build
-        run: mkdir -p public/data && cp docs/data/ideas.json docs/data/research.json public/data/
+        run: |
+          mkdir -p public/data
+          cp docs/data/ideas.json docs/data/research.json public/data/
+          cp docs/data/meetings.json public/data/ 2>/dev/null || true
 
       - run: npm ci
       - run: npm run build
