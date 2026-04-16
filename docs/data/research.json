@@ -1,7 +1,497 @@
 {
-  "exported_at": "2026-04-15T16:10:45.912641+00:00",
-  "count": 445,
+  "exported_at": "2026-04-16T01:21:27.894288+00:00",
+  "count": 494,
   "items": [
+    {
+      "id": 446,
+      "source": "hackernews",
+      "title": "Cybersecurity looks like proof of work now",
+      "url": "https://www.dbreunig.com/2026/04/14/cybersecurity-is-proof-of-work-now.html",
+      "content": null,
+      "score": 219,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 447,
+      "source": "hackernews",
+      "title": "I made a terminal pager",
+      "url": "https://theleo.zone/posts/pager/",
+      "content": null,
+      "score": 54,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 448,
+      "source": "hackernews",
+      "title": "YouTube now lets you turn off Shorts",
+      "url": "https://www.theverge.com/streaming/912898/youtube-shorts-feed-limit-zero-minutes",
+      "content": null,
+      "score": 121,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 449,
+      "source": "hackernews",
+      "title": "Ohio prison inmates 'built computers and hid them in ceiling (2017)",
+      "url": "https://www.bbc.com/news/technology-39576394",
+      "content": null,
+      "score": 54,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 450,
+      "source": "hackernews",
+      "title": "Google broke its promise to me – now ICE has my data",
+      "url": "https://www.eff.org/deeplinks/2026/04/google-broke-its-promise-me-now-ice-has-my-data",
+      "content": null,
+      "score": 1081,
+      "category": "seo",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 451,
+      "source": "hackernews",
+      "title": "Cal.com is going closed source",
+      "url": "https://cal.com/blog/cal-com-goes-closed-source-why",
+      "content": null,
+      "score": 202,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 452,
+      "source": "hackernews",
+      "title": "PiCore - Raspberry Pi Port of Tiny Core Linux",
+      "url": "http://tinycorelinux.net/5.x/armv6/releases/README",
+      "content": null,
+      "score": 78,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 453,
+      "source": "hackernews",
+      "title": "God sleeps in the minerals",
+      "url": "https://wchambliss.wordpress.com/2026/03/03/god-sleeps-in-the-minerals/",
+      "content": null,
+      "score": 447,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 454,
+      "source": "hackernews",
+      "title": "Retrofitting JIT Compilers into C Interpreters",
+      "url": "https://tratt.net/laurie/blog/2026/retrofitting_jit_compilers_into_c_interpreters.html",
+      "content": null,
+      "score": 33,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 455,
+      "source": "hackernews",
+      "title": "Live Nation illegally monopolized ticketing market, jury finds",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-15/live-nation-illegally-monopolized-ticketing-market-jury-finds",
+      "content": "<a href=\"https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;04&#x2F;15&#x2F;arts&#x2F;music&#x2F;live-nation-antitrust-trial-verdict-monopoly.html\" rel=\"nofollow\">https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;04&#x2F;15&#x2F;arts&#x2F;music&#x2F;live-nation-an...</a>, <a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;KA1wV\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;KA1wV</a><p><a href=\"https:&#x2F;&#x2F;www.theverge.com&#x2F;policy&#x2F;912689&#x2F;live-nation-ticketmaster-antitrust-monopoly-tr",
+      "score": 380,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 456,
+      "source": "hackernews",
+      "title": "Want to write a compiler? Just read these two papers (2008)",
+      "url": "https://prog21.dadgum.com/30.html",
+      "content": null,
+      "score": 465,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 457,
+      "source": "hackernews",
+      "title": "Hacker News CLI",
+      "url": "https://pythonhosted.org/hackernews-cli/commands.html",
+      "content": null,
+      "score": 30,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 458,
+      "source": "hackernews",
+      "title": "Good sleep, good learning, good life (2012)",
+      "url": "https://super-memory.com/articles/sleep.htm",
+      "content": null,
+      "score": 368,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 459,
+      "source": "hackernews",
+      "title": "Anna's Archive loses $322M Spotify piracy case without a fight",
+      "url": "https://torrentfreak.com/annas-archive-loses-322-million-spotify-piracy-case-without-a-fight/",
+      "content": null,
+      "score": 326,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 460,
+      "source": "hackernews",
+      "title": "Ask HN: Who is using OpenClaw?",
+      "url": null,
+      "content": "I don&#x27;t use it personally, and neither does anyone in my circle...even though I feel like I&#x27;m super plugged into the ai world",
+      "score": 200,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 461,
+      "source": "hackernews",
+      "title": "PBS Nova: Terror in Space (1998)",
+      "url": "https://www.pbs.org/wgbh/nova/mir/",
+      "content": null,
+      "score": 18,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 462,
+      "source": "hackernews",
+      "title": "The Gemini app is now on Mac",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-mac-os/",
+      "content": null,
+      "score": 76,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 463,
+      "source": "hackernews",
+      "title": "Fixing a monitor that goes black, off or blinks due to static electricity (2023)",
+      "url": "https://aalonso.dev/blog/2023/how-to-fix-monitor-that-goes-black-off-due-to-static-electricity-in-chair/",
+      "content": null,
+      "score": 112,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 464,
+      "source": "hackernews",
+      "title": "Monsters in the Archives by Caroline Bicks – The Writing Secrets of Stephen King",
+      "url": "https://www.theguardian.com/books/2026/mar/30/monsters-in-the-archives-by-caroline-bicks-review-the-writing-secrets-of-stephen-king",
+      "content": null,
+      "score": 5,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 465,
+      "source": "hackernews",
+      "title": "Do you even need a database?",
+      "url": "https://www.dbpro.app/blog/do-you-even-need-a-database",
+      "content": null,
+      "score": 199,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 466,
+      "source": "hackernews",
+      "title": "CRISPR takes important step toward silencing Down syndrome’s extra chromosome",
+      "url": "https://medicalxpress.com/news/2026-04-crispr-bold-silencing-syndrome-extra.html",
+      "content": null,
+      "score": 75,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 467,
+      "source": "hackernews",
+      "title": "The buns in McDonald's Japan's burger photos are all slightly askew",
+      "url": "https://www.mcdonalds.co.jp/en/menu/burger/",
+      "content": null,
+      "score": 205,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 468,
+      "source": "hackernews",
+      "title": "How can I keep from singing?",
+      "url": "https://blog.danieljanus.pl/singing/",
+      "content": null,
+      "score": 43,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 469,
+      "source": "hackernews",
+      "title": "Forcing an inversion of control on the SaaS stack",
+      "url": "https://www.100x.bot/a/client-side-injection-inversion-of-control-saas",
+      "content": null,
+      "score": 73,
+      "category": "saas",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 470,
+      "source": "hackernews",
+      "title": "Golden eagles' return to English skies",
+      "url": "https://www.bbc.co.uk/news/articles/cje4zlxqkqdo",
+      "content": null,
+      "score": 41,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 471,
+      "source": "hackernews",
+      "title": "Does Gas Town 'steal' usage from users' LLM credits to improve itself?",
+      "url": "https://github.com/gastownhall/gastown/issues/3649",
+      "content": null,
+      "score": 206,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 472,
+      "source": "hackernews",
+      "title": "One interface, every protocol",
+      "url": "https://openbindings.com/blog/one-interface-every-protocol",
+      "content": null,
+      "score": 37,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 473,
+      "source": "hackernews",
+      "title": "The Universal Constraint Engine: Neuromorphic Computing Without Neural Networks",
+      "url": "https://zenodo.org/records/19600206",
+      "content": null,
+      "score": 6,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 474,
+      "source": "hackernews",
+      "title": "Costasiella kuroshimae",
+      "url": "https://en.wikipedia.org/wiki/Costasiella_kuroshimae",
+      "content": null,
+      "score": 142,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 475,
+      "source": "techcrunch_rss",
+      "title": "Amazon-backed X-energy files to raise up to $800M in IPO",
+      "url": "https://techcrunch.com/2026/04/15/amazon-backed-x-energy-files-to-raise-up-to-800m-in-ipo/",
+      "content": "Nuclear startup X-energy hit the road today to sell prospective investors on its initial public offering.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 476,
+      "source": "techcrunch_rss",
+      "title": "Ford EV and tech chief leaving automaker",
+      "url": "https://techcrunch.com/2026/04/15/ford-ev-and-tech-chief-leaving-automaker/",
+      "content": "Doug Field had stints at Apple and Tesla before joining Ford in 2021.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 477,
+      "source": "techcrunch_rss",
+      "title": "Wait, could they still actually break up Live Nation?",
+      "url": "https://techcrunch.com/2026/04/15/wait-could-they-still-actually-break-up-live-nation/",
+      "content": "A federal jury found that Live Nation has acted illegally as a monopoly -- but the company just came to a tentative settlement with the DOJ last month.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 478,
+      "source": "techcrunch_rss",
+      "title": "Monarch Tractor’s collapse ends with an acquisition by Caterpillar",
+      "url": "https://techcrunch.com/2026/04/15/monarch-tractors-collapse-ends-in-with-an-acquisition-by-caterpillar/",
+      "content": "The startup had faced mounting pressure from dealers, farmers, and a co-founder who complained that Monarch's tech didn't work properly.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 479,
+      "source": "techcrunch_rss",
+      "title": "OpenAI updates its Agents SDK to help enterprises build safer, more capable agents",
+      "url": "https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/",
+      "content": "OpenAI has expanded the capabilities of its agent-building toolkit, as agentic AI continues to grow in popularity.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 480,
+      "source": "techcrunch_rss",
+      "title": "Hightouch reaches $100M ARR fueled by marketing tools powered by AI",
+      "url": "https://techcrunch.com/2026/04/15/hightouch-reaches-100m-arr-fueled-by-marketing-tools-powered-by-ai/",
+      "content": "The startup says it grew its ARR by $70 million in just 20 months after launching an AI agent platform for marketers.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 481,
+      "source": "techcrunch_rss",
+      "title": "LinkedIn data shows AI isn’t to blame for hiring decline… yet",
+      "url": "https://techcrunch.com/2026/04/15/linkedin-data-shows-ai-isnt-to-blame-for-hiring-decline-yet/",
+      "content": "LinkedIn says hiring is down 20% since 2022, but blames higher interest rates — not AI — for the slowdown.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 482,
+      "source": "techcrunch_rss",
+      "title": "Feds will require data centers to show their power bills",
+      "url": "https://techcrunch.com/2026/04/15/feds-will-require-data-centers-to-show-their-power-bills/",
+      "content": "In a first, the U.S. Energy Information Agency said it will require data centers to disclose details of their energy use.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 483,
+      "source": "techcrunch_rss",
+      "title": "AI learning app Gizmo levels up with 13M users and a $22M investment",
+      "url": "https://techcrunch.com/2026/04/15/ai-learning-app-gizmo-levels-up-with-13m-users-and-a-22m-investment/",
+      "content": "Gizmo, an AI-powered learning platform, has attracted more than 13 million users and just secured $22 million in Series A funding.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 484,
+      "source": "techcrunch_rss",
+      "title": "Can AI judge journalism? A Thiel-backed startup says yes, even if it risks chilling whistleblowers",
+      "url": "https://techcrunch.com/2026/04/15/can-ai-judge-journalism-a-thiel-backed-startup-says-yes-even-if-it-risks-chilling-whistleblowers/",
+      "content": "Objection, a Thiel-backed startup, aims to use AI to judge journalism, letting users pay to challenge stories. Critics warn it could chill whistleblowers and reshape how media accountability works.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 485,
+      "source": "techcrunch_rss",
+      "title": "Google rolls out a native Gemini app for Mac",
+      "url": "https://techcrunch.com/2026/04/15/google-rolls-out-a-native-gemini-app-for-mac/",
+      "content": "You can share anything on their screen with Gemini to get help with what they're looking at in the moment, including local files.",
+      "score": null,
+      "category": "seo",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 486,
+      "source": "techcrunch_rss",
+      "title": "This Khosla-backed autonomous pod startup just raised $170M — now it’s aiming for more",
+      "url": "https://techcrunch.com/2026/04/15/this-khosla-backed-autonomous-pod-startup-just-raised-170m-now-its-aiming-for-more/",
+      "content": "Glydways is in talks to raise another $250 million as it prepares to launch three pilot programs.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 487,
+      "source": "techcrunch_rss",
+      "title": "Accel raises $5B to back late-stage bets",
+      "url": "https://techcrunch.com/2026/04/15/accel-raises-5b-to-back-late-stage-bets/",
+      "content": "Accel announced on Tuesday that it raised $5 billion in fresh capital to back late-stage companies building AI.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 488,
+      "source": "techcrunch_rss",
+      "title": "India’s vibe-coding startup Emergent enters OpenClaw-like AI agent space",
+      "url": "https://techcrunch.com/2026/04/15/indias-vibe-coding-startup-emergent-enters-openclaw-like-ai-agent-space/",
+      "content": "Emergent's Wingman lets users manage and automate tasks through chat on platforms like WhatsApp and Telegram.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 489,
+      "source": "techcrunch_rss",
+      "title": "Anthropic shrugs off VC funding offers valuing it at $800B+, for now",
+      "url": "https://techcrunch.com/2026/04/15/anthropic-shrugs-off-vc-funding-offers-valuing-it-at-800b-for-now/",
+      "content": "VCs are frothing at the mouth to write more checks to Anthropic at a valuation that matches or beats OpenAI's.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 490,
+      "source": "techcrunch_rss",
+      "title": "Motorola sues social platforms and creators over posts, raising speech concerns in India",
+      "url": "https://techcrunch.com/2026/04/15/motorola-sues-social-platforms-and-creators-over-posts-raising-speech-concerns-in-india/",
+      "content": "Motorola has sought a permanent injunction restraining the defendants from publishing or sharing what it describes as false or defamatory content about its products, including reviews, videos, comments, and boycott campaigns.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 491,
+      "source": "techcrunch_rss",
+      "title": "Airwallex is about to take on Stripe and the rest of the payments industry — in the physical world",
+      "url": "https://techcrunch.com/2026/04/15/airwallex-is-about-to-take-on-stripe-and-the-rest-of-the-payments-industry-in-the-physical-world/",
+      "content": "Airwallex, valued at $8 billion, is launching a point-of-sale product that lets businesses accept in-person payments in multiple countries via a single platform.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 492,
+      "source": "techcrunch_rss",
+      "title": "After sale of its shoe business, Allbirds pivots to AI",
+      "url": "https://techcrunch.com/2026/04/15/after-sale-of-its-shoe-business-allbirds-pivots-to-ai/",
+      "content": "Allbirds is ditching wool sneakers for AI servers, rebranding as NewBird AI after locking in a $50M convertible financing facility.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 493,
+      "source": "techcrunch_rss",
+      "title": "Sweden blames Russian hackers for attempting ‘destructive’ cyberattack on thermal plant",
+      "url": "https://techcrunch.com/2026/04/15/sweden-blames-russian-hackers-for-attempting-destructive-cyberattack-on-thermal-plant/",
+      "content": "Sweden's minister for civil defense said Russian hackers are \"now attempting destructive cyber attacks against organizations in Europe.\"",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
+    {
+      "id": 494,
+      "source": "techcrunch_rss",
+      "title": "Aloe Blacc’s fame means nothing in biotech (and that’s the point)",
+      "url": "https://techcrunch.com/video/aloe-blaccs-fame-means-nothing-in-biotech-and-thats-the-point/",
+      "content": "When Grammy-nominated singer-songwriter&#160;Aloe Blacc&#160;got COVID despite being vaccinated and boosted, he tried to fund research for a better solution.&#160;What&#160;he&#160;quickly&#160;found&#160;out? You&#160;can&#8217;t&#160;just write a check in biotech. Regulators require a commercialization plan, and philanthropy&#160;doesn&#8217;t&#160;move science through clinical trials or get you a license on university IP. Now,&#160;he&#8217;s&#160;bootstrapping a cancer drug platform targetin",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-16 01:20:35"
+    },
     {
       "id": 397,
       "source": "hackernews",
