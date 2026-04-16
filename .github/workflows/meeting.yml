@@ -1,15 +1,16 @@
-name: Idea Pipeline
+name: Idea Evaluation Meeting
 
 on:
   schedule:
-    - cron: '0 21 * * *'  # 毎日 JST 06:00 (UTC 21:00)
-  workflow_dispatch:         # manual trigger for testing
+    - cron: '0 0 * * *'  # 毎日 JST 09:00 (UTC 00:00)
+  workflow_dispatch:       # 手動トリガー（テスト用）
 
 permissions:
-  contents: write            # needed to git push the DB and JSON files
+  contents: write          # data/ideas.db のコミット用
+  issues: write            # GitHub Issue 作成用
 
 jobs:
-  run-pipeline:
+  run-meeting:
     runs-on: ubuntu-latest
 
     steps:
@@ -30,20 +31,22 @@ jobs:
       - name: Run tests
         run: pytest tests/ -v
 
-      - name: Run pipeline
+      - name: Run meeting
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python -m pipeline.main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python -m meeting.main
 
-      - name: Commit and push results
+      - name: Commit meeting log
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Actions"
-          git add data/ideas.db docs/data/
+          git add data/ideas.db
           git diff --staged --quiet && echo "No changes to commit" && exit 0
-          git commit -m "chore: pipeline run $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
+          git commit -m "chore: meeting run $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
           git fetch origin main
           git reset --soft origin/main
-          git add data/ideas.db docs/data/
-          git diff --staged --quiet || git commit -m "chore: pipeline run $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
+          git add data/ideas.db
+          git diff --staged --quiet || git commit -m "chore: meeting run $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
           git push

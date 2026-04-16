@@ -49,9 +49,30 @@ _EVAL_COLUMNS = [
     ("eval_total", "REAL"),
 ]
 
+_CREATE_MEETING_SESSIONS = """
+CREATE TABLE IF NOT EXISTS meeting_sessions (
+    id               INTEGER PRIMARY KEY AUTOINCREMENT,
+    idea_id          INTEGER NOT NULL REFERENCES startup_ideas(id),
+    held_at          TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    conclusion       TEXT,
+    github_issue_url TEXT
+);
+"""
+
+_CREATE_MEETING_MESSAGES = """
+CREATE TABLE IF NOT EXISTS meeting_messages (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    session_id INTEGER NOT NULL REFERENCES meeting_sessions(id),
+    agent_role TEXT NOT NULL,
+    turn       INTEGER NOT NULL,
+    content    TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+"""
+
 
 def _migrate_db(conn: sqlite3.Connection) -> None:
-    """Add eval columns to startup_ideas if they are missing (forward-only migration)."""
+    """Forward-only migrations: add eval columns to startup_ideas if missing."""
     existing = {row[1] for row in conn.execute("PRAGMA table_info(startup_ideas)")}
     for col_name, col_type in _EVAL_COLUMNS:
         if col_name not in existing:
@@ -60,12 +81,14 @@ def _migrate_db(conn: sqlite3.Connection) -> None:
 
 
 def init_db(db_path: str | Path = DB_PATH) -> sqlite3.Connection:
-    """Create (or open) the SQLite DB and ensure both tables exist."""
+    """Create (or open) the SQLite DB and ensure all tables exist."""
     conn = sqlite3.connect(str(db_path), timeout=30)
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA journal_mode=WAL")
     conn.execute(_CREATE_MARKET_RESEARCH)
     conn.execute(_CREATE_STARTUP_IDEAS)
+    conn.execute(_CREATE_MEETING_SESSIONS)
+    conn.execute(_CREATE_MEETING_MESSAGES)
     _migrate_db(conn)
     conn.commit()
     return conn
