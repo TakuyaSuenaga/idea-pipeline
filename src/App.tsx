@@ -141,11 +141,13 @@ export default function App() {
       <main className="max-w-4xl mx-auto px-6 py-8">
         {/* Tab bar */}
         <div className="flex gap-0 mb-8" style={{ borderBottom: '1px solid var(--border)' }}>
-          {(['ideas', 'research'] as const).map((tab) => {
+          {(['ideas', 'research', 'meeting'] as const).map((tab) => {
             const label =
               tab === 'ideas'
                 ? `アイデア (${filtered.length})`
-                : `リサーチ (${research.length})`
+                : tab === 'research'
+                ? `リサーチ (${research.length})`
+                : `会議 (${meetings.length})`
             const isActive = activeTab === tab
             return (
               <button
@@ -230,6 +232,13 @@ export default function App() {
                 </div>
               </>
             )}
+          </section>
+        )}
+
+        {/* Meeting tab */}
+        {activeTab === 'meeting' && (
+          <section>
+            <MeetingTab sessions={meetings} loading={meetingsLoading} />
           </section>
         )}
       </main>
