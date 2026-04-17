@@ -1,7 +1,497 @@
 {
-  "exported_at": "2026-04-16T21:51:17.981483+00:00",
-  "count": 543,
+  "exported_at": "2026-04-17T21:50:59.346118+00:00",
+  "count": 592,
   "items": [
+    {
+      "id": 544,
+      "source": "hackernews",
+      "title": "Claude Design",
+      "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+      "content": null,
+      "score": 704,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 545,
+      "source": "hackernews",
+      "title": "Measuring Claude 4.7's tokenizer costs",
+      "url": "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you",
+      "content": null,
+      "score": 476,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 546,
+      "source": "hackernews",
+      "title": "All 12 moonwalkers had \"lunar hay fever\" from dust smelling like gunpowder (2018)",
+      "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/The_toxic_side_of_the_Moon",
+      "content": null,
+      "score": 157,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 547,
+      "source": "hackernews",
+      "title": "I'm spending 3 months coding the old way",
+      "url": "https://miguelconner.substack.com/p/im-coding-by-hand",
+      "content": null,
+      "score": 38,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 548,
+      "source": "hackernews",
+      "title": "Show HN: Smol machines – subsecond coldstart, portable virtual machines",
+      "url": "https://github.com/smol-machines/smolvm",
+      "content": null,
+      "score": 160,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 549,
+      "source": "hackernews",
+      "title": "Isaac Asimov: The Last Question (1956)",
+      "url": "https://hex.ooo/library/last_question.html",
+      "content": null,
+      "score": 558,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 550,
+      "source": "hackernews",
+      "title": "NASA Force",
+      "url": "https://nasaforce.gov/",
+      "content": null,
+      "score": 177,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 551,
+      "source": "hackernews",
+      "title": "Middle schooler finds coin from Troy in Berlin",
+      "url": "https://www.thehistoryblog.com/archives/75848",
+      "content": null,
+      "score": 176,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 552,
+      "source": "hackernews",
+      "title": "NIST gives up enriching most CVEs",
+      "url": "https://risky.biz/risky-bulletin-nist-gives-up-enriching-most-cves/",
+      "content": null,
+      "score": 142,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 553,
+      "source": "hackernews",
+      "title": "Introducing: ShaderPad",
+      "url": "https://rileyjshaw.com/blog/introducing-shaderpad/",
+      "content": null,
+      "score": 12,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 554,
+      "source": "hackernews",
+      "title": "I built a 3D printing business and ran it for 8 months",
+      "url": "https://www.wespiser.com/posts/2026-04-12-3D-Printing-Biz.html",
+      "content": null,
+      "score": 43,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 555,
+      "source": "hackernews",
+      "title": "The GNU libc atanh is correctly rounded",
+      "url": "https://inria.hal.science/hal-05591661",
+      "content": null,
+      "score": 10,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 556,
+      "source": "hackernews",
+      "title": "Hyperscalers have already outspent most famous US megaprojects",
+      "url": "https://twitter.com/finmoorhouse/status/2044933442236776794",
+      "content": null,
+      "score": 77,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 557,
+      "source": "hackernews",
+      "title": "Webloc: Analysis of Penlink's Ad-Based Geolocation Surveillance Tech",
+      "url": "https://citizenlab.ca/research/analysis-of-penlinks-ad-based-geolocation-surveillance-tech/",
+      "content": null,
+      "score": 40,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 558,
+      "source": "hackernews",
+      "title": "Ban the sale of precise geolocation",
+      "url": "https://www.lawfaremedia.org/article/it-is-time-to-ban-the-sale-of-precise-geolocation",
+      "content": null,
+      "score": 512,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 559,
+      "source": "hackernews",
+      "title": "Are the costs of AI agents also rising exponentially? (2025)",
+      "url": "https://www.tobyord.com/writing/hourly-costs-for-ai-agents",
+      "content": null,
+      "score": 7,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 560,
+      "source": "hackernews",
+      "title": "Show HN: PanicLock – Close your MacBook lid disable TouchID –> password unlock",
+      "url": "https://github.com/paniclock/paniclock/",
+      "content": null,
+      "score": 90,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 561,
+      "source": "hackernews",
+      "title": "Healthchecks.io now uses self-hosted object storage",
+      "url": "https://blog.healthchecks.io/2026/04/healthchecks-io-now-uses-self-hosted-object-storage/",
+      "content": null,
+      "score": 127,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 562,
+      "source": "hackernews",
+      "title": "Iceye Open Data",
+      "url": "https://www.iceye.com/open-data-initiative",
+      "content": null,
+      "score": 93,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 563,
+      "source": "hackernews",
+      "title": "Show HN: Stage – Putting humans back in control of code review",
+      "url": "https://stagereview.app/",
+      "content": "Hey HN! We&#x27;re Charles and Dean, and we&#x27;re building Stage: a code review tool that guides you through reading a PR step by step, instead of piecing together a giant diff.<p>Here&#x27;s a demo video: <a href=\"https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;stage-demo-1pph\" rel=\"nofollow\">https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;stage-demo-1pph</a>.\nYou can play around with some example PRs here: <a href=\"https:&#x2F;&#x2F;stagereview.app&#x2F;explore\">https:&#x2F;&#x2F;stagereview.a",
+      "score": 82,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 564,
+      "source": "hackernews",
+      "title": "Detecting DOSBox from Within the Box",
+      "url": "https://datagirl.xyz/posts/dos_inside_the_box.html",
+      "content": null,
+      "score": 44,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 565,
+      "source": "hackernews",
+      "title": "Solitaire simulator for finding the best strategy: Current record is 8.590%",
+      "url": "https://github.com/dacracot/Klondike3-Simulator",
+      "content": null,
+      "score": 34,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 566,
+      "source": "hackernews",
+      "title": "Connie Converse was a folk-music genius. Then she vanished",
+      "url": "https://www.bbc.com/culture/article/20260413-the-mystery-of-a-missing-folk-music-pioneer",
+      "content": null,
+      "score": 48,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 567,
+      "source": "hackernews",
+      "title": "The Gregorio project – GPL tools for typesetting Gregorian chant",
+      "url": "https://gregorio-project.github.io/index.html",
+      "content": null,
+      "score": 44,
+      "category": "saas",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 568,
+      "source": "hackernews",
+      "title": "Tesla tells HW3 owner to 'be patient' after 7 years of waiting for FSD",
+      "url": "https://electrek.co/2026/04/17/tesla-hw3-owners-be-patient-7-years-fsd/",
+      "content": null,
+      "score": 77,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 569,
+      "source": "hackernews",
+      "title": "Ada, its design, and the language that built the languages",
+      "url": "https://www.iqiipi.com/the-quiet-colossus.html",
+      "content": null,
+      "score": 235,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 570,
+      "source": "hackernews",
+      "title": "Designing the Transport Typeface",
+      "url": "https://www.thamesandhudson.com/blogs/all-news-features/designing-the-transport-typeface-margaret-calvert-on-the-making-of-britain-s-road-signs",
+      "content": null,
+      "score": 60,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 571,
+      "source": "hackernews",
+      "title": "MZI-based transistorlessness might finally be here",
+      "url": "https://write.as/mnggfj7asl07k",
+      "content": null,
+      "score": 20,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 572,
+      "source": "hackernews",
+      "title": "Reflections on 30 years of HPC programming",
+      "url": "https://chapel-lang.org/blog/posts/30years/",
+      "content": null,
+      "score": 132,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 573,
+      "source": "techcrunch_rss",
+      "title": "Kevin Weil and Bill Peebles exit OpenAI as company continues to shed ‘side quests’",
+      "url": "https://techcrunch.com/2026/04/17/kevin-weil-and-bill-peebles-exit-openai-as-company-continues-to-shed-side-quests/",
+      "content": "Kevin Weil and Bill Peebles are leaving OpenAI as the company shuts down Sora and folds its science team, signaling a sharp pivot away from consumer moonshots toward enterprise AI.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 574,
+      "source": "techcrunch_rss",
+      "title": "Man who hacked US Supreme Court filing system sentenced to probation",
+      "url": "https://techcrunch.com/2026/04/17/man-who-hacked-us-supreme-court-filing-system-sentenced-to-probation/",
+      "content": "Nicholas Moore hacked into three U.S. government networks using stolen credentials, and then bragged about it and posted victims' personal data on Instagram under the handle @ihackedthegovernment.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 575,
+      "source": "techcrunch_rss",
+      "title": "Sources: Cursor in talks to raise $2B+ at $50B valuation as enterprise growth surges",
+      "url": "https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/",
+      "content": "Returning backers a16z and Thrive are expected to lead the round.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 576,
+      "source": "techcrunch_rss",
+      "title": "‘Tokenmaxxing’ is making developers less productive than they think",
+      "url": "https://techcrunch.com/2026/04/17/tokenmaxxing-is-making-developers-less-productive-than-they-think/",
+      "content": "There's a lot more code — but it's a lot more expensive and requires a lot more rewriting.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 577,
+      "source": "techcrunch_rss",
+      "title": "Hackers are abusing unpatched Windows security flaws to hack into organizations",
+      "url": "https://techcrunch.com/2026/04/17/hackers-are-abusing-unpatched-windows-security-flaws-to-hack-into-organizations/",
+      "content": "A security researcher published details of three security vulnerabilities in Windows Defender, and the code used to exploit them. Now, hackers are taking advantage of the vulnerabilities in real-life attacks, according to a cybersecurity firm.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 578,
+      "source": "techcrunch_rss",
+      "title": "Zoom teams up with World to verify humans in meetings",
+      "url": "https://techcrunch.com/2026/04/17/zoom-teams-up-with-world-to-verify-humans-in-meeting/",
+      "content": "Meeting platform Zoom has announced a partnership with World, Sam Altman's human ID verification company, to ensure that the people attending meetings are actually human and not AI-generated imposters. Zoom will show a badge on verified participants' tile.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 579,
+      "source": "techcrunch_rss",
+      "title": "Gigs turns your concert history into a personal live music archive",
+      "url": "https://techcrunch.com/2026/04/17/gigs-turns-your-concert-history-into-a-personal-live-music-archive/",
+      "content": "New iPhone app Gigs uses AI to turn old tickets, screenshots, and emails into a personal concert archive with stats, memories, and more.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 580,
+      "source": "techcrunch_rss",
+      "title": "Chef Robotics escaped the robot cooking graveyard and says it’s thriving — here’s why",
+      "url": "https://techcrunch.com/2026/04/17/chef-robotics-escaped-the-robot-cooking-graveyard-and-says-its-thriving-heres-why/",
+      "content": "The company, which deploys AI-guided robot arms for food production, says it is looking to expand its services to provide for a broader array of customers.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 581,
+      "source": "techcrunch_rss",
+      "title": "Uber will now pick up your returns from your doorstep",
+      "url": "https://techcrunch.com/2026/04/17/uber-will-now-pick-up-your-returns-from-your-doorstep/",
+      "content": "The new returns feature is the company's latest effort to become an everything app. There are limitations to the new service, and there is, of course, a courier fee.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 582,
+      "source": "techcrunch_rss",
+      "title": "Anthropic launches Claude Design, a new product for creating quick visuals",
+      "url": "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/",
+      "content": "The company says Claude Design is intended to help people like founders and product managers without a design background share their ideas more easily.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 583,
+      "source": "techcrunch_rss",
+      "title": "With US spy laws set to expire, lawmakers are split over protecting Americans from warrantless surveillance",
+      "url": "https://techcrunch.com/2026/04/17/with-us-spy-laws-set-to-expire-lawmakers-are-split-over-protecting-americans-from-warrantless-surveillance/",
+      "content": "Some lawmakers are calling for widespread reforms following years of surveillance scandals and abuses across successive U.S. administrations. But even if the spy law known as Section 702 expires in April, the government's spy powers will not automatically lapse.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 584,
+      "source": "techcrunch_rss",
+      "title": "Google’s AI Mode can now help you find products in stock nearby",
+      "url": "https://techcrunch.com/2026/04/17/googles-ai-mode-can-now-help-you-find-products-in-stock-nearby/",
+      "content": "Although you can already track hotel prices at the city level, the new update lets you do so for a specific hotel that you're interested in.",
+      "score": null,
+      "category": "seo",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 585,
+      "source": "techcrunch_rss",
+      "title": "Bluesky confirms DDoS attack is cause of continued app outages",
+      "url": "https://techcrunch.com/2026/04/17/its-not-just-you-bluesky-is-sorta-down/",
+      "content": "Bluesky has been experiencing ongoing service disruptions since just before 3 a.m. ET on April 15.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 586,
+      "source": "techcrunch_rss",
+      "title": "Netflix plans to add a vertical video feed, use AI for recommendations",
+      "url": "https://techcrunch.com/2026/04/17/netflix-plans-to-add-a-vertical-video-feed-use-ai-for-recommendations/",
+      "content": "Netflix is going to launch a TikTok-like vertical video feed within its apps this month, and plans to use AI broadly for content creation and recommendations.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 587,
+      "source": "techcrunch_rss",
+      "title": "SaySo is a new short-form video app that aims to restore users’ trust in news",
+      "url": "https://techcrunch.com/2026/04/17/sayso-is-a-new-short-form-video-app-that-aims-to-restore-users-trust-in-news/",
+      "content": "Users are fed up with misinformation and AI slop cluttering their feeds. SaySo is a new short-form video app that delivers news from vetted creators and journalists.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 588,
+      "source": "techcrunch_rss",
+      "title": "Loop raises $95M to build supply chain AI that predicts disruptions",
+      "url": "https://techcrunch.com/2026/04/17/loop-raises-95m-to-build-supply-chain-ai-that-predicts-disruptions/",
+      "content": "The San Francisco startup closed a Series C funding round led by Antonio Gracias' firm Valor, which is a major backer of xAI.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 589,
+      "source": "techcrunch_rss",
+      "title": "Are we tokenmaxxing our way to nowhere?",
+      "url": "https://techcrunch.com/video/are-we-tokenmaxxing-our-way-to-nowhere/",
+      "content": "The gap between AI insiders and everyone else&#160;is widening, and the spending, suspicion, and even new vocabulary are starting to show it. While OpenAI is busy buying up everything from&#160;finance apps&#160;to&#160;talk shows, a certain shoe company just&#160;rebranded as an AI infrastructure play, and Anthropic unveiled a model it says is&#160;too powerful to release publicly&#160;&#8230;but&#160;apparently not&#160;too [&#8230;]",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 590,
+      "source": "techcrunch_rss",
+      "title": "New leaders, new fund: Sequoia has raised $7B to expand its AI bets",
+      "url": "https://techcrunch.com/2026/04/16/new-leaders-new-fund-sequoia-has-raised-7b-to-expand-its-ai-bets/",
+      "content": "The fundraise is the first major capital raise under Sequoia's new leadership, with Alfred Lin and Pat Grady now serving as co-stewards of the 54-year-old firm.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 591,
+      "source": "techcrunch_rss",
+      "title": "Factory hits $1.5B valuation to build AI coding for enterprises",
+      "url": "https://techcrunch.com/2026/04/16/factory-hits-1-5b-valuation-to-build-ai-coding-for-enterprises/",
+      "content": "The three-year-old startup raised $150 million led by Khosla Ventures.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
+    {
+      "id": 592,
+      "source": "techcrunch_rss",
+      "title": "Luma launches AI-powered production studio with faith-focused Wonder Project",
+      "url": "https://techcrunch.com/2026/04/16/luma-launches-ai-powered-production-studio-with-faith-focused-wonder-project/",
+      "content": "The studio's first project will be about Moses and star Academy Award-winner Ben Kingsley, to be released this spring on Prime Video.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-17 21:50:04"
+    },
     {
       "id": 495,
       "source": "hackernews",
