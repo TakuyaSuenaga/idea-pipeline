@@ -43,6 +43,17 @@
   - `difficulty` / `category` は UI フィルタ用の英語 enum のまま維持する
 - リサーチデータは 7 日より古いものを自動削除する設計を維持する
 - `docs/data/ideas.json` と `docs/data/research.json` はパイプライン実行後に自動コミットされる — 手動編集しないこと
+- `docs/data/meetings.json` は meeting.yml 実行後に自動コミットされる — 手動編集しないこと
+
+---
+
+## 会議システム設計
+
+- `meeting/` 各モジュールの関数も例外を内部で吸収し、ログ出力して処理を継続する（例外を外に伝播させない）
+- CEO エージェントの結論出力フォーマットは `結論: 採用` / `結論: 見送り` の完全フレーズ。部分一致で誤判定しないよう `_parse_conclusion()` は完全フレーズ検索を使うこと
+- `github_issue_url` は `http`/`https` プロトコルのみ許可し、export 時（`_safe_url()`）と UI 表示時（`isSafeUrl()`）の両方で検証すること
+- エージェントペルソナは `.claude/agents/*.md` に定義し、Python コードから system prompt として読み込む
+- 対象アイデア条件: `eval_total >= 7.0` かつ `meeting_sessions` 未登録、スコア降順で最大 3 件/回
 
 ---
 
