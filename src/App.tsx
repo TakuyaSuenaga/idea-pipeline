@@ -29,7 +29,6 @@ export default function App() {
 
   const [dark, setDark] = useState(false)
   const [meetings, setMeetings] = useState<MeetingSession[]>([])
-  const [meetingsLoading, setMeetingsLoading] = useState(false)
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark)
@@ -39,12 +38,16 @@ export default function App() {
     Promise.all([
       fetch(`${BASE}data/ideas.json`),
       fetch(`${BASE}data/research.json`),
+      fetch(`${BASE}data/meetings.json`).catch(() => null),
     ])
-      .then(([r1, r2]) => Promise.all([r1.json(), r2.json()]))
-      .then(([ideasData, researchData]) => {
+      .then(([r1, r2, r3]) =>
+        Promise.all([r1.json(), r2.json(), r3 ? r3.json() : Promise.resolve(null)]),
+      )
+      .then(([ideasData, researchData, meetingsData]) => {
         setIdeas(ideasData.ideas ?? [])
         setResearch(researchData.items ?? [])
         setExportedAt(ideasData.exported_at ?? null)
+        setMeetings(meetingsData?.sessions ?? [])
         setLoading(false)
       })
       .catch(() => {
@@ -52,18 +55,6 @@ export default function App() {
         setLoading(false)
       })
   }, [])
-
-  useEffect(() => {
-    if (activeTab !== 'meeting' || meetingsLoading || meetings.length > 0) return
-    setMeetingsLoading(true)
-    fetch(`${BASE}data/meetings.json`)
-      .then((r) => r.json())
-      .then((data) => {
-        setMeetings(data.sessions ?? [])
-        setMeetingsLoading(false)
-      })
-      .catch(() => setMeetingsLoading(false))
-  }, [activeTab])
 
   const DIFF_RANK: Record<string, number> = { low: 1, medium: 2, high: 3 }
 
@@ -238,7 +229,7 @@ export default function App() {
         {/* Meeting tab */}
         {activeTab === 'meeting' && (
           <section>
-            <MeetingTab sessions={meetings} loading={meetingsLoading} />
+            <MeetingTab sessions={meetings} loading={loading} />
           </section>
         )}
       </main>
