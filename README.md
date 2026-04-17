@@ -25,7 +25,7 @@ GitHub Actions が 12 時間ごとに市場調査を行い、Claude API でア�
 ## アーキテクチャ
 
 ```
-GitHub Actions (cron: 毎 12 時間) — pipeline.yml
+GitHub Actions (cron: 毎日 JST 6:00) — pipeline.yml
   └── 1. 市場調査 (HN API / Reddit JSON / TechCrunch RSS)
   └── 2. Claude API でアイデア生成 (claude-opus-4-6)
   └── 3. SQLite に保存 → JSON エクスポート

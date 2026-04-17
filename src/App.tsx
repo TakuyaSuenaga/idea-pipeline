@@ -7,8 +7,9 @@ import ResearchTable from './components/ResearchTable'
 import MeetingTab from './components/MeetingTab'
 
 const BASE = import.meta.env.BASE_URL
-const IDEAS_PER_PAGE = 20
-const RESEARCH_PER_PAGE = 30
+const IDEAS_PER_PAGE = 10
+const RESEARCH_PER_PAGE = 20
+const MEETINGS_PER_PAGE = 20
 
 type CategoryFilter = 'all' | 'saas' | 'seo'
 type DifficultyFilter = 'all' | 'low' | 'medium' | 'high'
@@ -26,6 +27,7 @@ export default function App() {
   const [sort, setSort] = useState<SortOrder>('date_desc')
   const [ideasPage, setIdeasPage] = useState(1)
   const [researchPage, setResearchPage] = useState(1)
+  const [meetingsPage, setMeetingsPage] = useState(1)
 
   const [dark, setDark] = useState(false)
   const [meetings, setMeetings] = useState<MeetingSession[]>([])
@@ -96,6 +98,12 @@ export default function App() {
   const pagedResearch = research.slice(
     (researchPage - 1) * RESEARCH_PER_PAGE,
     researchPage * RESEARCH_PER_PAGE,
+  )
+
+  const totalMeetingsPages = Math.max(1, Math.ceil(meetings.length / MEETINGS_PER_PAGE))
+  const pagedMeetings = meetings.slice(
+    (meetingsPage - 1) * MEETINGS_PER_PAGE,
+    meetingsPage * MEETINGS_PER_PAGE,
   )
 
   return (
@@ -229,7 +237,12 @@ export default function App() {
         {/* Meeting tab */}
         {activeTab === 'meeting' && (
           <section>
-            <MeetingTab sessions={meetings} loading={loading} />
+            <MeetingTab sessions={pagedMeetings} loading={loading} />
+            {!loading && meetings.length > 0 && (
+              <div className="mt-8">
+                <Pagination current={meetingsPage} total={totalMeetingsPages} onChange={setMeetingsPage} />
+              </div>
+            )}
           </section>
         )}
       </main>
