@@ -22,6 +22,10 @@ html.dark {
   --diff-low: #34d399;
   --diff-med: #fbbf24;
   --diff-high: #f87171;
+  --role-sales: #60a5fa;
+  --role-marketing: #c084fc;
+  --role-dev: #34d399;
+  --role-ops: #fb923c;
 }
 
 /* ── Light ────────────────────────────────────── */
@@ -44,6 +48,10 @@ html:not(.dark) {
   --diff-low: #059669;
   --diff-med: #d97706;
   --diff-high: #dc2626;
+  --role-sales: #2563eb;
+  --role-marketing: #9333ea;
+  --role-dev: #059669;
+  --role-ops: #ea580c;
 }
 
 @layer base {

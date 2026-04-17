@@ -26,13 +26,13 @@ function roleBorderColor(role: string): string {
     case 'planning':
       return 'var(--diff-low)'
     case 'sales':
-      return '#60a5fa'
+      return 'var(--role-sales)'
     case 'marketing':
-      return '#c084fc'
+      return 'var(--role-marketing)'
     case 'dev':
-      return '#34d399'
+      return 'var(--role-dev)'
     case 'ops':
-      return '#fb923c'
+      return 'var(--role-ops)'
     default:
       return 'var(--border)'
   }

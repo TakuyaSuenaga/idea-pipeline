@@ -56,8 +56,13 @@ def _build_issue_body(idea: dict, worker_messages: list[dict], conclusion_text: 
 
 
 def _parse_conclusion(text: str) -> str:
-    """Extract '採用' or '見送り' from the CEO's conclusion text."""
-    if "採用" in text:
+    """Extract '採用' or '見送り' from the CEO's conclusion text.
+
+    The CEO persona outputs '結論: 採用' or '結論: 見送り' as a structured marker.
+    Matching on the full phrase avoids false positives from substrings like
+    '採用できません' that appear in rejection reasoning.
+    """
+    if "結論: 採用" in text:
         return "採用"
     return "見送り"
 

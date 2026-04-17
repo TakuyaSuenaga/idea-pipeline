@@ -7,7 +7,7 @@ import ResearchTable from './components/ResearchTable'
 import MeetingTab from './components/MeetingTab'
 
 const BASE = import.meta.env.BASE_URL
-const IDEAS_PER_PAGE = 10
+const IDEAS_PER_PAGE = 20
 const RESEARCH_PER_PAGE = 30
 
 type CategoryFilter = 'all' | 'saas' | 'seo'

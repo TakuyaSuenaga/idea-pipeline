@@ -5,7 +5,40 @@ from unittest.mock import patch
 import pytest
 
 from pipeline.db import init_db, insert_idea
-from meeting.main import run_meeting
+from meeting.main import _parse_conclusion, run_meeting
+
+
+# --- _parse_conclusion unit tests ---
+
+def test_parse_conclusion_detects_adoption_with_marker():
+    assert _parse_conclusion("各意見を踏まえ\n結論: 採用") == "採用"
+
+
+def test_parse_conclusion_rejects_partial_match():
+    # "採用できません" contains 採用 as substring — must return 見送り
+    assert _parse_conclusion("今回は採用できません。\n結論: 見送り\n見送り理由: 市場が小さい") == "見送り"
+
+
+def test_parse_conclusion_detects_rejection():
+    assert _parse_conclusion("結論: 見送り\n見送り理由: タイミングが悪い") == "見送り"
+
+
+def test_parse_conclusion_empty_string_returns_rejection():
+    assert _parse_conclusion("") == "見送り"
+
+
+def test_parse_conclusion_adoption_without_marker_is_rejected():
+    # 採用 appears as isolated word but without the full marker phrase
+    assert _parse_conclusion("採用を検討した結果、見送りとする") == "見送り"
+
+
+def test_parse_conclusion_realistic_ceo_output_adopted():
+    text = (
+        "全員の意見を総合的に評価しました。市場タイミングも良好です。\n"
+        "結論: 採用\n"
+        "次のアクション:\n1. MVP構築\n2. 初期ターゲット選定"
+    )
+    assert _parse_conclusion(text) == "採用"
 
 
 def _make_high_score_idea(conn) -> int:
