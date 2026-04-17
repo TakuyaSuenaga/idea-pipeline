@@ -1,6 +1,15 @@
 import { useState } from 'react'
 import type { MeetingSession, MeetingMessage } from '../types'
 
+function isSafeUrl(url: string): boolean {
+  try {
+    const { protocol } = new URL(url)
+    return protocol === 'https:' || protocol === 'http:'
+  } catch {
+    return false
+  }
+}
+
 const ROLE_LABELS: Record<string, string> = {
   ceo: 'CEO',
   planning: '企画担当',
@@ -117,7 +126,7 @@ function SessionRow({ session, index }: { session: MeetingSession; index: number
 
       {expanded && (
         <div className="pl-10 pb-5">
-          {session.github_issue_url && (
+          {session.github_issue_url && isSafeUrl(session.github_issue_url) && (
             <a
               href={session.github_issue_url}
               target="_blank"

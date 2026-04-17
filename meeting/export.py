@@ -4,8 +4,17 @@ import json
 import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 MEETINGS_JSON_PATH = Path(__file__).parent.parent / "docs" / "data" / "meetings.json"
+
+
+def _safe_url(url: str | None) -> str | None:
+    """Return url only if it uses http/https; otherwise return None."""
+    if not url:
+        return None
+    scheme = urlparse(url).scheme
+    return url if scheme in ("http", "https") else None
 
 
 def export_meetings(conn: sqlite3.Connection) -> None:
@@ -28,6 +37,7 @@ def export_meetings(conn: sqlite3.Connection) -> None:
     sessions = []
     for row in sessions_rows:
         session = dict(row)
+        session["github_issue_url"] = _safe_url(session.get("github_issue_url"))
         messages = conn.execute(
             """
             SELECT agent_role, turn, content, created_at

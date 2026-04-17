@@ -115,17 +115,19 @@ def run_meeting() -> None:
 
     if not ideas:
         print("[meeting] No new ideas to discuss today.")
-        return
+    else:
+        print(f"[meeting] Starting meeting for {len(ideas)} idea(s).")
+        for idea in ideas:
+            try:
+                _run_idea_meeting(conn, idea, repo, token)
+            except Exception as exc:
+                print(f"[meeting] ERROR processing idea {idea.get('id')}: {exc}")
 
-    print(f"[meeting] Starting meeting for {len(ideas)} idea(s).")
-    for idea in ideas:
-        try:
-            _run_idea_meeting(conn, idea, repo, token)
-        except Exception as exc:
-            print(f"[meeting] ERROR processing idea {idea.get('id')}: {exc}")
-
-    export_meetings(conn)
-    print("[meeting] Exported meetings.json.")
+    try:
+        export_meetings(conn)
+        print("[meeting] Exported meetings.json.")
+    except Exception as exc:
+        print(f"[meeting] WARNING: Failed to export meetings.json: {exc}")
 
 
 if __name__ == "__main__":
