@@ -1,7 +1,947 @@
 {
-  "exported_at": "2026-04-18T04:30:16.140011+00:00",
-  "count": 686,
+  "exported_at": "2026-04-18T21:42:06.100605+00:00",
+  "count": 780,
   "items": [
+    {
+      "id": 687,
+      "source": "hackernews",
+      "title": "Thoughts and feelings around Claude Design",
+      "url": "https://samhenri.gold/blog/20260418-claude-design/",
+      "content": null,
+      "score": 111,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 688,
+      "source": "hackernews",
+      "title": "The electromechanical angle computer inside the B-52 bomber's star tracker",
+      "url": "https://www.righto.com/2026/04/B-52-star-tracker-angle-computer.html",
+      "content": null,
+      "score": 195,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 689,
+      "source": "hackernews",
+      "title": "College instructor turns to typewriters to curb AI-written work",
+      "url": "https://sentinelcolorado.com/uncategorized/a-college-instructor-turns-to-typewriters-to-curb-ai-written-work-and-teach-life-lessons/",
+      "content": null,
+      "score": 50,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 690,
+      "source": "hackernews",
+      "title": "Migrating from DigitalOcean to Hetzner",
+      "url": "https://isayeter.com/posts/digitalocean-to-hetzner-migration/",
+      "content": null,
+      "score": 606,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 691,
+      "source": "hackernews",
+      "title": "State of Kdenlive",
+      "url": "https://kdenlive.org/news/2026/state-2026/",
+      "content": null,
+      "score": 298,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 692,
+      "source": "hackernews",
+      "title": "Optimizing Ruby Path Methods",
+      "url": "https://byroot.github.io/ruby/performance/2026/04/18/faster-paths.html",
+      "content": null,
+      "score": 5,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 693,
+      "source": "hackernews",
+      "title": "Show HN: MDV – a Markdown superset for docs, dashboards, and slides with data",
+      "url": "https://github.com/drasimwagan/mdv",
+      "content": null,
+      "score": 65,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 694,
+      "source": "hackernews",
+      "title": "Floating Point Fun on Cortex-M Processors",
+      "url": "https://danielmangum.com/posts/floating-point-cortex-m/",
+      "content": null,
+      "score": 12,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 695,
+      "source": "hackernews",
+      "title": "Michael Rabin has died",
+      "url": "https://en.wikipedia.org/wiki/Michael_O._Rabin",
+      "content": null,
+      "score": 359,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 696,
+      "source": "hackernews",
+      "title": "Modern Common Lisp with FSET",
+      "url": "https://fset.common-lisp.dev/Modern-CL/Top_html/index.html",
+      "content": null,
+      "score": 25,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 697,
+      "source": "hackernews",
+      "title": "Scientists discover \"cleaner ants\" that groom giant ants in Arizona desert",
+      "url": "https://www.sciencedaily.com/releases/2026/04/260414075641.htm",
+      "content": null,
+      "score": 58,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 698,
+      "source": "hackernews",
+      "title": "Sumida Aquarium Posts 2026 Penguin Relationship Chart, with Drama and Breakups",
+      "url": "https://www.sumida-aquarium.com/special/sokanzu/en/2026/",
+      "content": null,
+      "score": 134,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 699,
+      "source": "hackernews",
+      "title": "Any Color You Like: NIST Scientists Create 'Any Wavelength' Lasers",
+      "url": "https://www.nist.gov/news-events/news/2026/04/any-color-you-nist-scientists-create-any-wavelength-lasers-tiny-circuits",
+      "content": null,
+      "score": 3,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 700,
+      "source": "hackernews",
+      "title": "Opus 4.7 to 4.6 Inflation is ~45%",
+      "url": "https://tokens.billchambers.me/leaderboard",
+      "content": null,
+      "score": 363,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 701,
+      "source": "hackernews",
+      "title": "Show HN: AI Subroutines – Run automation scripts inside your browser tab",
+      "url": "https://www.rtrvr.ai/blog/ai-subroutines-zero-token-deterministic-automation",
+      "content": "We built AI Subroutines in rtrvr.ai. Record a browser task once, save it as a callable tool, replay it at: zero token cost, zero LLM inference delay, and zero mistakes.<p>The subroutine itself is a deterministic script composed of discovered network calls hitting the site&#x27;s backend as well as page interactions like click&#x2F;type&#x2F;find.<p>The key architectural decision: the script executes inside the webpage itself, not through a proxy, not in a headless worker, not out of process. The",
+      "score": 13,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 702,
+      "source": "hackernews",
+      "title": "Graphs that explain the state of AI in 2026",
+      "url": "https://spectrum.ieee.org/state-of-ai-index-2026",
+      "content": null,
+      "score": 50,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 703,
+      "source": "hackernews",
+      "title": "80386 Memory Pipeline",
+      "url": "https://nand2mario.github.io/posts/2026/80386_memory_pipeline/",
+      "content": null,
+      "score": 68,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 704,
+      "source": "hackernews",
+      "title": "Fuzix OS",
+      "url": "https://www.fuzix.org/",
+      "content": null,
+      "score": 57,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 705,
+      "source": "hackernews",
+      "title": "Show HN: Remoroo. trying to fix memory in long-running coding agents",
+      "url": "https://www.remoroo.com",
+      "content": "I built Remoroo because most coding agents fall apart once the work stops being a short edit-and-run loop.<p>A real engineering experiment can run for hours. Along the way, the agent reads files, runs commands, checks logs, compares metrics, tries ideas that fail, and needs to remember what already happened. Once context starts slipping, it forgets the goal, loses track of the baseline, and retries bad ideas.<p>Remoroo is my attempt to solve that problem.<p>You point it at a repo and give it a m",
+      "score": 17,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 706,
+      "source": "hackernews",
+      "title": "4-bit floating point FP4",
+      "url": "https://www.johndcook.com/blog/2026/04/17/fp4/",
+      "content": null,
+      "score": 20,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 707,
+      "source": "hackernews",
+      "title": "PostgreSQL production incident caused by transaction ID wraparound",
+      "url": "https://www.sqlservercentral.com/articles/i-too-have-a-production-story-a-downtime-caused-by-postgres-transaction-id-wraparound-problem",
+      "content": null,
+      "score": 6,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 708,
+      "source": "hackernews",
+      "title": "Understanding the FFT Algorithm (2013)",
+      "url": "https://jakevdp.github.io/blog/2013/08/28/understanding-the-fft/",
+      "content": null,
+      "score": 37,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 709,
+      "source": "hackernews",
+      "title": "Amiga Graphics Archive",
+      "url": "https://amiga.lychesis.net/",
+      "content": null,
+      "score": 218,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 710,
+      "source": "hackernews",
+      "title": "PgQue: Zero-Bloat Postgres Queue",
+      "url": "https://github.com/NikolayS/pgque",
+      "content": null,
+      "score": 32,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 711,
+      "source": "hackernews",
+      "title": "Category Theory Illustrated – Orders",
+      "url": "https://abuseofnotation.github.io/category-theory-illustrated/04_order/",
+      "content": null,
+      "score": 212,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 712,
+      "source": "hackernews",
+      "title": "It's OK to compare floating-points for equality",
+      "url": "https://lisyarus.github.io/blog/posts/its-ok-to-compare-floating-points-for-equality.html",
+      "content": null,
+      "score": 159,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 713,
+      "source": "hackernews",
+      "title": "Traders placed over $1B in perfectly timed bets on the Iran war",
+      "url": "https://www.theguardian.com/world/2026/apr/18/iran-war-bets-ethics-concerns",
+      "content": null,
+      "score": 83,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 714,
+      "source": "hackernews",
+      "title": "Show HN: I made a calculator that works over disjoint sets of intervals",
+      "url": "https://victorpoughon.github.io/interval-calculator/",
+      "content": "I&#x27;ve been studying interval arithmetic for the past few weeks and it&#x27;s a really interesting field because while there is a ton of super interesting research published over the past decades, it has never really gotten the recognition that it deserves, IMO.<p>One reason for this is that standard interval arithmetic has really poor handling of division by intervals containing zero. If you compute 1 &#x2F; [-1, 2] in regular interval arithmetic, you get either [-∞, +∞], or you have to say ",
+      "score": 280,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 715,
+      "source": "hackernews",
+      "title": "Why Japan has such good railways",
+      "url": "https://worksinprogress.co/issue/why-japan-has-such-good-railways/",
+      "content": null,
+      "score": 253,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 716,
+      "source": "techcrunch_rss",
+      "title": "Tesla brings its robotaxi service to Dallas and Houston",
+      "url": "https://techcrunch.com/2026/04/18/tesla-brings-its-robotaxi-service-to-dallas-and-houston/",
+      "content": "Tesla is expanding its robotaxi service to Dallas and Houston, according to a social media post from the company. The post says simply that “Robotaxi is now rolling out in Dallas &#38; Houston 🤠” and includes a 14-second video showing Tesla vehicles driving without human monitors or drivers in the front seat. The company now [&#8230;]",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 717,
+      "source": "techcrunch_rss",
+      "title": "VC Ron Conway says he has a ‘rare form of cancer’",
+      "url": "https://techcrunch.com/2026/04/18/vc-ron-conway-says-he-has-a-rare-form-of-cancer/",
+      "content": "Conway wrote that he “will be stepping back from some of my usual activities,” but he will “continue to support” founders backed by his firm SV Angel.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 718,
+      "source": "techcrunch_rss",
+      "title": "AI chip startup Cerebras files for IPO",
+      "url": "https://techcrunch.com/2026/04/18/ai-chip-startup-cerebras-files-for-ipo/",
+      "content": "In recent months, the company announced an agreement with Amazon Web Services to use Cerebras chips in Amazon data centers, as well as a deal with OpenAI reportedly worth more than $10 billion.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 719,
+      "source": "techcrunch_rss",
+      "title": "Anthropic’s relationship with the Trump administration seems to be thawing",
+      "url": "https://techcrunch.com/2026/04/18/anthropics-relationship-with-the-trump-administration-seems-to-be-thawing/",
+      "content": "Despite recently being designated a supply-chain risk by the Pentagon, Anthropic is still talking to high-level members of the Trump administration.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 720,
+      "source": "techcrunch_rss",
+      "title": "The App Store is booming again, and AI may be why",
+      "url": "https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/",
+      "content": "New data from Appfigures shows a swell of new app launches in 2026, suggesting AI tools could be fueling a mobile software boom.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 721,
+      "source": "techcrunch_rss",
+      "title": "Once close enough for an acquisition, Stripe and Airwallex are now going after each other",
+      "url": "https://techcrunch.com/2026/04/17/once-close-enough-for-an-acquisition-stripe-and-airwallex-are-now-going-after-each-other/",
+      "content": "For most of its life, Airwallex and Stripe have mostly operated in different geographies, selling to different buyers. That's changing.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 722,
+      "source": "techcrunch_rss",
+      "title": "Sam Altman’s project World looks to scale its human verification empire. First stop: Tinder.",
+      "url": "https://techcrunch.com/2026/04/17/sam-altmans-project-world-looks-to-scale-its-human-verification-empire-first-stop-tinder/",
+      "content": "World, which has raised eyebrows (but also a lot of interest) with its Orb-centered anonymous verification project, is looking to expand its influence via a bevy of new partnerships.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 723,
+      "source": "techcrunch_rss",
+      "title": "Kevin Weil and Bill Peebles exit OpenAI as company continues to shed ‘side quests’",
+      "url": "https://techcrunch.com/2026/04/17/kevin-weil-and-bill-peebles-exit-openai-as-company-continues-to-shed-side-quests/",
+      "content": "Kevin Weil and Bill Peebles are leaving OpenAI as the company shuts down Sora and folds its science team, signaling a sharp pivot away from consumer moonshots toward enterprise AI.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 724,
+      "source": "techcrunch_rss",
+      "title": "Man who hacked US Supreme Court filing system sentenced to probation",
+      "url": "https://techcrunch.com/2026/04/17/man-who-hacked-us-supreme-court-filing-system-sentenced-to-probation/",
+      "content": "Nicholas Moore hacked into three U.S. government networks using stolen credentials, and then bragged about it and posted victims' personal data on Instagram under the handle @ihackedthegovernment.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 725,
+      "source": "techcrunch_rss",
+      "title": "Sources: Cursor in talks to raise $2B+ at $50B valuation as enterprise growth surges",
+      "url": "https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/",
+      "content": "Returning backers a16z and Thrive are expected to lead the round.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 726,
+      "source": "techcrunch_rss",
+      "title": "‘Tokenmaxxing’ is making developers less productive than they think",
+      "url": "https://techcrunch.com/2026/04/17/tokenmaxxing-is-making-developers-less-productive-than-they-think/",
+      "content": "There's a lot more code — but it's a lot more expensive and requires a lot more rewriting.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 727,
+      "source": "techcrunch_rss",
+      "title": "Hackers are abusing unpatched Windows security flaws to hack into organizations",
+      "url": "https://techcrunch.com/2026/04/17/hackers-are-abusing-unpatched-windows-security-flaws-to-hack-into-organizations/",
+      "content": "A security researcher published details of three security vulnerabilities in Windows Defender, and the code used to exploit them. Now, hackers are taking advantage of the vulnerabilities in real-life attacks, according to a cybersecurity firm.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 728,
+      "source": "techcrunch_rss",
+      "title": "Zoom teams up with World to verify humans in meetings",
+      "url": "https://techcrunch.com/2026/04/17/zoom-teams-up-with-world-to-verify-humans-in-meeting/",
+      "content": "Meeting platform Zoom has announced a partnership with World, Sam Altman's human ID verification company, to ensure that the people attending meetings are actually human and not AI-generated imposters. Zoom will show a badge on verified participants' tile.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 729,
+      "source": "techcrunch_rss",
+      "title": "Gigs turns your concert history into a personal live music archive",
+      "url": "https://techcrunch.com/2026/04/17/gigs-turns-your-concert-history-into-a-personal-live-music-archive/",
+      "content": "New iPhone app Gigs uses AI to turn old tickets, screenshots, and emails into a personal concert archive with stats, memories, and more.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 730,
+      "source": "techcrunch_rss",
+      "title": "Chef Robotics escaped the robot cooking graveyard and says it’s thriving — here’s why",
+      "url": "https://techcrunch.com/2026/04/17/chef-robotics-escaped-the-robot-cooking-graveyard-and-says-its-thriving-heres-why/",
+      "content": "The company, which deploys AI-guided robot arms for food production, says it is looking to expand its services to provide for a broader array of customers.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 731,
+      "source": "techcrunch_rss",
+      "title": "Uber will now pick up your returns from your doorstep",
+      "url": "https://techcrunch.com/2026/04/17/uber-will-now-pick-up-your-returns-from-your-doorstep/",
+      "content": "The new returns feature is the company's latest effort to become an everything app. There are limitations to the new service, and there is, of course, a courier fee.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 732,
+      "source": "techcrunch_rss",
+      "title": "Anthropic launches Claude Design, a new product for creating quick visuals",
+      "url": "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/",
+      "content": "The company says Claude Design is intended to help people like founders and product managers without a design background share their ideas more easily.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 733,
+      "source": "techcrunch_rss",
+      "title": "With US spy laws set to expire, lawmakers are split over protecting Americans from warrantless surveillance",
+      "url": "https://techcrunch.com/2026/04/17/with-us-spy-laws-set-to-expire-lawmakers-are-split-over-protecting-americans-from-warrantless-surveillance/",
+      "content": "Some lawmakers are calling for widespread reforms following years of surveillance scandals and abuses across successive U.S. administrations. But even if the spy law known as Section 702 expires in April, the government's spy powers will not automatically lapse.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 734,
+      "source": "techcrunch_rss",
+      "title": "Google’s AI Mode can now help you find products in stock nearby",
+      "url": "https://techcrunch.com/2026/04/17/googles-ai-mode-can-now-help-you-find-products-in-stock-nearby/",
+      "content": "Although you can already track hotel prices at the city level, the new update lets you do so for a specific hotel that you're interested in.",
+      "score": null,
+      "category": "seo",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 735,
+      "source": "techcrunch_rss",
+      "title": "Bluesky confirms DDoS attack is cause of continued app outages",
+      "url": "https://techcrunch.com/2026/04/17/its-not-just-you-bluesky-is-sorta-down/",
+      "content": "Bluesky has been experiencing ongoing service disruptions since just before 3 a.m. ET on April 15.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 736,
+      "source": "producthunt",
+      "title": "CraftBot",
+      "url": "https://www.producthunt.com/products/craftbot",
+      "content": "<p>\n            Self-hosted proactive AI assistant that lives locally\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/craftbot?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1110300?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 737,
+      "source": "producthunt",
+      "title": "Is Your Site Agent-Ready? by Cloudflare",
+      "url": "https://www.producthunt.com/products/is-your-site-agent-ready",
+      "content": "<p>\n            Scan your website to see how ready it is for AI agents. \n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/is-your-site-agent-ready?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126098?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 738,
+      "source": "producthunt",
+      "title": "Notebooks in Gemini",
+      "url": "https://www.producthunt.com/products/google",
+      "content": "<p>\n            Keep every project, chat, and file in one focused space\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/google?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1124025?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 739,
+      "source": "producthunt",
+      "title": "Grok Voice API",
+      "url": "https://www.producthunt.com/products/grok",
+      "content": "<p>\n            Fast, accurate STT and TTS APIs at the best price\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/grok?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126543?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 740,
+      "source": "producthunt",
+      "title": "Android CLI",
+      "url": "https://www.producthunt.com/products/android-cli",
+      "content": "<p>\n            Build high quality Android apps 3x faster using any agent \n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/android-cli?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1125579?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 741,
+      "source": "producthunt",
+      "title": "Lounge",
+      "url": "https://www.producthunt.com/products/lounge-2",
+      "content": "<p>\n            macOS Tahoe menu bar manager with notch-aware icon control\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/lounge-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126154?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 742,
+      "source": "producthunt",
+      "title": ".MD This Page",
+      "url": "https://www.producthunt.com/products/md-this-page",
+      "content": "<p>\n            Convert any page to clean Markdown instantly\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/md-this-page?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1125963?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 743,
+      "source": "producthunt",
+      "title": "ChatGPT Shopping",
+      "url": "https://www.producthunt.com/products/chatgpt-shopping",
+      "content": "<p>\n            Richer, more visually immersive shopping experiences\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/chatgpt-shopping?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1106266?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 744,
+      "source": "producthunt",
+      "title": "CapyPlan",
+      "url": "https://www.producthunt.com/products/gentle-daily-planner-capyplan",
+      "content": "<p>\n            Your no stress chearleader for tiny tasks\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/gentle-daily-planner-capyplan?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126062?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 745,
+      "source": "producthunt",
+      "title": "Claude Code Rendering",
+      "url": "https://www.producthunt.com/products/claude-code-no_flicker-mode",
+      "content": "<p>\n            Mouse support and flicker-free rendering for Claude Code\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/claude-code-no_flicker-mode?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1113838?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 746,
+      "source": "producthunt",
+      "title": "React Email 6.0 by Resend",
+      "url": "https://www.producthunt.com/products/react-email-6-0-resend",
+      "content": "<p>\n            Build, customize, and ship emails — all from your own app\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/react-email-6-0-resend?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126148?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 747,
+      "source": "producthunt",
+      "title": "Vercel Flags",
+      "url": "https://www.producthunt.com/products/vercel",
+      "content": "<p>\n            Feature flags, targeting rules, rollouts. All from Vercel.\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/vercel?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126372?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 748,
+      "source": "producthunt",
+      "title": "Claude Design by Anthropic Labs",
+      "url": "https://www.producthunt.com/products/claude",
+      "content": "<p>\n            Make prototypes, slides & one-pagers by talking to Claude\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/claude?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126180?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 749,
+      "source": "producthunt",
+      "title": "Hipocampus",
+      "url": "https://www.producthunt.com/products/hipocampus",
+      "content": "<p>\n            AI operators that own team workflows\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/hipocampus?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126115?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 750,
+      "source": "producthunt",
+      "title": "Codex 2.0 by OpenAI",
+      "url": "https://www.producthunt.com/products/openai",
+      "content": "<p>\n            Codex now runs apps, automates tasks, codes & more\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/openai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1125523?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 751,
+      "source": "producthunt",
+      "title": "Melo",
+      "url": "https://www.producthunt.com/products/melo-3",
+      "content": "<p>\n            One canvas for all your work\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/melo-3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1125527?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 752,
+      "source": "producthunt",
+      "title": "Ichiba AI",
+      "url": "https://www.producthunt.com/products/ichiba-ai",
+      "content": "<p>\n            AI to AI influence, scored. See what moves the models.\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/ichiba-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1125844?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 753,
+      "source": "producthunt",
+      "title": "SFX Stacks",
+      "url": "https://www.producthunt.com/products/sfx-stacks",
+      "content": "<p>\n            Find sounds in local SFX libraries with plain words\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/sfx-stacks?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1122704?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 754,
+      "source": "producthunt",
+      "title": "E.Y.E. by Expert Chase",
+      "url": "https://www.producthunt.com/products/expert-chase-deleted-1107920",
+      "content": "<p>\n            Where human life runs with AI\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/expert-chase-deleted-1107920?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1124657?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 755,
+      "source": "producthunt",
+      "title": "Klippy",
+      "url": "https://www.producthunt.com/products/klippy-2",
+      "content": "<p>\n            Video editing for creators In your browser\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/klippy-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1125500?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 756,
+      "source": "github_trending",
+      "title": "getagentseal/codeburn",
+      "url": "https://github.com/getagentseal/codeburn",
+      "content": "See where your AI coding tokens go. Interactive TUI dashboard for Claude Code, Codex, and Cursor cost observability.",
+      "score": 2700,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 757,
+      "source": "github_trending",
+      "title": "Robbyant/lingbot-map",
+      "url": "https://github.com/Robbyant/lingbot-map",
+      "content": "A feed-forward 3D foundation model for reconstructing scenes from streaming data",
+      "score": 1768,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 758,
+      "source": "github_trending",
+      "title": "Nightmare-Eclipse/RedSun",
+      "url": "https://github.com/Nightmare-Eclipse/RedSun",
+      "content": "The Red Sun vulnerability repository",
+      "score": 1485,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 759,
+      "source": "github_trending",
+      "title": "vercel-labs/wterm",
+      "url": "https://github.com/vercel-labs/wterm",
+      "content": "A terminal emulator for the web",
+      "score": 1454,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 760,
+      "source": "github_trending",
+      "title": "Mouseww/anything-analyzer",
+      "url": "https://github.com/Mouseww/anything-analyzer",
+      "content": "全能协议分析工具：浏览器抓包 + MITM 代理 + 指纹伪装 + AI 分析 + MCP Server 无缝对接 AI Agent/IDE   |  All-in-one protocol analysis toolkit — built-in browser capture, MITM proxy, JS hooks, fingerprint spoofing, AI analysis & MCP server for agent integration",
+      "score": 1346,
+      "category": "saas",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 761,
+      "source": "github_trending",
+      "title": "browser-use/video-use",
+      "url": "https://github.com/browser-use/video-use",
+      "content": null,
+      "score": 1208,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 762,
+      "source": "github_trending",
+      "title": "alchaincyf/darwin-skill",
+      "url": "https://github.com/alchaincyf/darwin-skill",
+      "content": "达尔文.skill —— 一个让你的Skill无限进化的系统：评估→改进→测试→保留或回滚 | Autoresearch-inspired autonomous skill optimization for Claude Code. Evaluate, improve, test, keep or revert.",
+      "score": 1188,
+      "category": "seo",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 763,
+      "source": "github_trending",
+      "title": "lewislulu/html-ppt-skill",
+      "url": "https://github.com/lewislulu/html-ppt-skill",
+      "content": "HTML PPT Studio — AgentSkill with 24 themes, 31 layouts, 20+ animations for building professional HTML presentations",
+      "score": 1133,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 764,
+      "source": "github_trending",
+      "title": "Manavarya09/design-extract",
+      "url": "https://github.com/Manavarya09/design-extract",
+      "content": "Extract the complete design language from any website — colors, typography, spacing, shadows, and more. npx CLI + Claude Code plugin.",
+      "score": 986,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 765,
+      "source": "github_trending",
+      "title": "patterniha/SNI-Spoofing",
+      "url": "https://github.com/patterniha/SNI-Spoofing",
+      "content": "Bypass DPI with IP/TCP-Header manipulation",
+      "score": 959,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 766,
+      "source": "github_trending",
+      "title": "BuilderPulse/BuilderPulse",
+      "url": "https://github.com/BuilderPulse/BuilderPulse",
+      "content": "AI-powered daily intelligence for indie hackers and builders. 20 questions, 10+ sources, every morning.",
+      "score": 927,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 767,
+      "source": "github_trending",
+      "title": "sogonov/anubis",
+      "url": "https://github.com/sogonov/anubis",
+      "content": "Android app manager with VPN integration. Manages groups of apps by freezing/unfreezing them based on VPN connection state.",
+      "score": 911,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 768,
+      "source": "github_trending",
+      "title": "sterlingcrispin/nothing-ever-happens",
+      "url": "https://github.com/sterlingcrispin/nothing-ever-happens",
+      "content": "Polymarket bot that buys \"No\" on all non-sports markets",
+      "score": 832,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 769,
+      "source": "github_trending",
+      "title": "WeaveMindAI/weft",
+      "url": "https://github.com/WeaveMindAI/weft",
+      "content": "A programming language for AI systems",
+      "score": 823,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 770,
+      "source": "github_trending",
+      "title": "yaojingang/GEOFlow",
+      "url": "https://github.com/yaojingang/GEOFlow",
+      "content": "Open-source GEO content production system with AI tasks, review workflow, and publishing.",
+      "score": 807,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 771,
+      "source": "github_trending",
+      "title": "wbh604/UZI-Skill",
+      "url": "https://github.com/wbh604/UZI-Skill",
+      "content": "冰冷的钱就这样流进我温暖的口袋-游资（UZI）Skills — 51位投资大佬帮你看盘 · 22维数据 × 180条量化规则 × 17种机构分析方法 · A股/港股/美股 ",
+      "score": 759,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 772,
+      "source": "github_trending",
+      "title": "Lazarus-AI/clearwing",
+      "url": "https://github.com/Lazarus-AI/clearwing",
+      "content": null,
+      "score": 632,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 773,
+      "source": "github_trending",
+      "title": "andrewjiang/palantir-for-family-trips",
+      "url": "https://github.com/andrewjiang/palantir-for-family-trips",
+      "content": "A Palantir-ish dashboard for family trip planning.",
+      "score": 631,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 774,
+      "source": "github_trending",
+      "title": "xataio/xata",
+      "url": "https://github.com/xataio/xata",
+      "content": "Open source, cloud native, Postgres platform with copy-on-write branching and scale-to-zero",
+      "score": 601,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 775,
+      "source": "github_trending",
+      "title": "op7418/logo-generator-skill",
+      "url": "https://github.com/op7418/logo-generator-skill",
+      "content": "logo-generator-skill",
+      "score": 599,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 776,
+      "source": "github_trending",
+      "title": "poteto/how",
+      "url": "https://github.com/poteto/how",
+      "content": "skill for explaining architecture",
+      "score": 558,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 777,
+      "source": "github_trending",
+      "title": "amitshekhariitbhu/llm-internals",
+      "url": "https://github.com/amitshekhariitbhu/llm-internals",
+      "content": "Learn LLM internals step by step - from tokenization to attention to inference optimization.",
+      "score": 535,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 778,
+      "source": "github_trending",
+      "title": "Jakubantalik/border-beam",
+      "url": "https://github.com/Jakubantalik/border-beam",
+      "content": "Animated border beam effect for React",
+      "score": 524,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 779,
+      "source": "github_trending",
+      "title": "codejunkie99/agentic-stack",
+      "url": "https://github.com/codejunkie99/agentic-stack",
+      "content": "One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols) that plugs into Claude Code, Cursor, Windsurf, OpenCode, OpenClaw, Hermes, or DIY Python — and keeps its knowledge when you switch.",
+      "score": 492,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
+    {
+      "id": 780,
+      "source": "github_trending",
+      "title": "millionco/claude-doctor",
+      "url": "https://github.com/millionco/claude-doctor",
+      "content": "Diagnose your Claude Code sessions",
+      "score": 459,
+      "category": "general",
+      "fetched_at": "2026-04-18 21:40:59"
+    },
     {
       "id": 593,
       "source": "hackernews",
