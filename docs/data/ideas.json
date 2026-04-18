@@ -1,7 +1,207 @@
 {
-  "exported_at": "2026-04-17T21:50:59.344340+00:00",
-  "count": 60,
+  "exported_at": "2026-04-18T04:30:16.138314+00:00",
+  "count": 65,
   "ideas": [
+    {
+      "id": 65,
+      "title": "Hyperscale Tracker - AIインフラ投資データベース＆SEOメディア",
+      "description": "ハイパースケーラー（Google、Microsoft、Amazon、Meta等）のAIインフラ投資額、データセンター建設計画、電力消費データを体系的に収集・可視化するSEO特化型データメディア。投資家・アナリスト・ジャーナリストが参照する権威的データソースを目指す。",
+      "target_market": "テック系投資家・アナリスト、エネルギー業界関係者、テック系ジャーナリスト、AIスタートアップの事業開発担当",
+      "why_now": "ハイパースケーラーのAI投資が米国史上の大型インフラプロジェクトを超える規模に達し、データの体系的な整理・比較への需要が急増。各社の決算報告・建設計画が四半期ごとに更新され、継続的なコンテンツ生成が可能。",
+      "revenue_model": "SEOトラフィックによる広告収入＋プレミアムデータレポートのサブスクリプション（月額$49〜$199）＋ニュースレター。",
+      "difficulty": "low",
+      "category": "seo",
+      "research_ids": [
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612
+      ],
+      "generated_at": "2026-04-18 04:30:16",
+      "eval_why_now": 8,
+      "eval_differentiation": 7,
+      "eval_feasibility": 9,
+      "eval_market_size": 6,
+      "eval_comment": "データ収集・整理は個人で十分可能で、SEOドメインオーソリティを早期に確立できれば強い参入障壁になる。投資家向けの高単価サブスクも狙える。ただしデータの正確性維持と情報源の確保が継続的な課題。",
+      "eval_total": 7.2,
+      "eval_pain_point": 6
+    },
+    {
+      "id": 64,
+      "title": "AI Slop Detector API - AIスロップ検出SaaS",
+      "description": "ウェブ上に氾濫するAI生成の低品質コンテンツ（いわゆる『スロップ』）を検出するAPI。SEOスパム対策、コンテンツプラットフォームの品質管理、採用時の応募書類スクリーニングなどに利用可能。単なるAI検出ではなく、品質スコアリングとスロップパターン分類に特化。",
+      "target_market": "コンテンツプラットフォーム運営者、SEO担当者、メディア企業、採用担当者",
+      "why_now": "AI生成コンテンツの爆発的増加により、「Slop Cop」のようなツールがHacker Newsで注目を集めるほど、コンテンツ品質問題が深刻化。GoogleのSEOアルゴリズム更新もAIスパム対策を強化しており、検出需要が急増中。",
+      "revenue_model": "API従量課金（1000リクエスト/$5〜）＋月額プラン$29〜$199。",
+      "difficulty": "high",
+      "category": "saas",
+      "research_ids": [
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612
+      ],
+      "generated_at": "2026-04-18 04:30:16",
+      "eval_why_now": 8,
+      "eval_differentiation": 6,
+      "eval_feasibility": 5,
+      "eval_market_size": 7,
+      "eval_comment": "AI検出はtarpit寄りの市場（GPTZero等多数の競合）だが、『スロップ品質分類』という切り口で差別化は可能。精度の維持がソロ開発者にとって最大の課題。特定ユースケース（SEOコンテンツ監査等）に絞れば勝機あり。",
+      "eval_total": 6.6,
+      "eval_pain_point": 7
+    },
+    {
+      "id": 63,
+      "title": "TermSafe - ターミナルセキュリティ監査ツール",
+      "description": "iTerm2の脆弱性（catコマンドでの任意コード実行リスク）やmacOSのTouchID強制解除問題など、開発者のローカル環境におけるセキュリティリスクを自動スキャン・警告するCLIツール＋ダッシュボード。ターミナルエミュレータの設定不備、危険なシェル設定、生体認証ポリシーの脆弱性を検出。",
+      "target_market": "セキュリティ意識の高い個人開発者、ジャーナリスト、機密情報を扱うリモートワーカー",
+      "why_now": "iTerm2のcat脆弱性やTouchID強制解除（記者のSignalソース流出事件）が同時期に話題になり、開発者のローカル環境セキュリティへの関心が急上昇。リモートワーク普及でBYOD端末のセキュリティギャップも拡大中。",
+      "revenue_model": "CLI版はOSS（フリー）でユーザー基盤構築。クラウドダッシュボード・チーム管理機能を月額$9〜$49で提供。",
+      "difficulty": "medium",
+      "category": "saas",
+      "research_ids": [
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612
+      ],
+      "generated_at": "2026-04-18 04:30:16",
+      "eval_why_now": 7,
+      "eval_differentiation": 7,
+      "eval_feasibility": 8,
+      "eval_market_size": 5,
+      "eval_comment": "複数の具体的インシデントが同時発生しており注目度は高いが、市場規模がニッチ。OSS→有料変換の難しさもある。ただし個人開発者との相性は良く、プロダクトハント等でのバイラル獲得が見込める。",
+      "eval_total": 6.6,
+      "eval_pain_point": 6
+    },
+    {
+      "id": 62,
+      "title": "AgentCost - AIエージェントコスト可視化ツール",
+      "description": "AIエージェントの実行コストが指数関数的に増加している問題に対し、各エージェントフレームワーク（LangChain、CrewAI等）のAPI呼び出し・トークン消費・実行時間をリアルタイムで計測・可視化し、コスト最適化を提案するSaaS。SDKをプロジェクトに組み込むだけで利用可能。",
+      "target_market": "AIエージェントを本番運用している開発者・スタートアップ、特にマルチエージェントシステムを構築している企業",
+      "why_now": "AIエージェントが本番環境に導入され始め、トークンコストの予測不能な急増が経営課題になりつつある。Claude 4.7のトークナイザーコスト計測の話題が出るほど、コスト意識が業界全体で高まっている。エージェント市場自体が2025年に急拡大中。",
+      "revenue_model": "月額$19（個人）〜$99（チーム）のサブスクリプション。月間トラッキングイベント数による従量課金。",
+      "difficulty": "medium",
+      "category": "saas",
+      "research_ids": [
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612
+      ],
+      "generated_at": "2026-04-18 04:30:16",
+      "eval_why_now": 8,
+      "eval_differentiation": 7,
+      "eval_feasibility": 7,
+      "eval_market_size": 8,
+      "eval_comment": "AIエージェントのコスト爆発は今まさに顕在化している問題。既存のLLMコスト監視ツール（Helicone等）はあるが、マルチエージェント特有のコスト構造に特化したものは少ない。差別化の鍵はエージェントフレームワークとの深い統合。",
+      "eval_total": 7.6,
+      "eval_pain_point": 8
+    },
+    {
+      "id": 61,
+      "title": "CVE Watch - 脆弱性インテリジェンスSaaS",
+      "description": "NISTがCVEのエンリッチメント（詳細情報の付与）を大幅に縮小したことを受け、AIを活用して脆弱性情報を自動的に収集・分析・スコアリングし、開発者やセキュリティチームに通知するサービス。NIST NVDの空白を埋める独立したCVEインテリジェンスプラットフォーム。",
+      "target_market": "中小規模のSaaS企業のCTO・セキュリティ担当者、およびセキュリティコンプライアンスが必要なスタートアップ",
+      "why_now": "NISTがCVEエンリッチメントを事実上放棄したことで、企業は脆弱性の深刻度や影響範囲を自力で判断する必要が生じた。同時にLLMの進化により、CVE記述文やExploitコードの自動解析・リスクスコアリングが個人開発者でも構築可能になった。",
+      "revenue_model": "フリーミアム（月10件まで無料）+ 月額$29〜$99のサブスクリプション。エンタープライズ向けAPI課金。",
+      "difficulty": "medium",
+      "category": "saas",
+      "research_ids": [
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612
+      ],
+      "generated_at": "2026-04-18 04:30:16",
+      "eval_why_now": 9,
+      "eval_differentiation": 8,
+      "eval_feasibility": 7,
+      "eval_market_size": 7,
+      "eval_comment": "NISTの撤退という明確なトリガーがあり、セキュリティチームの痛みは即座に発生している。競合は存在するが、NIST空白後の新たな需要を狙えるタイミングが絶妙。LLMを活用したエンリッチメントの自動化は個人開発でも実現可能。",
+      "eval_total": 8.0,
+      "eval_pain_point": 9
+    },
     {
       "id": 60,
       "title": "ヘルスチェック番長",
@@ -39,7 +239,8 @@
       "eval_feasibility": 9,
       "eval_market_size": 4,
       "eval_comment": "実装難易度が低くソロ開発に最適だが、Healthchecks.io、UptimeRobot等の強力な既存競合が多数存在。日本語UI・低価格だけでは差別化が弱く、ニッチすぎて大きなスケールは見込みにくい。最初のSaaSの練習としては良い。",
-      "eval_total": 5.8
+      "eval_total": 5.8,
+      "eval_pain_point": null
     },
     {
       "id": 59,
@@ -78,7 +279,8 @@
       "eval_feasibility": 6,
       "eval_market_size": 6,
       "eval_comment": "位置情報監視の社会問題化と規制強化という明確なWhy Nowがあり、ニッチだが競合が少ない独自ポジション。技術的にはヘッドレスブラウザでのトラフィック解析が核だが、精度の担保とサードパーティSDKの網羅性が課題。",
-      "eval_total": 7.0
+      "eval_total": 7.0,
+      "eval_pain_point": null
     },
     {
       "id": 58,
@@ -117,7 +319,8 @@
       "eval_feasibility": 5,
       "eval_market_size": 7,
       "eval_comment": "AIコード生成によるPR増大という構造的変化は追い風だが、Stage自体が先行しており、開発ツール市場は競争が激しい。日本語ローカライズだけでは差別化が弱く、ソロ開発での実装・維持負荷も高い。",
-      "eval_total": 6.0
+      "eval_total": 6.0,
+      "eval_pain_point": null
     },
     {
       "id": 57,
@@ -156,7 +359,8 @@
       "eval_feasibility": 7,
       "eval_market_size": 7,
       "eval_comment": "AIエージェントコストの急増という明確なペインポイントがあり市場は拡大中。ただしクラウドプロバイダーや大手が類似機能を内蔵する可能性があるため、独自の最適化提案やマルチプロバイダー対応で差別化が必要。",
-      "eval_total": 7.0
+      "eval_total": 7.0,
+      "eval_pain_point": null
     },
     {
       "id": 56,
@@ -195,7 +399,8 @@
       "eval_feasibility": 7,
       "eval_market_size": 6,
       "eval_comment": "NISTの方針変更という明確なWhy Nowがあり、情報の空白を埋めるポジショニングが取れる。日本語対応で国内市場の差別化も可能だが、グローバルでは類似サービスとの競争に注意。",
-      "eval_total": 7.2
+      "eval_total": 7.2,
+      "eval_pain_point": null
     },
     {
       "id": 55,
@@ -234,7 +439,8 @@
       "eval_feasibility": 5,
       "eval_market_size": 8,
       "eval_comment": "オープンモデルの急速な性能向上とHNでの話題性が強力なWhy Now。ただしGPUインフラのコスト管理と多様なモデル対応は一人開発には重い。ローカル実行支援に絞ればフィジビリティは上がる。",
-      "eval_total": 7.0
+      "eval_total": 7.0,
+      "eval_pain_point": null
     },
     {
       "id": 54,
@@ -273,7 +479,8 @@
       "eval_feasibility": 6,
       "eval_market_size": 7,
       "eval_comment": "AIエージェントインフラ市場は急拡大中で、比較・選定ツールという切り口は実需がある。各プロバイダーの料金体系・API仕様の変更追従が運用負荷になるが、一人開発でもMVPは十分構築可能。",
-      "eval_total": 7.0
+      "eval_total": 7.0,
+      "eval_pain_point": null
     },
     {
       "id": 53,
@@ -312,7 +519,8 @@
       "eval_feasibility": 9,
       "eval_market_size": 6,
       "eval_comment": "新モデルの洪水状態が検索需要を生み出しており、SEO的にはブルーオーシャンの日本語キーワードが多い。参入障壁は低いため差別化には独自ベンチマークや試算ツール等のインタラクティブ要素が必須。",
-      "eval_total": 7.0
+      "eval_total": 7.0,
+      "eval_pain_point": null
     },
     {
       "id": 52,
@@ -351,7 +559,8 @@
       "eval_feasibility": 5,
       "eval_market_size": 7,
       "eval_comment": "YC W26で採択されたKampalaの存在が市場の有望さを証明。日本の業務ソフトAPI未整備問題は深刻で、ローカル特化の余地は大きい。ただしMITMプロキシの実装・メンテは一人開発では難易度高め。",
-      "eval_total": 6.8
+      "eval_total": 6.8,
+      "eval_pain_point": null
     },
     {
       "id": 51,
@@ -390,7 +599,8 @@
       "eval_feasibility": 8,
       "eval_market_size": 7,
       "eval_comment": "CodeBurnがHNで話題になったことが需要の強い証拠。OSSツールは存在するがSaaS化・マルチツール対応の統合プロダクトはまだブルーオーシャン。ただし各ツールのログ形式の差異への対応がキモ。",
-      "eval_total": 7.5
+      "eval_total": 7.5,
+      "eval_pain_point": null
     },
     {
       "id": 50,
@@ -429,7 +639,8 @@
       "eval_feasibility": 8,
       "eval_market_size": 7,
       "eval_comment": "独占判決直後のSEOトラフィック獲得チャンスは大きい。ただしチケット比較は競合も多く、差別化には手数料の透明性比較など独自データが必要。速度勝負の面が強く、早期に記事を量産できるかが鍵。",
-      "eval_total": 7.2
+      "eval_total": 7.2,
+      "eval_pain_point": null
     },
     {
       "id": 49,
@@ -468,7 +679,8 @@
       "eval_feasibility": 9,
       "eval_market_size": 4,
       "eval_comment": "ニッチだが個人開発者コミュニティでバイラルする可能性がある。開発は軽量で即座にMVP公開可能。ただし市場規模は小さく、有料化への転換率が課題。コンテンツマーケティングとの組み合わせが有効。",
-      "eval_total": 6.5
+      "eval_total": 6.5,
+      "eval_pain_point": null
     },
     {
       "id": 48,
@@ -507,7 +719,8 @@
       "eval_feasibility": 6,
       "eval_market_size": 6,
       "eval_comment": "Googleデータ提供問題は氷山の一角で、ベンダーのプライバシーリスク管理は今後B2Bの必須要件になる。公開情報のスクレイピング＋LLM解析でMVPは作れるが、データの正確性と網羅性が信頼獲得の鍵。",
-      "eval_total": 7.0
+      "eval_total": 7.0,
+      "eval_pain_point": null
     },
     {
       "id": 47,
@@ -546,7 +759,8 @@
       "eval_feasibility": 4,
       "eval_market_size": 7,
       "eval_comment": "Why Nowは極めて強い。ただしスケジューリングSaaSは機能の幅が広くソロ開発では差別化と品質維持が困難。最小限のAPI-firstアプローチに絞れば実現可能性は上がるが、競合参入も早いだろう。",
-      "eval_total": 6.5
+      "eval_total": 6.5,
+      "eval_pain_point": null
     },
     {
       "id": 46,
@@ -585,7 +799,8 @@
       "eval_feasibility": 6,
       "eval_market_size": 7,
       "eval_comment": "セキュリティの『やってる証明』コストは実感として大きく、HNでの議論もこの痛みを反映。日本のISMAP・Pマーク文化と相性が良く、LLMで証跡文書を半自動生成する仕組みはソロ開発者でも構築可能。",
-      "eval_total": 7.0
+      "eval_total": 7.0,
+      "eval_pain_point": null
     },
     {
       "id": 45,
@@ -624,7 +839,8 @@
       "eval_feasibility": 7,
       "eval_market_size": 7,
       "eval_comment": "SaaS管理・最適化領域はVendr、Zylo等の競合が存在するがエンタープライズ向け高額ツールが中心。中小企業向けの手頃な価格帯は空白地帯。ターピットリスクはやや高いが、AI活用の代替提案機能で差別化可能。",
-      "eval_total": 6.5
+      "eval_total": 6.5,
+      "eval_pain_point": null
     },
     {
       "id": 44,
@@ -663,7 +879,8 @@
       "eval_feasibility": 4,
       "eval_market_size": 6,
       "eval_comment": "AI生成コンテンツ＋学術不正の構造的問題という2つのトレンドが交差する独自ポジション。技術的には統計検証・画像解析・LLM検出の3領域をカバーする必要があり難易度は高い。MVPは統計不整合検出に絞るべき。",
-      "eval_total": 6.8
+      "eval_total": 6.8,
+      "eval_pain_point": null
     },
     {
       "id": 43,
@@ -702,7 +919,8 @@
       "eval_feasibility": 6,
       "eval_market_size": 7,
       "eval_comment": "判例という明確なトリガーイベントがあり、Why Nowが極めて強い。法務ドメイン知識が必要だが、テンプレート＋チェックリスト型MVPならソロでも構築可能。市場は急速に立ち上がるがウィンドウは限定的。",
-      "eval_total": 7.8
+      "eval_total": 7.8,
+      "eval_pain_point": null
     },
     {
       "id": 42,
@@ -741,7 +959,8 @@
       "eval_feasibility": 5,
       "eval_market_size": 8,
       "eval_comment": "オンデバイスLLMが実用化した直後という絶好のタイミング。ただしSDK統合やモデル最適化の技術的難易度が高く、ソロ開発では最初はテンプレート提供+SDKラッパーに絞る戦略が必要。",
-      "eval_total": 7.5
+      "eval_total": 7.5,
+      "eval_pain_point": null
     },
     {
       "id": 41,
@@ -780,7 +999,8 @@
       "eval_feasibility": 8,
       "eval_market_size": 7,
       "eval_comment": "HNで実際にソロ開発者が構築済みで市場検証されている。LLMによるファイリング解析が容易になった今がまさにタイミング。差別化はアラート精度とCRM連携の深さで勝負できる。",
-      "eval_total": 7.8
+      "eval_total": 7.8,
+      "eval_pain_point": null
     },
     {
       "id": 40,
@@ -819,7 +1039,8 @@
       "eval_feasibility": 8,
       "eval_market_size": 6,
       "eval_comment": "LLM×図表生成は技術的に実現可能でPLGに向くが、ChatGPT自体が図表生成できるため差別化が課題。専用UX（リアルタイム編集・バージョン管理・チーム共有）で勝負する必要がある。ターピットリスクはやや高めだが、ニッチに絞れば勝機あり。",
-      "eval_total": 6.5
+      "eval_total": 6.5,
+      "eval_pain_point": null
     },
     {
       "id": 39,
@@ -858,7 +1079,8 @@
       "eval_feasibility": 9,
       "eval_market_size": 7,
       "eval_comment": "規制の波に先回りするSEO戦略として非常にタイミングが良い。法案成立前にコンテンツを準備すれば検索需要の急増を独占できる可能性が高い。差別化はコンテンツの深さとアップデート頻度がカギ。ソロ開発者に最適な低リスク・高フィージビリティ案。",
-      "eval_total": 7.8
+      "eval_total": 7.8,
+      "eval_pain_point": null
     },
     {
       "id": 38,
@@ -897,7 +1119,8 @@
       "eval_feasibility": 4,
       "eval_market_size": 6,
       "eval_comment": "技術トレンドの変曲点を捉えた着眼点は優秀だが、実デバイスファームの構築や多機種対応はソロ開発者には負担が大きい。まずはシミュレーターベースのベンチマーク比較サイト（SEO型）から始め、需要を検証してからSaaS化する段階的アプローチが望ましい。",
-      "eval_total": 6.5
+      "eval_total": 6.5,
+      "eval_pain_point": null
     },
     {
       "id": 37,
@@ -936,7 +1159,8 @@
       "eval_feasibility": 5,
       "eval_market_size": 8,
       "eval_comment": "判例という明確なWhy Nowがあり、規制ドリブンの需要は強い。ただしエンタープライズ向けセキュリティ製品はソロ開発者にとって信頼構築と販売サイクルの長さが課題。ブラウザ拡張から始めてPLGで攻める戦略が現実的。",
-      "eval_total": 7.5
+      "eval_total": 7.5,
+      "eval_pain_point": null
     },
     {
       "id": 36,
@@ -975,7 +1199,8 @@
       "eval_feasibility": 7,
       "eval_market_size": 7,
       "eval_comment": "SEC filingデータ×LLM抽出×営業トリガーという組み合わせが新しく、HNでの反響がPMFの初期シグナル。ただしデータソースはSEC EDGARに依存するため、差別化はUI/UXとアクションへの変換力がカギ。",
-      "eval_total": 7.2
+      "eval_total": 7.2,
+      "eval_pain_point": null
     },
     {
       "id": 35,
@@ -1014,7 +1239,8 @@
       "eval_feasibility": 9,
       "eval_market_size": 4,
       "eval_comment": "HNで繰り返しバズるエバーグリーントピック。ソロ開発者にとって実現性は高いが、ニッチ市場のため大きなスケールは見込みにくい。LLM活用で記事量産できる点は効率的だが、差別化にはインタラクティブ要素が鍵。",
-      "eval_total": 6.0
+      "eval_total": 6.0,
+      "eval_pain_point": null
     },
     {
       "id": 34,
@@ -1053,7 +1279,8 @@
       "eval_feasibility": 5,
       "eval_market_size": 7,
       "eval_comment": "規制の波は強いWhy Now。ただしJPKI連携には認定取得等の手続きが必要で、ソロ開発者には行政対応の負荷が大きい。規制が具体化する前にポジションを取れれば先行優位は大きい。",
-      "eval_total": 6.5
+      "eval_total": 6.5,
+      "eval_pain_point": null
     },
     {
       "id": 33,
@@ -1092,7 +1319,8 @@
       "eval_feasibility": 7,
       "eval_market_size": 8,
       "eval_comment": "MCPエコシステムは爆発的成長期にあり、Why Nowが極めて強い。ログ収集・可視化はソロ開発者の得意領域。ただし標準化が進む過程で大手が参入するリスクがあるため、先行優位を築く速度が重要。",
-      "eval_total": 7.8
+      "eval_total": 7.8,
+      "eval_pain_point": null
     },
     {
       "id": 32,
@@ -1131,7 +1359,8 @@
       "eval_feasibility": 4,
       "eval_market_size": 7,
       "eval_comment": "オンデバイスLLMの実用化はまさに「昨日まで不可能だったこと」。ただしMDM連携やマルチOS対応の技術的難易度が高く、ソロ開発ではまずiOS単一プラットフォームに絞るなどスコープ管理が鍵。",
-      "eval_total": 7.0
+      "eval_total": 7.0,
+      "eval_pain_point": null
     },
     {
       "id": 31,
@@ -1170,7 +1399,8 @@
       "eval_feasibility": 8,
       "eval_market_size": 6,
       "eval_comment": "HNのShow HNで個人開発の実績が証明済み。日本語特化・日本市場向けという明確な差別化があり、LLM翻訳コストも低下しているため今が好機。ニッチだが単価が取れる市場。",
-      "eval_total": 7.2
+      "eval_total": 7.2,
+      "eval_pain_point": null
     },
     {
       "id": 30,
@@ -1209,7 +1439,8 @@
       "eval_feasibility": 7,
       "eval_market_size": 7,
       "eval_comment": "Snyk/Dependabotが脆弱性に特化する中、メンテナ健全性・フリーライダーリスクという独自切り口で差別化できる。公開データ（GitHub API、npm registry）で構築可能なためソロ開発者でも実現性が高い。EU規制対応ニーズが成長ドライバーになりうる。",
-      "eval_total": 7.2
+      "eval_total": 7.2,
+      "eval_pain_point": null
     },
     {
       "id": 29,
@@ -1248,7 +1479,8 @@
       "eval_feasibility": 9,
       "eval_market_size": 6,
       "eval_comment": "SEOコンテンツ＋軽量アプリの組み合わせで一人でも実現可能。Why Nowはやや弱いが、日本の受験市場は安定的に大きく、睡眠×学習の切り口は競合が少ない。差別化にはエビデンスの深さとUXが重要。",
-      "eval_total": 6.5
+      "eval_total": 6.5,
+      "eval_pain_point": null
     },
     {
       "id": 28,
@@ -1287,7 +1519,8 @@
       "eval_feasibility": 8,
       "eval_market_size": 6,
       "eval_comment": "技術的に一人で十分構築可能で、GitHubのSecret Scanningと差別化するには「AI APIキー特化」「ローテーション自動化」が鍵。市場はニッチだが、開発者ツールとしてPLGで成長可能。",
-      "eval_total": 6.5
+      "eval_total": 6.5,
+      "eval_pain_point": null
     },
     {
       "id": 27,
@@ -1326,7 +1559,8 @@
       "eval_feasibility": 4,
       "eval_market_size": 7,
       "eval_comment": "エッジLLMの爆発的普及前夜であり、Why Nowが非常に強い。ただしSDK開発やデバイス多様性への対応が一人では重く、MVPのスコープを狭く絞る必要あり（例：iOS専用から開始）。",
-      "eval_total": 7.0
+      "eval_total": 7.0,
+      "eval_pain_point": null
     },
     {
       "id": 26,
@@ -1365,7 +1599,8 @@
       "eval_feasibility": 7,
       "eval_market_size": 7,
       "eval_comment": "プロンプト管理ツールは増えつつあるが、Chrome拡張＋チーム共有＋分析の組み合わせで差別化可能。ただしタープット寄りのリスクがあり、LLMプロバイダー自身が類似機能を出す可能性に注意。",
-      "eval_total": 7.0
+      "eval_total": 7.0,
+      "eval_pain_point": null
     },
     {
       "id": 25,
@@ -1404,7 +1639,8 @@
       "eval_feasibility": 6,
       "eval_market_size": 6,
       "eval_comment": "軽量CRMは典型的なtarpit ideaで、Attio、Folk、Close、Streak等の競合が既に多数存在する超激戦領域。AI自動更新の切り口は良いが、CRMのネットワーク効果やスイッチングコストの低さから、ソロファウンダー向けのニッチだけでは成長が難しい。",
-      "eval_total": 5.2
+      "eval_total": 5.2,
+      "eval_pain_point": null
     },
     {
       "id": 24,
@@ -1443,7 +1679,8 @@
       "eval_feasibility": 8,
       "eval_market_size": 4,
       "eval_comment": "AI活用でコンテンツ量産可能な点とロングテールSEO戦略は現実的だが、ニッチすぎてトラフィック規模に限界がありマネタイズが弱い。著作権やアーカイブ利用規約の確認も必要で、広告収益だけでは収益性が低い可能性が高い。",
-      "eval_total": 6.2
+      "eval_total": 6.2,
+      "eval_pain_point": null
     },
     {
       "id": 23,
@@ -1482,7 +1719,8 @@
       "eval_feasibility": 6,
       "eval_market_size": 5,
       "eval_comment": "xz事件後のサプライチェーンセキュリティ意識の高まりは追い風で、既存ツールが脆弱性特化な中でメンテナンス持続性・フリーライダーリスクという独自切り口は差別化要素として強い。ただしスコアリングの信頼性確立と市場がニッチな点が課題。",
-      "eval_total": 6.5
+      "eval_total": 6.5,
+      "eval_pain_point": null
     },
     {
       "id": 22,
@@ -1521,7 +1759,8 @@
       "eval_feasibility": 4,
       "eval_market_size": 5,
       "eval_comment": "AIエージェント時代のAPIキー管理という課題は確かに増大しているが、GitGuardian・Vault・既存シークレット管理ツールとの競合が激しく、セキュリティ製品はソロ開発者では信頼性の担保が困難。エンタープライズ向け販売にはセールス体制が必要。",
-      "eval_total": 5.5
+      "eval_total": 5.5,
+      "eval_pain_point": null
     },
     {
       "id": 21,
@@ -1560,7 +1799,8 @@
       "eval_feasibility": 7,
       "eval_market_size": 6,
       "eval_comment": "プロンプト管理ツールは既にTypingMind、PromptLayer、Langfuse等が多数存在するレッドオーシャン領域。非エンジニア向けの切り口は良いが、LLMプラットフォーム自体がプロンプト管理機能を内蔵し始めており、独立ツールとしての持続性に懸念がある。",
-      "eval_total": 6.0
+      "eval_total": 6.0,
+      "eval_pain_point": null
     },
     {
       "id": 20,
@@ -1599,7 +1839,8 @@
       "eval_feasibility": 3,
       "eval_market_size": 5,
       "eval_comment": "Pi-holeの発展版としてコンセプトは魅力的だが、ネットワークパケット解析・IoTプロトコル対応・デバイス識別のエンジニアリング負荷が非常に高い。ハードウェア依存もありソロ開発での品質維持は困難。",
-      "eval_total": 5.5
+      "eval_total": 5.5,
+      "eval_pain_point": null
     },
     {
       "id": 19,
@@ -1638,7 +1879,8 @@
       "eval_feasibility": 9,
       "eval_market_size": 3,
       "eval_comment": "ソロ開発の実現性は非常に高いが、市場が極めてニッチ。アフィリエイト単価も低く、ロングテールSEOでトラフィックは取れても収益化が難しい趣味プロジェクトに近い。",
-      "eval_total": 5.8
+      "eval_total": 5.8,
+      "eval_pain_point": null
     },
     {
       "id": 18,
@@ -1677,7 +1919,8 @@
       "eval_feasibility": 6,
       "eval_market_size": 7,
       "eval_comment": "ID11とほぼ同じ領域であり、差別化が不明瞭。ノーコードでChrome拡張やSlackボットに変換する部分の技術的完成度が鍵だが、各プラットフォームの審査・保守コストがソロ開発者には厳しい。",
-      "eval_total": 6.2
+      "eval_total": 6.2,
+      "eval_pain_point": null
     },
     {
       "id": 17,
@@ -1716,7 +1959,8 @@
       "eval_feasibility": 4,
       "eval_market_size": 5,
       "eval_comment": "セルフホスト管理パネルはCasaOS、Coolify、Umbrel等の既存OSSが充実しておりレッドオーシャン。VPS管理・暗号化バックアップの信頼性担保はソロ開発では重い責任を伴う。",
-      "eval_total": 5.2
+      "eval_total": 5.2,
+      "eval_pain_point": null
     },
     {
       "id": 16,
@@ -1755,7 +1999,8 @@
       "eval_feasibility": 5,
       "eval_market_size": 5,
       "eval_comment": "パスキーの普及タイミングとシニア市場の成長は合致しているが、認証SDKはAuth0/Clerk等の大手と競合する領域。シニア特化のUXリサーチに深く入り込めれば差別化は可能だが、販売先がB2B2Cで営業難易度が高い。",
-      "eval_total": 6.0
+      "eval_total": 6.0,
+      "eval_pain_point": null
     },
     {
       "id": 15,
@@ -1794,7 +2039,8 @@
       "eval_feasibility": 8,
       "eval_market_size": 5,
       "eval_comment": "プライバシーオプトアウト手順のDB化は社会的意義が高いが、SEOメディアとしてはDeleteMe等の類似サービスが存在する。月額$3のSaaSは単価が低すぎてスケールしにくい。",
-      "eval_total": 6.0
+      "eval_total": 6.0,
+      "eval_pain_point": null
     },
     {
       "id": 14,
@@ -1833,7 +2079,8 @@
       "eval_feasibility": 4,
       "eval_market_size": 7,
       "eval_comment": "金融データのコンテキスト圧縮というミドルウェアレイヤーは独自性が高く、LLMエージェント時代のインフラとして筋が良い。しかし金融データソースの調達コスト・精度保証が重く、ソロ開発での実現難易度は非常に高い。",
-      "eval_total": 6.8
+      "eval_total": 6.8,
+      "eval_pain_point": null
     },
     {
       "id": 13,
@@ -1872,7 +2119,8 @@
       "eval_feasibility": 8,
       "eval_market_size": 4,
       "eval_comment": "SEOコンテンツ＋簡易SaaSの組み合わせはソロ開発向きだが、バックアップポリシー変更の監視は地味でニッチすぎる。アフィリエイト単価も低く、収益規模に限界がありそう。",
-      "eval_total": 5.8
+      "eval_total": 5.8,
+      "eval_pain_point": null
     },
     {
       "id": 12,
@@ -1911,7 +2159,8 @@
       "eval_feasibility": 6,
       "eval_market_size": 6,
       "eval_comment": "Fiverrの事件が具体的なペインを証明しており、タイミングが良い。ただし各SaaSのURLパターン調査・維持コストが高く、ソロ開発では対応サービスの網羅性確保が課題になる。",
-      "eval_total": 6.8
+      "eval_total": 6.8,
+      "eval_pain_point": null
     },
     {
       "id": 11,
@@ -1950,7 +2199,8 @@
       "eval_feasibility": 7,
       "eval_market_size": 7,
       "eval_comment": "プロンプト管理SaaSは既にPromptLayer、Langfuse等の競合が多いタルピットアイデアに近い。ただしChrome拡張でのワンクリック実行という切り口は実用的で、SMB向けに絞れば勝機はある。",
-      "eval_total": 6.5
+      "eval_total": 6.5,
+      "eval_pain_point": null
     },
     {
       "id": 10,
@@ -1989,7 +2239,8 @@
       "eval_feasibility": 4,
       "eval_market_size": 6,
       "eval_comment": "ID3のMCPスキーマ最適化ツールと大きく重複しており、金融特化にすることで差別化を図っているが、フィンテック向けは規制・データライセンスの壁が高く、ソロ開発者には負担が大きい。",
-      "eval_total": 6.0
+      "eval_total": 6.0,
+      "eval_pain_point": null
     },
     {
       "id": 9,
@@ -2028,7 +2279,8 @@
       "eval_feasibility": 8,
       "eval_market_size": 4,
       "eval_comment": "ニッチなSEOメディアとしてはソロ開発者に適しているが、規制情報の収集・翻訳・更新コストが継続的にかかる。VPN企業へのスポンサー収入が主な現実的収益源になりそう。",
-      "eval_total": 6.2
+      "eval_total": 6.2,
+      "eval_pain_point": null
     },
     {
       "id": 8,
@@ -2067,7 +2319,8 @@
       "eval_feasibility": 7,
       "eval_market_size": 4,
       "eval_comment": "ニッチだが空白市場を狙う面白いアプローチ。ただし5NFまでの正規化診断を必要とするユーザーは非常に限定的で、教育ツール寄りになりがち。継続課金を正当化する頻度の問題がある。",
-      "eval_total": 5.8
+      "eval_total": 5.8,
+      "eval_pain_point": null
     },
     {
       "id": 7,
@@ -2106,7 +2359,8 @@
       "eval_feasibility": 6,
       "eval_market_size": 6,
       "eval_comment": "プロンプトの商品化・ツール化は需要があるが、PromptBase等の既存マーケットプレイスや各LLMプロバイダの公式機能拡張と競合する。「ツール化」の付加価値をどこまで出せるかが鍵。",
-      "eval_total": 6.2
+      "eval_total": 6.2,
+      "eval_pain_point": null
     },
     {
       "id": 6,
@@ -2145,7 +2399,8 @@
       "eval_feasibility": 5,
       "eval_market_size": 5,
       "eval_comment": "Backblazeの問題は一時的なトリガーとしては弱く、クラウド間バックアップは既存サービス（rclone、MultCloud等）との差別化が難しい。ストレージ転送コストの問題もある。",
-      "eval_total": 5.2
+      "eval_total": 5.2,
+      "eval_pain_point": null
     },
     {
       "id": 5,
@@ -2184,7 +2439,8 @@
       "eval_feasibility": 7,
       "eval_market_size": 5,
       "eval_comment": "OSSメンテナーの課題は実在するが、支払い意欲が低いターゲット層が中心。GitHub Copilot自体がIssue管理機能を拡張する可能性もあり、プラットフォームリスクが高い。",
-      "eval_total": 5.8
+      "eval_total": 5.8,
+      "eval_pain_point": null
     },
     {
       "id": 4,
@@ -2223,7 +2479,8 @@
       "eval_feasibility": 9,
       "eval_market_size": 4,
       "eval_comment": "ソロ開発に最適な低難度・ニッチSEOツール。ただしバックボタンハイジャック検出は一過性の需要で終わる可能性があり、長期的な収益の柱にするには機能拡張が必要。",
-      "eval_total": 6.8
+      "eval_total": 6.8,
+      "eval_pain_point": null
     },
     {
       "id": 3,
@@ -2262,7 +2519,8 @@
       "eval_feasibility": 5,
       "eval_market_size": 5,
       "eval_comment": "MCPエコシステムの成熟度次第でマーケットが大きく変動するリスクがある。技術的には面白いが、MCPプロトコル自体がまだ流動的で、標準側の変更で不要になる可能性も。",
-      "eval_total": 6.2
+      "eval_total": 6.2,
+      "eval_pain_point": null
     },
     {
       "id": 2,
@@ -2301,7 +2559,8 @@
       "eval_feasibility": 6,
       "eval_market_size": 6,
       "eval_comment": "AIエージェントのシークレット管理は6ヶ月前には存在しなかった新しい課題で、まだ明確な競合がいない。セキュリティ系SaaSは信頼構築が重要だがニッチを先に押さえる価値がある。",
-      "eval_total": 7.2
+      "eval_total": 7.2,
+      "eval_pain_point": null
     },
     {
       "id": 1,
@@ -2340,7 +2599,8 @@
       "eval_feasibility": 5,
       "eval_market_size": 8,
       "eval_comment": "LLM監視は明確な需要があるが、Datadog、LangSmith、Arize等の既存プレイヤーが多く差別化が難しい。Keletとの直接競合になるためタイミングは良いがレッドオーシャン化リスクが高い。",
-      "eval_total": 6.8
+      "eval_total": 6.8,
+      "eval_pain_point": null
     }
   ]
 }
