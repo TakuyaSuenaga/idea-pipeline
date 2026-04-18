@@ -41,6 +41,24 @@ def test_parse_conclusion_realistic_ceo_output_adopted():
     assert _parse_conclusion(text) == "採用"
 
 
+def test_parse_conclusion_handles_markdown_bold_adoption():
+    # Regression: id=11 で `結論: **採用**` が見送り扱いされたバグ
+    assert _parse_conclusion("各意見を総合し、\n結論: **採用**\n次のアクション:") == "採用"
+
+
+def test_parse_conclusion_handles_fullwidth_colon():
+    assert _parse_conclusion("結論：採用\n次のアクション:") == "採用"
+
+
+def test_parse_conclusion_handles_markdown_bold_rejection():
+    # `**採用**` が本文に含まれても、結論マーカー直下は見送りなので見送り
+    assert _parse_conclusion("**採用**の可能性を検討したが、\n結論: **見送り**") == "見送り"
+
+
+def test_parse_conclusion_handles_bold_label_with_adoption():
+    assert _parse_conclusion("**結論**: 採用\n次のアクション:") == "採用"
+
+
 def _make_high_score_idea(conn) -> int:
     return insert_idea(
         conn,

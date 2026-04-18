@@ -6,6 +6,7 @@ decides whether to adopt or reject the idea. Adopted ideas become GitHub Issues.
 """
 
 import os
+import re
 from datetime import datetime, timezone
 
 from pipeline.db import DB_PATH, init_db
@@ -21,6 +22,10 @@ from meeting.github_issue import create_github_issue
 
 MIN_SCORE = 7.0
 MAX_IDEAS_PER_RUN = 3
+
+# 「結論: 採用」を Markdown 太字・全角コロン・空白ゆらぎに耐えて検出する。
+# '採用できません' のような substring に誤マッチしないよう、先頭の '結論[:：]' を必須にする。
+_ADOPT_RE = re.compile(r"結論\**\s*[:：]\s*\**\s*採用")
 
 
 def _build_issue_body(idea: dict, worker_messages: list[dict], conclusion_text: str) -> str:
@@ -60,10 +65,11 @@ def _parse_conclusion(text: str) -> str:
     """Extract '採用' or '見送り' from the CEO's conclusion text.
 
     The CEO persona outputs '結論: 採用' or '結論: 見送り' as a structured marker.
-    Matching on the full phrase avoids false positives from substrings like
-    '採用できません' that appear in rejection reasoning.
+    LLM は強調のため Markdown 太字 (**採用**) や全角コロンを付与することがあるため
+    正規表現で吸収する。'採用できません' 等の substring を拾わないよう、
+    '結論[:：]' プレフィックス直後の「採用」のみを見る。
     """
-    if "結論: 採用" in text:
+    if _ADOPT_RE.search(text):
         return "採用"
     return "見送り"
 
