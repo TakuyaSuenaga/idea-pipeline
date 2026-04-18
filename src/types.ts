@@ -12,6 +12,7 @@ export interface Idea {
   eval_differentiation: number | null
   eval_feasibility: number | null
   eval_market_size: number | null
+  eval_pain_point: number | null
   eval_comment: string | null
   eval_total: number | null
 }

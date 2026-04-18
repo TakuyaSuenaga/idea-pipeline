@@ -35,6 +35,7 @@ CREATE TABLE IF NOT EXISTS startup_ideas (
     eval_differentiation INTEGER,
     eval_feasibility     INTEGER,
     eval_market_size     INTEGER,
+    eval_pain_point      INTEGER,
     eval_comment         TEXT,
     eval_total           REAL
 );
@@ -45,9 +46,11 @@ _EVAL_COLUMNS = [
     ("eval_differentiation", "INTEGER"),
     ("eval_feasibility", "INTEGER"),
     ("eval_market_size", "INTEGER"),
+    ("eval_pain_point", "INTEGER"),
     ("eval_comment", "TEXT"),
     ("eval_total", "REAL"),
 ]
+_ALLOWED_COL_TYPES = {"INTEGER", "TEXT", "REAL"}
 
 _CREATE_MEETING_SESSIONS = """
 CREATE TABLE IF NOT EXISTS meeting_sessions (
@@ -72,9 +75,16 @@ CREATE TABLE IF NOT EXISTS meeting_messages (
 
 
 def _migrate_db(conn: sqlite3.Connection) -> None:
-    """Forward-only migrations: add eval columns to startup_ideas if missing."""
+    """Forward-only migrations: add eval columns to startup_ideas if missing.
+
+    DDL values come from _EVAL_COLUMNS (module-local literals), not user input,
+    but the allow-list check below is a defense-in-depth guard against future
+    edits that might accidentally introduce dynamic values.
+    """
     existing = {row[1] for row in conn.execute("PRAGMA table_info(startup_ideas)")}
     for col_name, col_type in _EVAL_COLUMNS:
+        if not col_name.replace("_", "").isalnum() or col_type not in _ALLOWED_COL_TYPES:
+            raise ValueError(f"Unsafe column definition: {col_name!r} {col_type!r}")
         if col_name not in existing:
             conn.execute(f"ALTER TABLE startup_ideas ADD COLUMN {col_name} {col_type}")
     conn.commit()
@@ -160,18 +170,21 @@ def insert_idea(
     eval_differentiation: int | None = None,
     eval_feasibility: int | None = None,
     eval_market_size: int | None = None,
+    eval_pain_point: int | None = None,
     eval_comment: str | None = None,
 ) -> int:
     """Insert a startup idea and return its row id."""
-    eval_total = _compute_eval_total([eval_why_now, eval_differentiation, eval_feasibility, eval_market_size])
+    eval_total = _compute_eval_total(
+        [eval_why_now, eval_differentiation, eval_feasibility, eval_market_size, eval_pain_point]
+    )
     cursor = conn.execute(
         """
         INSERT INTO startup_ideas
             (title, description, target_market, why_now, revenue_model,
              difficulty, category, research_ids,
              eval_why_now, eval_differentiation, eval_feasibility, eval_market_size,
-             eval_comment, eval_total)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+             eval_pain_point, eval_comment, eval_total)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             title,
@@ -186,6 +199,7 @@ def insert_idea(
             eval_differentiation,
             eval_feasibility,
             eval_market_size,
+            eval_pain_point,
             eval_comment,
             eval_total,
         ),

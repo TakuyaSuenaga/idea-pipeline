@@ -38,6 +38,7 @@ Each idea must have exactly these keys:
   - differentiation_score: integer 1-10 (how unique / off the beaten path)
   - feasibility_score: integer 1-10 (how feasible for a solo developer)
   - market_size_score: integer 1-10 (market size potential)
+  - pain_point_score: integer 1-10 (how painful/urgent the problem is — would the target user pay money to solve it today?)
   - comment: string (brief evaluation summary in Japanese, 1-2 sentences)
 
 **IMPORTANT: Write all text values (title, description, target_market, why_now, revenue_model, evaluation.comment) in Japanese. Only the enum values (difficulty, category) and integer scores remain in English/numeric.**
@@ -106,6 +107,7 @@ def _validate_idea(idea: dict) -> dict | None:
     idea["eval_differentiation"] = _clamp_score(eval_data.get("differentiation_score"))
     idea["eval_feasibility"] = _clamp_score(eval_data.get("feasibility_score"))
     idea["eval_market_size"] = _clamp_score(eval_data.get("market_size_score"))
+    idea["eval_pain_point"] = _clamp_score(eval_data.get("pain_point_score"))
     comment = eval_data.get("comment")
     idea["eval_comment"] = comment if isinstance(comment, str) else None
 

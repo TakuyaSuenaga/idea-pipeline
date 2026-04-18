@@ -69,6 +69,7 @@ def main() -> None:
             eval_differentiation=idea.get("eval_differentiation"),
             eval_feasibility=idea.get("eval_feasibility"),
             eval_market_size=idea.get("eval_market_size"),
+            eval_pain_point=idea.get("eval_pain_point"),
             eval_comment=idea.get("eval_comment"),
         )
 

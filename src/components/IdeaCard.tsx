@@ -138,7 +138,8 @@ export default function IdeaCard({ idea, index }: Props) {
           )}
 
           {(idea.eval_why_now != null || idea.eval_differentiation != null ||
-            idea.eval_feasibility != null || idea.eval_market_size != null) && (
+            idea.eval_feasibility != null || idea.eval_market_size != null ||
+            idea.eval_pain_point != null) && (
             <div>
               <p
                 className="text-[10px] font-bold uppercase tracking-widest mb-2"
@@ -152,6 +153,7 @@ export default function IdeaCard({ idea, index }: Props) {
                   { label: '差別化', value: idea.eval_differentiation },
                   { label: '実現可能性', value: idea.eval_feasibility },
                   { label: '市場規模', value: idea.eval_market_size },
+                  { label: 'Pain Point', value: idea.eval_pain_point },
                 ] as { label: string; value: number | null }[]).map(({ label, value }) =>
                   value != null ? (
                     <div key={label} className="flex items-center gap-2">

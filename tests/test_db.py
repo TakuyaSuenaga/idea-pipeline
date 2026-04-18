@@ -52,6 +52,7 @@ def _idea_kwargs(**overrides):
         eval_differentiation=7,
         eval_feasibility=9,
         eval_market_size=6,
+        eval_pain_point=5,
         eval_comment="市場規模は中程度だが、実現可能性が高い。",
     )
     base.update(overrides)
@@ -98,7 +99,7 @@ def test_init_db_migrates_eval_columns(tmp_path):
 
     conn = init_db(db_path)
     cols = {row[1] for row in conn.execute("PRAGMA table_info(startup_ideas)")}
-    for expected in ("eval_why_now", "eval_differentiation", "eval_feasibility", "eval_market_size", "eval_comment", "eval_total"):
+    for expected in ("eval_why_now", "eval_differentiation", "eval_feasibility", "eval_market_size", "eval_pain_point", "eval_comment", "eval_total"):
         assert expected in cols, f"Missing column: {expected}"
     conn.close()
 
@@ -261,16 +262,17 @@ def test_insert_idea_saves_eval_fields(tmp_path):
     assert idea["eval_differentiation"] == 7
     assert idea["eval_feasibility"] == 9
     assert idea["eval_market_size"] == 6
+    assert idea["eval_pain_point"] == 5
     assert idea["eval_comment"] == "市場規模は中程度だが、実現可能性が高い。"
     conn.close()
 
 
 def test_insert_idea_computes_eval_total(tmp_path):
-    """eval_total should be the average of the 4 score fields (rounded to 1 decimal)."""
+    """eval_total should be the average of the 5 score fields (rounded to 1 decimal)."""
     conn = _make_conn(tmp_path)
-    insert_idea(conn, **_idea_kwargs())  # scores: 8, 7, 9, 6 → avg 7.5
+    insert_idea(conn, **_idea_kwargs())  # scores: 8, 7, 9, 6, 5 → avg 7.0
     ideas = fetch_all_ideas(conn)
-    assert ideas[0]["eval_total"] == 7.5
+    assert ideas[0]["eval_total"] == 7.0
     conn.close()
 
 
@@ -280,6 +282,7 @@ def test_insert_idea_eval_total_none_when_no_scores(tmp_path):
     insert_idea(conn, **_idea_kwargs(
         eval_why_now=None, eval_differentiation=None,
         eval_feasibility=None, eval_market_size=None,
+        eval_pain_point=None,
         eval_comment=None,
     ))
     ideas = fetch_all_ideas(conn)

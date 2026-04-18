@@ -36,6 +36,7 @@ def _sample_ideas_json() -> str:
                 "differentiation_score": 7,
                 "feasibility_score": 9,
                 "market_size_score": 6,
+                "pain_point_score": 7,
                 "comment": "実現可能性が高く、市場機会も存在する。",
             },
         }
@@ -121,6 +122,7 @@ def test_validate_idea_flattens_evaluation_scores():
             "differentiation_score": 7,
             "feasibility_score": 9,
             "market_size_score": 6,
+            "pain_point_score": 7,
             "comment": "良いアイデア。",
         },
     }
@@ -129,6 +131,7 @@ def test_validate_idea_flattens_evaluation_scores():
     assert result["eval_differentiation"] == 7
     assert result["eval_feasibility"] == 9
     assert result["eval_market_size"] == 6
+    assert result["eval_pain_point"] == 7
     assert result["eval_comment"] == "良いアイデア。"
     assert "evaluation" not in result
 
@@ -141,6 +144,7 @@ def test_validate_idea_clamps_eval_scores():
             "differentiation_score": 0,  # should clamp to 1
             "feasibility_score": "bad",  # should become None
             "market_size_score": 5,
+            "pain_point_score": 12,  # should clamp to 10
             "comment": None,
         },
     }
@@ -149,6 +153,7 @@ def test_validate_idea_clamps_eval_scores():
     assert result["eval_differentiation"] == 1
     assert result["eval_feasibility"] is None
     assert result["eval_market_size"] == 5
+    assert result["eval_pain_point"] == 10
     assert result["eval_comment"] is None
 
 
@@ -159,6 +164,7 @@ def test_validate_idea_handles_missing_evaluation():
     assert result["eval_differentiation"] is None
     assert result["eval_feasibility"] is None
     assert result["eval_market_size"] is None
+    assert result["eval_pain_point"] is None
     assert result["eval_comment"] is None
 
 

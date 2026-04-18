@@ -3,7 +3,14 @@
 import pytest
 import requests
 
-from pipeline.research import fetch_hackernews, fetch_reddit, fetch_rss, run_research
+from pipeline.research import (
+    fetch_github_trending,
+    fetch_hackernews,
+    fetch_producthunt,
+    fetch_reddit,
+    fetch_rss,
+    run_research,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -191,6 +198,114 @@ def test_fetch_rss_result_has_required_keys(mocker):
 
 
 # ---------------------------------------------------------------------------
+# fetch_producthunt
+# ---------------------------------------------------------------------------
+
+def test_fetch_producthunt_returns_normalized_items(mocker):
+    entries = [
+        _MockFeedEntry("ProductX — AI todo app", "https://www.producthunt.com/posts/productx", "An AI-powered todo app."),
+        _MockFeedEntry("ProductY — SEO toolkit", "https://www.producthunt.com/posts/producty", ""),
+    ]
+    mocker.patch("pipeline.research.feedparser.parse", return_value=_MockFeed(entries))
+    results = fetch_producthunt(limit=2)
+    assert len(results) == 2
+    assert results[0]["source"] == "producthunt"
+    assert results[0]["title"] == "ProductX — AI todo app"
+    assert results[0]["url"] == "https://www.producthunt.com/posts/productx"
+
+
+def test_fetch_producthunt_respects_limit(mocker):
+    entries = [_MockFeedEntry(f"P{i}", f"https://ph.com/{i}") for i in range(10)]
+    mocker.patch("pipeline.research.feedparser.parse", return_value=_MockFeed(entries))
+    assert len(fetch_producthunt(limit=3)) == 3
+
+
+def test_fetch_producthunt_handles_exception(mocker):
+    mocker.patch("pipeline.research.feedparser.parse", side_effect=Exception("network error"))
+    assert fetch_producthunt() == []
+
+
+def test_fetch_producthunt_handles_bozo_feed_with_no_entries(mocker):
+    mocker.patch(
+        "pipeline.research.feedparser.parse",
+        return_value=_MockFeed(entries=[], bozo=True),
+    )
+    assert fetch_producthunt() == []
+
+
+def test_fetch_producthunt_result_has_required_keys(mocker):
+    entries = [_MockFeedEntry("Title", "https://ph.com/1", "summary")]
+    mocker.patch("pipeline.research.feedparser.parse", return_value=_MockFeed(entries))
+    results = fetch_producthunt(limit=1)
+    for key in ("source", "title", "url", "content", "score", "category"):
+        assert key in results[0]
+
+
+# ---------------------------------------------------------------------------
+# fetch_github_trending
+# ---------------------------------------------------------------------------
+
+def _gh_payload(repos):
+    return {"items": repos}
+
+
+def test_fetch_github_trending_returns_normalized_items(mocker):
+    mock_get = mocker.patch("pipeline.research.requests.get")
+    mock_get.return_value = _MockResponse(
+        _gh_payload([
+            {
+                "full_name": "foo/saas-boilerplate",
+                "description": "A SaaS boilerplate.",
+                "html_url": "https://github.com/foo/saas-boilerplate",
+                "stargazers_count": 500,
+            },
+        ])
+    )
+    results = fetch_github_trending(limit=1)
+    assert len(results) == 1
+    assert results[0]["source"] == "github_trending"
+    assert results[0]["title"] == "foo/saas-boilerplate"
+    assert results[0]["score"] == 500
+    assert results[0]["url"] == "https://github.com/foo/saas-boilerplate"
+
+
+def test_fetch_github_trending_handles_403_rate_limit(mocker):
+    mock_get = mocker.patch("pipeline.research.requests.get")
+    mock_get.return_value = _MockResponse({}, status_code=403)
+    assert fetch_github_trending() == []
+
+
+def test_fetch_github_trending_handles_connection_error(mocker):
+    mocker.patch("pipeline.research.requests.get", side_effect=requests.ConnectionError)
+    assert fetch_github_trending() == []
+
+
+def test_fetch_github_trending_skips_items_without_name(mocker):
+    mock_get = mocker.patch("pipeline.research.requests.get")
+    mock_get.return_value = _MockResponse(
+        _gh_payload([
+            {"description": "No full_name", "html_url": "https://github.com/x", "stargazers_count": 10},
+            {"full_name": "ok/repo", "description": "OK", "html_url": "https://github.com/ok/repo", "stargazers_count": 20},
+        ])
+    )
+    results = fetch_github_trending(limit=2)
+    assert len(results) == 1
+    assert results[0]["title"] == "ok/repo"
+
+
+def test_fetch_github_trending_result_has_required_keys(mocker):
+    mock_get = mocker.patch("pipeline.research.requests.get")
+    mock_get.return_value = _MockResponse(
+        _gh_payload([
+            {"full_name": "a/b", "description": "", "html_url": "https://github.com/a/b", "stargazers_count": 1},
+        ])
+    )
+    results = fetch_github_trending(limit=1)
+    for key in ("source", "title", "url", "content", "score", "category"):
+        assert key in results[0]
+
+
+# ---------------------------------------------------------------------------
 # run_research
 # ---------------------------------------------------------------------------
 
@@ -201,10 +316,14 @@ def test_run_research_aggregates_all_sources(mocker):
         side_effect=lambda sub, **kw: [{"source": f"reddit_{sub}", "title": sub}],
     )
     mocker.patch("pipeline.research.fetch_rss", return_value=[{"source": "techcrunch_rss", "title": "TC"}])
+    mocker.patch("pipeline.research.fetch_producthunt", return_value=[{"source": "producthunt", "title": "PH"}])
+    mocker.patch("pipeline.research.fetch_github_trending", return_value=[{"source": "github_trending", "title": "GH"}])
     results = run_research()
     sources = {r["source"] for r in results}
     assert "hackernews" in sources
     assert "techcrunch_rss" in sources
+    assert "producthunt" in sources
+    assert "github_trending" in sources
     assert any(s.startswith("reddit_") for s in sources)
 
 
@@ -212,4 +331,6 @@ def test_run_research_returns_empty_list_when_all_fail(mocker):
     mocker.patch("pipeline.research.fetch_hackernews", return_value=[])
     mocker.patch("pipeline.research.fetch_reddit", return_value=[])
     mocker.patch("pipeline.research.fetch_rss", return_value=[])
+    mocker.patch("pipeline.research.fetch_producthunt", return_value=[])
+    mocker.patch("pipeline.research.fetch_github_trending", return_value=[])
     assert run_research() == []

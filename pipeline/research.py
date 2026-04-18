@@ -1,4 +1,9 @@
-"""Market research fetchers: Hacker News, Reddit, RSS feeds."""
+"""Market research fetchers: Hacker News, Reddit, RSS feeds, Product Hunt, GitHub Trending."""
+
+import os
+import re
+from datetime import datetime, timedelta, timezone
+from urllib.parse import quote, urlparse
 
 import feedparser
 import requests
@@ -6,9 +11,16 @@ import requests
 _HN_BASE = "https://hacker-news.firebaseio.com/v0"
 _REDDIT_HEADERS = {"User-Agent": "idea-pipeline/1.0 (automated market research)"}
 _TECHCRUNCH_RSS = "https://techcrunch.com/feed/"
+_PRODUCTHUNT_RSS = "https://www.producthunt.com/feed"
+_GITHUB_SEARCH_URL = "https://api.github.com/search/repositories"
+_GITHUB_HEADERS = {
+    "Accept": "application/vnd.github+json",
+    "User-Agent": "idea-pipeline/1.0 (automated market research)",
+}
 
 _SAAS_KEYWORDS = {"saas", "software", "api", "subscription", "b2b", "startup", "tool"}
 _SEO_KEYWORDS = {"seo", "search", "ranking", "google", "keyword", "backlink", "traffic"}
+_SUBREDDIT_RE = re.compile(r"^[A-Za-z0-9_]{1,50}$")
 
 
 def _assign_category(text: str) -> str:
@@ -20,13 +32,36 @@ def _assign_category(text: str) -> str:
     return "general"
 
 
+def _safe_url(url: str | None) -> str | None:
+    """Return the URL if scheme is http(s); else None. Blocks javascript:/data: etc."""
+    if not url or not isinstance(url, str):
+        return None
+    try:
+        parsed = urlparse(url)
+    except ValueError:
+        return None
+    if parsed.scheme in ("http", "https") and parsed.netloc:
+        return url
+    return None
+
+
+def _github_headers() -> dict:
+    """GitHub request headers with optional bearer token for higher rate limit."""
+    headers = dict(_GITHUB_HEADERS)
+    token = os.environ.get("GITHUB_TOKEN", "").strip()
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    return headers
+
+
 def fetch_hackernews(limit: int = 30) -> list[dict]:
     """Fetch top stories from Hacker News Firebase API."""
     try:
         resp = requests.get(f"{_HN_BASE}/topstories.json", timeout=10)
         resp.raise_for_status()
         story_ids: list[int] = resp.json()[:limit]
-    except (requests.RequestException, ValueError):
+    except (requests.RequestException, ValueError) as exc:
+        print(f"[research] Hacker News fetch failed: {exc}")
         return []
 
     items = []
@@ -43,7 +78,7 @@ def fetch_hackernews(limit: int = 30) -> list[dict]:
                 {
                     "source": "hackernews",
                     "title": title,
-                    "url": url or None,
+                    "url": _safe_url(url) if url else None,
                     "content": item.get("text", "")[:500] or None,
                     "score": item.get("score"),
                     "category": _assign_category(title),
@@ -57,14 +92,25 @@ def fetch_hackernews(limit: int = 30) -> list[dict]:
 
 def fetch_reddit(subreddit: str, limit: int = 25) -> list[dict]:
     """Fetch top posts from a subreddit using the public JSON API."""
-    url = f"https://www.reddit.com/r/{subreddit}/top.json?limit={limit}&t=week"
+    if not _SUBREDDIT_RE.match(subreddit or ""):
+        print(f"[research] Reddit fetch rejected: invalid subreddit '{subreddit}'")
+        return []
+    safe_sub = quote(subreddit, safe="")
+    url = f"https://www.reddit.com/r/{safe_sub}/top.json"
     try:
-        resp = requests.get(url, headers=_REDDIT_HEADERS, timeout=15)
+        resp = requests.get(
+            url,
+            headers=_REDDIT_HEADERS,
+            params={"limit": limit, "t": "week"},
+            timeout=15,
+        )
         if resp.status_code == 429:
+            print(f"[research] Reddit rate limited (429) for r/{subreddit}")
             return []
         resp.raise_for_status()
         posts = resp.json()["data"]["children"]
-    except (requests.RequestException, ValueError, KeyError):
+    except (requests.RequestException, ValueError, KeyError) as exc:
+        print(f"[research] Reddit fetch failed for r/{subreddit}: {exc}")
         return []
 
     items = []
@@ -77,7 +123,7 @@ def fetch_reddit(subreddit: str, limit: int = 25) -> list[dict]:
             {
                 "source": f"reddit_{subreddit}",
                 "title": title,
-                "url": data.get("url"),
+                "url": _safe_url(data.get("url")),
                 "content": (data.get("selftext", "") or "")[:500] or None,
                 "score": data.get("score"),
                 "category": _assign_category(title),
@@ -101,14 +147,85 @@ def fetch_rss(url: str, limit: int = 20) -> list[dict]:
                 {
                     "source": "techcrunch_rss",
                     "title": title,
-                    "url": getattr(entry, "link", None),
+                    "url": _safe_url(getattr(entry, "link", None)),
                     "content": (getattr(entry, "summary", "") or "")[:500] or None,
                     "score": None,
                     "category": _assign_category(title),
                 }
             )
         return items
-    except Exception:
+    except Exception as exc:
+        print(f"[research] RSS fetch failed for {url}: {exc}")
+        return []
+
+
+def fetch_producthunt(limit: int = 20) -> list[dict]:
+    """Fetch recent launches from Product Hunt RSS."""
+    try:
+        feed = feedparser.parse(_PRODUCTHUNT_RSS)
+        if feed.bozo and not feed.entries:
+            return []
+        items = []
+        for entry in feed.entries[:limit]:
+            title = getattr(entry, "title", "") or ""
+            if not title:
+                continue
+            items.append(
+                {
+                    "source": "producthunt",
+                    "title": title,
+                    "url": _safe_url(getattr(entry, "link", None)),
+                    "content": (getattr(entry, "summary", "") or "")[:500] or None,
+                    "score": None,
+                    "category": _assign_category(title),
+                }
+            )
+        return items
+    except Exception as exc:
+        print(f"[research] Product Hunt fetch failed: {exc}")
+        return []
+
+
+def fetch_github_trending(limit: int = 25) -> list[dict]:
+    """Fetch recently created high-star repos from GitHub (trending proxy)."""
+    since = (datetime.now(timezone.utc) - timedelta(days=7)).strftime("%Y-%m-%d")
+    params = {
+        "q": f"created:>{since} stars:>50",
+        "sort": "stars",
+        "order": "desc",
+        "per_page": limit,
+    }
+    try:
+        resp = requests.get(
+            _GITHUB_SEARCH_URL,
+            headers=_github_headers(),
+            params=params,
+            timeout=15,
+        )
+        if resp.status_code in (403, 429):
+            print(f"[research] GitHub API rate limited ({resp.status_code})")
+            return []
+        resp.raise_for_status()
+        repos = resp.json().get("items", [])
+        items = []
+        for repo in repos:
+            full_name = repo.get("full_name")
+            if not full_name:
+                continue
+            description = repo.get("description") or ""
+            items.append(
+                {
+                    "source": "github_trending",
+                    "title": full_name,
+                    "url": _safe_url(repo.get("html_url")),
+                    "content": description[:500] or None,
+                    "score": repo.get("stargazers_count"),
+                    "category": _assign_category(f"{full_name} {description}"),
+                }
+            )
+        return items
+    except (requests.RequestException, ValueError, AttributeError) as exc:
+        print(f"[research] GitHub trending fetch failed: {exc}")
         return []
 
 
@@ -119,4 +236,6 @@ def run_research() -> list[dict]:
     for sub in ("SaaS", "SEO", "startups"):
         results.extend(fetch_reddit(sub))
     results.extend(fetch_rss(_TECHCRUNCH_RSS))
+    results.extend(fetch_producthunt())
+    results.extend(fetch_github_trending())
     return results
