@@ -245,3 +245,23 @@ def test_generate_ideas_returns_empty_when_no_research(mocker):
     mock_client_cls = mocker.patch("pipeline.ideation.anthropic.Anthropic")
     assert generate_ideas([]) == []
     mock_client_cls.return_value.messages.create.assert_not_called()
+
+
+def test_generate_ideas_includes_existing_titles_in_prompt(mocker):
+    mock_client_cls = mocker.patch("pipeline.ideation.anthropic.Anthropic")
+    mock_client = mock_client_cls.return_value
+    mock_client.messages.create.return_value = _make_mock_message(_sample_ideas_json(), mocker)
+    existing = ["Similar SEO Tool", "古いSaaSアイデア"]
+    generate_ideas(_sample_research(), existing_titles=existing)
+    call_kwargs = mock_client.messages.create.call_args.kwargs
+    user_content = call_kwargs["messages"][-1]["content"]
+    assert "Similar SEO Tool" in user_content
+    assert "古いSaaSアイデア" in user_content
+
+
+def test_generate_ideas_works_without_existing_titles(mocker):
+    mock_client_cls = mocker.patch("pipeline.ideation.anthropic.Anthropic")
+    mock_client = mock_client_cls.return_value
+    mock_client.messages.create.return_value = _make_mock_message(_sample_ideas_json(), mocker)
+    results = generate_ideas(_sample_research(), existing_titles=None)
+    assert len(results) == 1

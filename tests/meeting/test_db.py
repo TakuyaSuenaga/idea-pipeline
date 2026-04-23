@@ -7,6 +7,7 @@ from meeting.db import (
     create_meeting_session,
     add_meeting_message,
     update_meeting_conclusion,
+    update_personal_scores,
 )
 
 
@@ -149,3 +150,29 @@ def test_update_meeting_conclusion_rejected(tmp_path):
     row = conn.execute("SELECT * FROM meeting_sessions WHERE id = ?", (session_id,)).fetchone()
     assert row["conclusion"] == "見送り"
     assert row["github_issue_url"] is None
+
+
+# ---------------------------------------------------------------------------
+# update_personal_scores
+# ---------------------------------------------------------------------------
+
+def test_update_personal_scores_stores_values(tmp_path):
+    conn = init_db(tmp_path / "test.db")
+    idea_id = _make_idea(conn)
+    session_id = create_meeting_session(conn, idea_id)
+    update_personal_scores(conn, session_id, japan_demand=2, solo_customer=3, revenue_6mo=1, background_fit=3)
+    row = conn.execute("SELECT * FROM meeting_sessions WHERE id = ?", (session_id,)).fetchone()
+    assert row["personal_japan_demand"] == 2
+    assert row["personal_solo_customer"] == 3
+    assert row["personal_revenue_6mo"] == 1
+    assert row["personal_background_fit"] == 3
+
+
+def test_update_personal_scores_accepts_none_values(tmp_path):
+    conn = init_db(tmp_path / "test.db")
+    idea_id = _make_idea(conn)
+    session_id = create_meeting_session(conn, idea_id)
+    update_personal_scores(conn, session_id, japan_demand=None, solo_customer=None, revenue_6mo=None, background_fit=None)
+    row = conn.execute("SELECT * FROM meeting_sessions WHERE id = ?", (session_id,)).fetchone()
+    assert row["personal_japan_demand"] is None
+    assert row["personal_solo_customer"] is None

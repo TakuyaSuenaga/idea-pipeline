@@ -50,6 +50,12 @@ _EVAL_COLUMNS = [
     ("eval_comment", "TEXT"),
     ("eval_total", "REAL"),
 ]
+_PERSONAL_SCORE_COLUMNS = [
+    ("personal_japan_demand", "INTEGER"),
+    ("personal_solo_customer", "INTEGER"),
+    ("personal_revenue_6mo", "INTEGER"),
+    ("personal_background_fit", "INTEGER"),
+]
 _ALLOWED_COL_TYPES = {"INTEGER", "TEXT", "REAL"}
 
 _CREATE_MEETING_SESSIONS = """
@@ -75,18 +81,21 @@ CREATE TABLE IF NOT EXISTS meeting_messages (
 
 
 def _migrate_db(conn: sqlite3.Connection) -> None:
-    """Forward-only migrations: add eval columns to startup_ideas if missing.
+    """Forward-only migrations: add columns to tables if missing.
 
-    DDL values come from _EVAL_COLUMNS (module-local literals), not user input,
-    but the allow-list check below is a defense-in-depth guard against future
-    edits that might accidentally introduce dynamic values.
+    DDL values come from module-local literals, not user input, but the
+    allow-list check is a defense-in-depth guard against future edits.
     """
-    existing = {row[1] for row in conn.execute("PRAGMA table_info(startup_ideas)")}
-    for col_name, col_type in _EVAL_COLUMNS:
-        if not col_name.replace("_", "").isalnum() or col_type not in _ALLOWED_COL_TYPES:
-            raise ValueError(f"Unsafe column definition: {col_name!r} {col_type!r}")
-        if col_name not in existing:
-            conn.execute(f"ALTER TABLE startup_ideas ADD COLUMN {col_name} {col_type}")
+    def _add_columns(table: str, columns: list[tuple[str, str]]) -> None:
+        existing = {row[1] for row in conn.execute(f"PRAGMA table_info({table})")}
+        for col_name, col_type in columns:
+            if not col_name.replace("_", "").isalnum() or col_type not in _ALLOWED_COL_TYPES:
+                raise ValueError(f"Unsafe column definition: {col_name!r} {col_type!r}")
+            if col_name not in existing:
+                conn.execute(f"ALTER TABLE {table} ADD COLUMN {col_name} {col_type}")
+
+    _add_columns("startup_ideas", _EVAL_COLUMNS)
+    _add_columns("meeting_sessions", _PERSONAL_SCORE_COLUMNS)
     conn.commit()
 
 
@@ -206,6 +215,14 @@ def insert_idea(
     )
     conn.commit()
     return cursor.lastrowid
+
+
+def fetch_existing_idea_titles(conn: sqlite3.Connection) -> list[str]:
+    """Return all past idea titles for deduplication, newest first."""
+    cursor = conn.execute(
+        "SELECT title FROM startup_ideas ORDER BY generated_at DESC, id DESC"
+    )
+    return [row["title"] for row in cursor.fetchall()]
 
 
 def fetch_all_ideas(conn: sqlite3.Connection, limit: int = 100) -> list[dict]:

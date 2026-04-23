@@ -114,8 +114,15 @@ def _validate_idea(idea: dict) -> dict | None:
     return idea
 
 
-def generate_ideas(research_items: list[dict]) -> list[dict]:
-    """Call Claude to generate startup ideas based on recent research."""
+def generate_ideas(
+    research_items: list[dict],
+    existing_titles: list[str] | None = None,
+) -> list[dict]:
+    """Call Claude to generate startup ideas based on recent research.
+
+    existing_titles: 過去に生成済みのアイデアタイトル一覧。渡すと重複を回避するよう
+    プロンプトに含める。
+    """
     if not research_items:
         return []
 
@@ -128,11 +135,19 @@ def generate_ideas(research_items: list[dict]) -> list[dict]:
         for item in research_items[:20]
     )
 
-    user_message = (
-        "Based on this market research from the last 7 days, generate 3-5 startup ideas:\n\n"
-        f"{research_summary}\n\n"
-        "Remember: Go off the beaten path. What is newly possible? Apply the Why Now test."
-    )
+    parts = [
+        "Based on this market research from the last 7 days, generate 3-5 startup ideas:",
+        research_summary,
+    ]
+    if existing_titles:
+        listed = "\n".join(f"- {t}" for t in existing_titles[:50])
+        parts.append(
+            "## 既存アイデア（重複禁止）\n"
+            "以下はすでに生成済みのアイデアです。同じまたは非常に似たアイデアは出力しないでください:\n"
+            f"{listed}"
+        )
+    parts.append("Remember: Go off the beaten path. What is newly possible? Apply the Why Now test.")
+    user_message = "\n\n".join(parts)
 
     client = anthropic.Anthropic()
     try:

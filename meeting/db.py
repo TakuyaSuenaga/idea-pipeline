@@ -73,3 +73,26 @@ def update_meeting_conclusion(
         (conclusion, github_issue_url, session_id),
     )
     conn.commit()
+
+
+def update_personal_scores(
+    conn: sqlite3.Connection,
+    session_id: int,
+    japan_demand: int | None,
+    solo_customer: int | None,
+    revenue_6mo: int | None,
+    background_fit: int | None,
+) -> None:
+    """Record personal context scores (0-3 each) for a meeting session."""
+    conn.execute(
+        """
+        UPDATE meeting_sessions
+        SET personal_japan_demand = ?,
+            personal_solo_customer = ?,
+            personal_revenue_6mo = ?,
+            personal_background_fit = ?
+        WHERE id = ?
+        """,
+        (japan_demand, solo_customer, revenue_6mo, background_fit, session_id),
+    )
+    conn.commit()

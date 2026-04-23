@@ -6,6 +6,7 @@ from pipeline.db import (
     DB_PATH,
     cleanup_old_research,
     fetch_all_ideas,
+    fetch_existing_idea_titles,
     fetch_recent_research,
     init_db,
     insert_idea,
@@ -46,7 +47,8 @@ def main() -> None:
         sys.exit(0)
 
     print("Generating startup ideas...")
-    ideas = generate_ideas(recent_research)
+    existing_titles = fetch_existing_idea_titles(conn)
+    ideas = generate_ideas(recent_research, existing_titles=existing_titles)
     print(f"  Generated {len(ideas)} ideas")
 
     if not ideas:

@@ -27,7 +27,11 @@ def export_meetings(conn: sqlite3.Connection) -> None:
             si.title AS idea_title,
             ms.held_at,
             ms.conclusion,
-            ms.github_issue_url
+            ms.github_issue_url,
+            ms.personal_japan_demand,
+            ms.personal_solo_customer,
+            ms.personal_revenue_6mo,
+            ms.personal_background_fit
         FROM meeting_sessions ms
         JOIN startup_ideas si ON si.id = ms.idea_id
         ORDER BY ms.id DESC

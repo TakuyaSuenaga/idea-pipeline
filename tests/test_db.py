@@ -10,6 +10,7 @@ import pytest
 from pipeline.db import (
     cleanup_old_research,
     fetch_all_ideas,
+    fetch_existing_idea_titles,
     fetch_recent_research,
     init_db,
     insert_idea,
@@ -287,4 +288,33 @@ def test_insert_idea_eval_total_none_when_no_scores(tmp_path):
     ))
     ideas = fetch_all_ideas(conn)
     assert ideas[0]["eval_total"] is None
+    conn.close()
+
+
+# ---------------------------------------------------------------------------
+# fetch_existing_idea_titles
+# ---------------------------------------------------------------------------
+
+def test_fetch_existing_idea_titles_returns_empty_when_no_ideas(tmp_path):
+    conn = _make_conn(tmp_path)
+    assert fetch_existing_idea_titles(conn) == []
+    conn.close()
+
+
+def test_fetch_existing_idea_titles_returns_titles_only(tmp_path):
+    conn = _make_conn(tmp_path)
+    insert_idea(conn, **_idea_kwargs(title="アイデアA"))
+    titles = fetch_existing_idea_titles(conn)
+    assert titles == ["アイデアA"]
+    assert all(isinstance(t, str) for t in titles)
+    conn.close()
+
+
+def test_fetch_existing_idea_titles_returns_newest_first(tmp_path):
+    conn = _make_conn(tmp_path)
+    insert_idea(conn, **_idea_kwargs(title="古いアイデア"))
+    insert_idea(conn, **_idea_kwargs(title="新しいアイデア"))
+    titles = fetch_existing_idea_titles(conn)
+    assert titles[0] == "新しいアイデア"
+    assert titles[1] == "古いアイデア"
     conn.close()

@@ -2,7 +2,7 @@
 
 import json
 from pipeline.db import init_db, insert_idea
-from meeting.db import create_meeting_session, add_meeting_message, update_meeting_conclusion
+from meeting.db import create_meeting_session, add_meeting_message, update_meeting_conclusion, update_personal_scores
 from meeting.export import export_meetings
 
 
@@ -100,3 +100,21 @@ def test_export_meetings_empty_when_no_sessions(tmp_path, monkeypatch):
     data = json.loads((tmp_path / "meetings.json").read_text(encoding="utf-8"))
     assert data["count"] == 0
     assert data["sessions"] == []
+
+
+def test_export_meetings_includes_personal_scores(tmp_path, monkeypatch):
+    monkeypatch.setattr("meeting.export.MEETINGS_JSON_PATH", tmp_path / "meetings.json")
+    conn = init_db(tmp_path / "test.db")
+    idea_id = insert_idea(conn, title="テストアイデア", description="説明",
+                          eval_why_now=9, eval_differentiation=9,
+                          eval_feasibility=8, eval_market_size=8)
+    session_id = create_meeting_session(conn, idea_id)
+    update_meeting_conclusion(conn, session_id, "採用")
+    update_personal_scores(conn, session_id, japan_demand=3, solo_customer=2, revenue_6mo=2, background_fit=3)
+    export_meetings(conn)
+    data = json.loads((tmp_path / "meetings.json").read_text(encoding="utf-8"))
+    session = data["sessions"][0]
+    assert session["personal_japan_demand"] == 3
+    assert session["personal_solo_customer"] == 2
+    assert session["personal_revenue_6mo"] == 2
+    assert session["personal_background_fit"] == 3

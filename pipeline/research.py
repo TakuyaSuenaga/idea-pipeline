@@ -1,4 +1,5 @@
-"""Market research fetchers: Hacker News, Reddit, RSS feeds, Product Hunt, GitHub Trending."""
+"""Market research fetchers: Hacker News, Reddit, RSS feeds, Product Hunt, GitHub Trending,
+PRTIMES, Qiita Trending, Google Trends JP."""
 
 import os
 import re
@@ -7,6 +8,13 @@ from urllib.parse import quote, urlparse
 
 import feedparser
 import requests
+
+try:
+    from pytrends.request import TrendReq as _TrendReq
+    _PYTRENDS_AVAILABLE = True
+except ImportError:
+    _TrendReq = None
+    _PYTRENDS_AVAILABLE = False
 
 _HN_BASE = "https://hacker-news.firebaseio.com/v0"
 _REDDIT_HEADERS = {"User-Agent": "idea-pipeline/1.0 (automated market research)"}
@@ -17,6 +25,8 @@ _GITHUB_HEADERS = {
     "Accept": "application/vnd.github+json",
     "User-Agent": "idea-pipeline/1.0 (automated market research)",
 }
+_PRTIMES_RSS = "https://prtimes.jp/rss2.0/"
+_QIITA_TRENDING_RSS = "https://qiita.com/popular-items/feed.atom"
 
 _SAAS_KEYWORDS = {"saas", "software", "api", "subscription", "b2b", "startup", "tool"}
 _SEO_KEYWORDS = {"seo", "search", "ranking", "google", "keyword", "backlink", "traffic"}
@@ -132,8 +142,8 @@ def fetch_reddit(subreddit: str, limit: int = 25) -> list[dict]:
     return items
 
 
-def fetch_rss(url: str, limit: int = 20) -> list[dict]:
-    """Fetch entries from an RSS feed."""
+def fetch_rss(url: str, source_name: str = "rss", limit: int = 20) -> list[dict]:
+    """Fetch entries from an RSS/Atom feed."""
     try:
         feed = feedparser.parse(url)
         if feed.bozo and not feed.entries:
@@ -145,7 +155,7 @@ def fetch_rss(url: str, limit: int = 20) -> list[dict]:
                 continue
             items.append(
                 {
-                    "source": "techcrunch_rss",
+                    "source": source_name,
                     "title": title,
                     "url": _safe_url(getattr(entry, "link", None)),
                     "content": (getattr(entry, "summary", "") or "")[:500] or None,
@@ -229,13 +239,61 @@ def fetch_github_trending(limit: int = 25) -> list[dict]:
         return []
 
 
+def fetch_prtimes(limit: int = 10) -> list[dict]:
+    """PRTIMESの最新プレスリリースをRSSから取得する（日本の市場動向シグナル）。"""
+    return fetch_rss(_PRTIMES_RSS, source_name="prtimes", limit=limit)
+
+
+def fetch_qiita_trending(limit: int = 10) -> list[dict]:
+    """Qiitaの人気記事をRSSから取得する（日本のエンジニア技術トレンド）。"""
+    return fetch_rss(_QIITA_TRENDING_RSS, source_name="qiita_trending", limit=limit)
+
+
+def fetch_google_trends_jp(limit: int = 10) -> list[dict]:
+    """Google Trendsの日本トレンド検索キーワードを取得する。
+
+    pytrends が未インストールの場合や Google 側のレート制限時は空リストを返す。
+    """
+    if not _PYTRENDS_AVAILABLE:
+        print("[research] Google Trends: pytrends not installed, skipping")
+        return []
+    try:
+        req = _TrendReq(hl="ja", tz=540, timeout=(10, 25))
+        trending_df = req.trending_searches(pn="japan")
+        items = []
+        for keyword in list(trending_df[0].head(limit)):
+            keyword_str = str(keyword)
+            items.append(
+                {
+                    "source": "google_trends_jp",
+                    "title": keyword_str,
+                    "url": None,
+                    "content": f"日本のGoogleトレンド検索: {keyword_str}",
+                    "score": None,
+                    "category": _assign_category(keyword_str),
+                }
+            )
+        return items
+    except Exception as exc:
+        print(f"[research] Google Trends JP fetch failed: {exc}")
+        return []
+
+
 def run_research() -> list[dict]:
-    """Aggregate research from all sources and return combined list."""
+    """Aggregate research from all sources and return combined list.
+
+    英語圏ソースは各5件に絞り、日本ソース（PRTIMES・Qiita・Google Trends）を追加する。
+    """
     results: list[dict] = []
-    results.extend(fetch_hackernews())
+    # English sources — top 5 each to avoid overwhelming JP signal
+    results.extend(fetch_hackernews(limit=5))
     for sub in ("SaaS", "SEO", "startups"):
-        results.extend(fetch_reddit(sub))
-    results.extend(fetch_rss(_TECHCRUNCH_RSS))
-    results.extend(fetch_producthunt())
-    results.extend(fetch_github_trending())
+        results.extend(fetch_reddit(sub, limit=5))
+    results.extend(fetch_rss(_TECHCRUNCH_RSS, source_name="techcrunch_rss", limit=5))
+    results.extend(fetch_producthunt(limit=5))
+    results.extend(fetch_github_trending(limit=5))
+    # Japanese sources
+    results.extend(fetch_prtimes())
+    results.extend(fetch_qiita_trending())
+    results.extend(fetch_google_trends_jp())
     return results

@@ -5,8 +5,11 @@ import requests
 
 from pipeline.research import (
     fetch_github_trending,
+    fetch_google_trends_jp,
     fetch_hackernews,
     fetch_producthunt,
+    fetch_prtimes,
+    fetch_qiita_trending,
     fetch_reddit,
     fetch_rss,
     run_research,
@@ -318,6 +321,9 @@ def test_run_research_aggregates_all_sources(mocker):
     mocker.patch("pipeline.research.fetch_rss", return_value=[{"source": "techcrunch_rss", "title": "TC"}])
     mocker.patch("pipeline.research.fetch_producthunt", return_value=[{"source": "producthunt", "title": "PH"}])
     mocker.patch("pipeline.research.fetch_github_trending", return_value=[{"source": "github_trending", "title": "GH"}])
+    mocker.patch("pipeline.research.fetch_prtimes", return_value=[{"source": "prtimes", "title": "PT"}])
+    mocker.patch("pipeline.research.fetch_qiita_trending", return_value=[{"source": "qiita_trending", "title": "QT"}])
+    mocker.patch("pipeline.research.fetch_google_trends_jp", return_value=[{"source": "google_trends_jp", "title": "GT"}])
     results = run_research()
     sources = {r["source"] for r in results}
     assert "hackernews" in sources
@@ -325,6 +331,9 @@ def test_run_research_aggregates_all_sources(mocker):
     assert "producthunt" in sources
     assert "github_trending" in sources
     assert any(s.startswith("reddit_") for s in sources)
+    assert "prtimes" in sources
+    assert "qiita_trending" in sources
+    assert "google_trends_jp" in sources
 
 
 def test_run_research_returns_empty_list_when_all_fail(mocker):
@@ -333,4 +342,106 @@ def test_run_research_returns_empty_list_when_all_fail(mocker):
     mocker.patch("pipeline.research.fetch_rss", return_value=[])
     mocker.patch("pipeline.research.fetch_producthunt", return_value=[])
     mocker.patch("pipeline.research.fetch_github_trending", return_value=[])
+    mocker.patch("pipeline.research.fetch_prtimes", return_value=[])
+    mocker.patch("pipeline.research.fetch_qiita_trending", return_value=[])
+    mocker.patch("pipeline.research.fetch_google_trends_jp", return_value=[])
     assert run_research() == []
+
+
+# ---------------------------------------------------------------------------
+# fetch_prtimes
+# ---------------------------------------------------------------------------
+
+def test_fetch_prtimes_returns_prtimes_source(mocker):
+    entries = [_MockFeedEntry("スタートアップ新製品発表", "https://prtimes.jp/main/1", "概要テキスト")]
+    mocker.patch("pipeline.research.feedparser.parse", return_value=_MockFeed(entries))
+    results = fetch_prtimes(limit=1)
+    assert len(results) == 1
+    assert results[0]["source"] == "prtimes"
+    assert results[0]["title"] == "スタートアップ新製品発表"
+
+
+def test_fetch_prtimes_handles_exception(mocker):
+    mocker.patch("pipeline.research.feedparser.parse", side_effect=Exception("network error"))
+    assert fetch_prtimes() == []
+
+
+def test_fetch_prtimes_respects_limit(mocker):
+    entries = [_MockFeedEntry(f"PR{i}", f"https://prtimes.jp/{i}") for i in range(10)]
+    mocker.patch("pipeline.research.feedparser.parse", return_value=_MockFeed(entries))
+    assert len(fetch_prtimes(limit=3)) == 3
+
+
+# ---------------------------------------------------------------------------
+# fetch_qiita_trending
+# ---------------------------------------------------------------------------
+
+def test_fetch_qiita_trending_returns_qiita_source(mocker):
+    entries = [_MockFeedEntry("Qiitaトレンド記事", "https://qiita.com/items/1", "内容")]
+    mocker.patch("pipeline.research.feedparser.parse", return_value=_MockFeed(entries))
+    results = fetch_qiita_trending(limit=1)
+    assert len(results) == 1
+    assert results[0]["source"] == "qiita_trending"
+    assert results[0]["title"] == "Qiitaトレンド記事"
+
+
+def test_fetch_qiita_trending_handles_exception(mocker):
+    mocker.patch("pipeline.research.feedparser.parse", side_effect=Exception("network error"))
+    assert fetch_qiita_trending() == []
+
+
+def test_fetch_qiita_trending_respects_limit(mocker):
+    entries = [_MockFeedEntry(f"Article{i}", f"https://qiita.com/{i}") for i in range(10)]
+    mocker.patch("pipeline.research.feedparser.parse", return_value=_MockFeed(entries))
+    assert len(fetch_qiita_trending(limit=4)) == 4
+
+
+# ---------------------------------------------------------------------------
+# fetch_google_trends_jp
+# ---------------------------------------------------------------------------
+
+def test_fetch_google_trends_jp_returns_items(mocker):
+    mock_df = mocker.MagicMock()
+    mock_df.__getitem__.return_value.head.return_value = ["AI副業", "SaaS導入"]
+    mock_req = mocker.MagicMock()
+    mock_req.trending_searches.return_value = mock_df
+    mocker.patch("pipeline.research._PYTRENDS_AVAILABLE", True)
+    mocker.patch("pipeline.research._TrendReq", return_value=mock_req)
+    results = fetch_google_trends_jp(limit=2)
+    assert len(results) == 2
+    assert results[0]["source"] == "google_trends_jp"
+    assert results[0]["title"] == "AI副業"
+
+
+def test_fetch_google_trends_jp_result_has_required_keys(mocker):
+    mock_df = mocker.MagicMock()
+    mock_df.__getitem__.return_value.head.return_value = ["フリーランス"]
+    mock_req = mocker.MagicMock()
+    mock_req.trending_searches.return_value = mock_df
+    mocker.patch("pipeline.research._PYTRENDS_AVAILABLE", True)
+    mocker.patch("pipeline.research._TrendReq", return_value=mock_req)
+    results = fetch_google_trends_jp(limit=1)
+    for key in ("source", "title", "url", "content", "score", "category"):
+        assert key in results[0]
+
+
+def test_fetch_google_trends_jp_handles_exception(mocker):
+    mocker.patch("pipeline.research._PYTRENDS_AVAILABLE", True)
+    mocker.patch("pipeline.research._TrendReq", side_effect=Exception("rate limited"))
+    assert fetch_google_trends_jp() == []
+
+
+def test_fetch_google_trends_jp_returns_empty_when_unavailable(mocker):
+    mocker.patch("pipeline.research._PYTRENDS_AVAILABLE", False)
+    assert fetch_google_trends_jp() == []
+
+
+# ---------------------------------------------------------------------------
+# fetch_rss source_name parameter
+# ---------------------------------------------------------------------------
+
+def test_fetch_rss_uses_custom_source_name(mocker):
+    entries = [_MockFeedEntry("Article", "https://example.com/1", "content")]
+    mocker.patch("pipeline.research.feedparser.parse", return_value=_MockFeed(entries))
+    results = fetch_rss("https://example.com/feed/", source_name="my_source", limit=1)
+    assert results[0]["source"] == "my_source"
