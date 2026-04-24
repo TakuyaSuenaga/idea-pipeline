@@ -1,7 +1,307 @@
 {
-  "exported_at": "2026-04-23T21:53:46.828490+00:00",
-  "count": 620,
+  "exported_at": "2026-04-24T21:53:54.977183+00:00",
+  "count": 601,
   "items": [
+    {
+      "id": 1164,
+      "source": "hackernews",
+      "title": "Google Plans to Invest Up to $40B in Anthropic",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic",
+      "content": null,
+      "score": 51,
+      "category": "seo",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1165,
+      "source": "hackernews",
+      "title": "My audio interface has SSH enabled by default",
+      "url": "https://hhh.hn/rodecaster-duo-fw/",
+      "content": null,
+      "score": 79,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1166,
+      "source": "hackernews",
+      "title": "Iliad fragment found in Roman-era mummy",
+      "url": "https://www.thehistoryblog.com/archives/75877",
+      "content": null,
+      "score": 31,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1167,
+      "source": "hackernews",
+      "title": "Sabotaging projects by overthinking, scope creep, and structural diffing",
+      "url": "https://kevinlynagh.com/newsletter/2026_04_overthinking/",
+      "content": null,
+      "score": 322,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1168,
+      "source": "hackernews",
+      "title": "The Classic American Diner",
+      "url": "https://blogs.loc.gov/picturethis/2026/04/the-classic-american-diner/",
+      "content": null,
+      "score": 90,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1169,
+      "source": "techcrunch_rss",
+      "title": "Cohere acquires, merges with German-based startup to create a ‘transatlantic AI powerhouse’",
+      "url": "https://techcrunch.com/2026/04/24/cohere-acquires-merges-with-german-based-startup-to-create-a-transatlantic-ai-powerhouse/",
+      "content": "Cohere, the Canada-based AI company that makes AI tools for businesses in regulated industries, announced Friday it would merge with Aleph Alpha, a German company that also builds AI systems for businesses and governments.",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1170,
+      "source": "techcrunch_rss",
+      "title": "Two college kids raise a $5.1 million pre-seed to build an AI social network in iMessage",
+      "url": "https://techcrunch.com/2026/04/24/two-college-kids-raise-a-5-1-million-pre-seed-to-build-an-ai-social-network-in-imessage/",
+      "content": "Series, a social networking app that's grown popular on college campuses, announced a $5.1 million pre-seed round from some big names in tech.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1171,
+      "source": "techcrunch_rss",
+      "title": "Meta’s loss is Thinking Machines’ gain",
+      "url": "https://techcrunch.com/2026/04/24/metas-loss-is-thinking-machines-gain/",
+      "content": "Meta has been poaching talent from Thinking Machines Lab. But it's a two-way street.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1172,
+      "source": "techcrunch_rss",
+      "title": "X-energy stock pops 27% on first day of trading following upsized IPO",
+      "url": "https://techcrunch.com/2026/04/24/x-energy-stock-pops-27-on-first-day-of-trading-following-upsized-ipo/",
+      "content": "Investors flocked to nuclear power startup X-energy in its first day of public trading on the Nasdaq.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1173,
+      "source": "techcrunch_rss",
+      "title": "ComfyUI hits $500M valuation as creators seek more control over AI-generated media",
+      "url": "https://techcrunch.com/2026/04/24/comfyui-hits-500m-valuation-as-creators-seek-more-control-over-ai-generated-media/",
+      "content": "ComfyUI, whose tools give creators more control over AI image, video, and audio generation, just raised $30 million.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1174,
+      "source": "producthunt",
+      "title": "Beezi AI",
+      "url": "https://www.producthunt.com/products/beezi-ai",
+      "content": "<p>\n            Make AI development structured, secure, and cost-efficient.\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/beezi-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1111779?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1175,
+      "source": "producthunt",
+      "title": "Spira AI",
+      "url": "https://www.producthunt.com/products/spira-ai",
+      "content": "<p>\n            AI Influencer that always on trend, create & grow your brand\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/spira-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1130495?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1176,
+      "source": "producthunt",
+      "title": "Codex 3.0 by OpenAI",
+      "url": "https://www.producthunt.com/products/codex-3-0-by-openai",
+      "content": "<p>\n            Codex can now build, test & debug on autopilot\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/codex-3-0-by-openai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1130897?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1177,
+      "source": "producthunt",
+      "title": "NotchNest AI",
+      "url": "https://www.producthunt.com/products/notchnest-quick-access-hub",
+      "content": "<p>\n            AI powered by Apple Intelligence now in your Notch\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/notchnest-quick-access-hub?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1130673?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1178,
+      "source": "producthunt",
+      "title": "LifeOS",
+      "url": "https://www.producthunt.com/products/lifeos-6",
+      "content": "<p>\n            Turn your AI chats/memory to intros with real humans\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/lifeos-6?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1130787?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1179,
+      "source": "github_trending",
+      "title": "kyegomez/OpenMythos",
+      "url": "https://github.com/kyegomez/OpenMythos",
+      "content": "A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research literature.",
+      "score": 10073,
+      "category": "seo",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1180,
+      "source": "github_trending",
+      "title": "alchaincyf/huashu-design",
+      "url": "https://github.com/alchaincyf/huashu-design",
+      "content": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic",
+      "score": 6053,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1181,
+      "source": "github_trending",
+      "title": "EvoLinkAI/awesome-gpt-image-2-prompts",
+      "url": "https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts",
+      "content": "Curated GPT-Image-2 prompts fot the Openai API：image examples across portraits, posters, UI mockups, character sheets, and community experiments.",
+      "score": 3204,
+      "category": "saas",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1182,
+      "source": "github_trending",
+      "title": "tw93/Kami",
+      "url": "https://github.com/tw93/Kami",
+      "content": "👩‍🚒 Good content deserves good paper.",
+      "score": 3039,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1183,
+      "source": "github_trending",
+      "title": "OpenCoworkAI/open-codesign",
+      "url": "https://github.com/OpenCoworkAI/open-codesign",
+      "content": "Open-source Claude Design alternative. One-click import your Claude Code / Codex API key. Prompt → prototype / slides / PDF. Multi-model (Claude, GPT, Gemini, Kimi, GLM, Ollama). BYOK, local-first, MIT.",
+      "score": 2163,
+      "category": "saas",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1184,
+      "source": "qiita_trending",
+      "title": "その“親切な設計”、たぶん無駄です  - エンジニアがハマる「やりすぎ問題」-",
+      "url": "https://qiita.com/prum_hitomi/items/f94803dd326ef7c3eb25?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "はじめまして。株式会社PRUMでエンジニアをしている ひとみ です。\n日々、プログラミング学習や実務の中で、つまずきやすいポイントや\n考え方を整理して発信しています。\nPRUMについて気になった方は、コーポレートサイトもぜひご覧ください。\n▶コーポレートサイト\n\nその“親切...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1185,
+      "source": "qiita_trending",
+      "title": "Opus4.7の登場により、Claude Codeの開発者と公式が「これはもうやめろ」と言い始めた6つのこと",
+      "url": "https://qiita.com/ot12/items/06420caf41a34a910c53?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "2026年4月16日、AnthropicがClaude Opus 4.7をリリースしました。\n同時に公式ブログ「Best Practices for Using Claude Opus 4.7 with Claude Code」が公開され、Claude Code作者のBor...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1186,
+      "source": "qiita_trending",
+      "title": "prisma migrate resolveを使ってRails+Prismaのマイグレーションを共存させる",
+      "url": "https://qiita.com/tatsuya582/items/fc215131805b7523c20b?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "はじめに\n本来であれば、1つのDBに対してORMは1つに統一するべきです。\nしかし詳細は割愛しますが、RailsとHono（PrismaをORMとして使用するWebフレームワーク）が同じDBを触らざるを得ない状況になってしまいました。同じ境遇のエンジニアの方に向けて、その...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1187,
+      "source": "qiita_trending",
+      "title": "【初心者エンジニア向け】開発業務の視野を広げる運用のはなし",
+      "url": "https://qiita.com/masa20057/items/5144c0d01539ccd6a881?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "こんにちは。\n株式会社 PRUMのmasaです。\n今日はITサービスの\"運用\"について、初心者エンジニア、プログラミング初学者向けに記事を書きました。\nこの記事を読むことで、リリース後のシステムがどう守られているかを知り、保守しやすいコードを書く視点を得られると思います。興...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1188,
+      "source": "qiita_trending",
+      "title": "AIがCTOみたいに計画から実装まで進めてくれた話",
+      "url": "https://qiita.com/KNR109/items/17aba9efc0de7ceff040?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "はじめに\n個人開発で色々なAI系ツールを試している中で、 Verdent AI というツールの新機能 Manager を触る機会があったので、実際に使ってみた感想をまとめていきます。\n結論としては「AIにコードを書いてもらう」というより「AIにプロジェクトマネジメントごと...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1189,
+      "source": "qiita_trending",
+      "title": "n8nで「ランチ自動提案Bot」を作ってみた（Google Maps × Discord）",
+      "url": "https://qiita.com/wan-code/items/71b3c3188d19e2429ee0?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "はじめに\n毎日のランチ、こんな悩みありませんか？\n\n毎回どこ行くか迷う\n同じ店ばかり行ってしまう\n新しい店を開拓したい\n\nそこで今回は\nn8n + Google Maps API + Discord を使って\nランチを自動で提案してくれるBot\nを作ってみました。\n\n作っ...",
+      "score": null,
+      "category": "seo",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1190,
+      "source": "qiita_trending",
+      "title": "プッシュ通知の許可フロー設計 ― ブラウザやデバイスごとの違いと実装パターン",
+      "url": "https://qiita.com/Katsushi21/items/9c5fff6f00bcd03b3370?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "はじめに\n今回は Firebase Cloud Messaging（FCM）によるプッシュ通知を本番運用するうえで考えるべき課題の中から「許可取得」にフォーカスして、具体的な設計と実装を深掘りしていきます。\nせっかく自分のサイトにプッシュ通知を導入するなら、できるだけ多く...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1191,
+      "source": "qiita_trending",
+      "title": "Neovim で最高の Markdown ビューワーを作る - md-render.nvim",
+      "url": "https://qiita.com/delphinus/items/7dab609ef95bf030f217?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "この記事は Vim 駅伝の 2026/4/22 の記事です。前回は ultimatileさんによる「ブラウザで日本語入力中にIMEが勝手に切り替わると思ったらNeovimのLSPが原因だった」でした。\n\n作ったもの\n最初に作ったものを紹介します。\n\ndelphinu...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1192,
+      "source": "qiita_trending",
+      "title": "【前編】9割の新人エンジニアがやっている 「承知しました」の落とし穴",
+      "url": "https://qiita.com/hitomin_poke/items/befed7f99c8d90b649b9?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "はじめまして。株式会社PRUMでエンジニアをしている人見です。\n日々、プログラミング学習や実務の中で、つまずきやすいポイントや考え方を整理して発信しています。\nPRUMについて気になった方は、コーポレートサイトもぜひご覧ください。\n▶コーポレートサイト\n\n【前編】9割の新人...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
+    {
+      "id": 1193,
+      "source": "qiita_trending",
+      "title": "[Frontend Performance - Part 7] Long Task を分解する：なぜ50msがUXを壊すのか？",
+      "url": "https://qiita.com/tuanphan/items/ce891e246da988d07f40?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "📝 注意\n本記事はAIの補助を受けて編集しています。\n内容は大規模Webアプリケーションの実務経験に基づいています。\n\n📚 目次\n\n問題：「処理が速いのにUXが悪い」の正体\nなぜ50msがUXの境界線なのか？\nLong Taskの本質：時間ではなく「占有」の問題\n...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-24 21:52:56"
+    },
     {
       "id": 1134,
       "source": "hackernews",
@@ -5711,496 +6011,6 @@
       "score": 430,
       "category": "general",
       "fetched_at": "2026-04-18 04:29:21"
-    },
-    {
-      "id": 544,
-      "source": "hackernews",
-      "title": "Claude Design",
-      "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
-      "content": null,
-      "score": 704,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 545,
-      "source": "hackernews",
-      "title": "Measuring Claude 4.7's tokenizer costs",
-      "url": "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you",
-      "content": null,
-      "score": 476,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 546,
-      "source": "hackernews",
-      "title": "All 12 moonwalkers had \"lunar hay fever\" from dust smelling like gunpowder (2018)",
-      "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/The_toxic_side_of_the_Moon",
-      "content": null,
-      "score": 157,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 547,
-      "source": "hackernews",
-      "title": "I'm spending 3 months coding the old way",
-      "url": "https://miguelconner.substack.com/p/im-coding-by-hand",
-      "content": null,
-      "score": 38,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 548,
-      "source": "hackernews",
-      "title": "Show HN: Smol machines – subsecond coldstart, portable virtual machines",
-      "url": "https://github.com/smol-machines/smolvm",
-      "content": null,
-      "score": 160,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 549,
-      "source": "hackernews",
-      "title": "Isaac Asimov: The Last Question (1956)",
-      "url": "https://hex.ooo/library/last_question.html",
-      "content": null,
-      "score": 558,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 550,
-      "source": "hackernews",
-      "title": "NASA Force",
-      "url": "https://nasaforce.gov/",
-      "content": null,
-      "score": 177,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 551,
-      "source": "hackernews",
-      "title": "Middle schooler finds coin from Troy in Berlin",
-      "url": "https://www.thehistoryblog.com/archives/75848",
-      "content": null,
-      "score": 176,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 552,
-      "source": "hackernews",
-      "title": "NIST gives up enriching most CVEs",
-      "url": "https://risky.biz/risky-bulletin-nist-gives-up-enriching-most-cves/",
-      "content": null,
-      "score": 142,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 553,
-      "source": "hackernews",
-      "title": "Introducing: ShaderPad",
-      "url": "https://rileyjshaw.com/blog/introducing-shaderpad/",
-      "content": null,
-      "score": 12,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 554,
-      "source": "hackernews",
-      "title": "I built a 3D printing business and ran it for 8 months",
-      "url": "https://www.wespiser.com/posts/2026-04-12-3D-Printing-Biz.html",
-      "content": null,
-      "score": 43,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 555,
-      "source": "hackernews",
-      "title": "The GNU libc atanh is correctly rounded",
-      "url": "https://inria.hal.science/hal-05591661",
-      "content": null,
-      "score": 10,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 556,
-      "source": "hackernews",
-      "title": "Hyperscalers have already outspent most famous US megaprojects",
-      "url": "https://twitter.com/finmoorhouse/status/2044933442236776794",
-      "content": null,
-      "score": 77,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 557,
-      "source": "hackernews",
-      "title": "Webloc: Analysis of Penlink's Ad-Based Geolocation Surveillance Tech",
-      "url": "https://citizenlab.ca/research/analysis-of-penlinks-ad-based-geolocation-surveillance-tech/",
-      "content": null,
-      "score": 40,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 558,
-      "source": "hackernews",
-      "title": "Ban the sale of precise geolocation",
-      "url": "https://www.lawfaremedia.org/article/it-is-time-to-ban-the-sale-of-precise-geolocation",
-      "content": null,
-      "score": 512,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 559,
-      "source": "hackernews",
-      "title": "Are the costs of AI agents also rising exponentially? (2025)",
-      "url": "https://www.tobyord.com/writing/hourly-costs-for-ai-agents",
-      "content": null,
-      "score": 7,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 560,
-      "source": "hackernews",
-      "title": "Show HN: PanicLock – Close your MacBook lid disable TouchID –> password unlock",
-      "url": "https://github.com/paniclock/paniclock/",
-      "content": null,
-      "score": 90,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 561,
-      "source": "hackernews",
-      "title": "Healthchecks.io now uses self-hosted object storage",
-      "url": "https://blog.healthchecks.io/2026/04/healthchecks-io-now-uses-self-hosted-object-storage/",
-      "content": null,
-      "score": 127,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 562,
-      "source": "hackernews",
-      "title": "Iceye Open Data",
-      "url": "https://www.iceye.com/open-data-initiative",
-      "content": null,
-      "score": 93,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 563,
-      "source": "hackernews",
-      "title": "Show HN: Stage – Putting humans back in control of code review",
-      "url": "https://stagereview.app/",
-      "content": "Hey HN! We&#x27;re Charles and Dean, and we&#x27;re building Stage: a code review tool that guides you through reading a PR step by step, instead of piecing together a giant diff.<p>Here&#x27;s a demo video: <a href=\"https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;stage-demo-1pph\" rel=\"nofollow\">https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;stage-demo-1pph</a>.\nYou can play around with some example PRs here: <a href=\"https:&#x2F;&#x2F;stagereview.app&#x2F;explore\">https:&#x2F;&#x2F;stagereview.a",
-      "score": 82,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 564,
-      "source": "hackernews",
-      "title": "Detecting DOSBox from Within the Box",
-      "url": "https://datagirl.xyz/posts/dos_inside_the_box.html",
-      "content": null,
-      "score": 44,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 565,
-      "source": "hackernews",
-      "title": "Solitaire simulator for finding the best strategy: Current record is 8.590%",
-      "url": "https://github.com/dacracot/Klondike3-Simulator",
-      "content": null,
-      "score": 34,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 566,
-      "source": "hackernews",
-      "title": "Connie Converse was a folk-music genius. Then she vanished",
-      "url": "https://www.bbc.com/culture/article/20260413-the-mystery-of-a-missing-folk-music-pioneer",
-      "content": null,
-      "score": 48,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 567,
-      "source": "hackernews",
-      "title": "The Gregorio project – GPL tools for typesetting Gregorian chant",
-      "url": "https://gregorio-project.github.io/index.html",
-      "content": null,
-      "score": 44,
-      "category": "saas",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 568,
-      "source": "hackernews",
-      "title": "Tesla tells HW3 owner to 'be patient' after 7 years of waiting for FSD",
-      "url": "https://electrek.co/2026/04/17/tesla-hw3-owners-be-patient-7-years-fsd/",
-      "content": null,
-      "score": 77,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 569,
-      "source": "hackernews",
-      "title": "Ada, its design, and the language that built the languages",
-      "url": "https://www.iqiipi.com/the-quiet-colossus.html",
-      "content": null,
-      "score": 235,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 570,
-      "source": "hackernews",
-      "title": "Designing the Transport Typeface",
-      "url": "https://www.thamesandhudson.com/blogs/all-news-features/designing-the-transport-typeface-margaret-calvert-on-the-making-of-britain-s-road-signs",
-      "content": null,
-      "score": 60,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 571,
-      "source": "hackernews",
-      "title": "MZI-based transistorlessness might finally be here",
-      "url": "https://write.as/mnggfj7asl07k",
-      "content": null,
-      "score": 20,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 572,
-      "source": "hackernews",
-      "title": "Reflections on 30 years of HPC programming",
-      "url": "https://chapel-lang.org/blog/posts/30years/",
-      "content": null,
-      "score": 132,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 573,
-      "source": "techcrunch_rss",
-      "title": "Kevin Weil and Bill Peebles exit OpenAI as company continues to shed ‘side quests’",
-      "url": "https://techcrunch.com/2026/04/17/kevin-weil-and-bill-peebles-exit-openai-as-company-continues-to-shed-side-quests/",
-      "content": "Kevin Weil and Bill Peebles are leaving OpenAI as the company shuts down Sora and folds its science team, signaling a sharp pivot away from consumer moonshots toward enterprise AI.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 574,
-      "source": "techcrunch_rss",
-      "title": "Man who hacked US Supreme Court filing system sentenced to probation",
-      "url": "https://techcrunch.com/2026/04/17/man-who-hacked-us-supreme-court-filing-system-sentenced-to-probation/",
-      "content": "Nicholas Moore hacked into three U.S. government networks using stolen credentials, and then bragged about it and posted victims' personal data on Instagram under the handle @ihackedthegovernment.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 575,
-      "source": "techcrunch_rss",
-      "title": "Sources: Cursor in talks to raise $2B+ at $50B valuation as enterprise growth surges",
-      "url": "https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/",
-      "content": "Returning backers a16z and Thrive are expected to lead the round.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 576,
-      "source": "techcrunch_rss",
-      "title": "‘Tokenmaxxing’ is making developers less productive than they think",
-      "url": "https://techcrunch.com/2026/04/17/tokenmaxxing-is-making-developers-less-productive-than-they-think/",
-      "content": "There's a lot more code — but it's a lot more expensive and requires a lot more rewriting.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 577,
-      "source": "techcrunch_rss",
-      "title": "Hackers are abusing unpatched Windows security flaws to hack into organizations",
-      "url": "https://techcrunch.com/2026/04/17/hackers-are-abusing-unpatched-windows-security-flaws-to-hack-into-organizations/",
-      "content": "A security researcher published details of three security vulnerabilities in Windows Defender, and the code used to exploit them. Now, hackers are taking advantage of the vulnerabilities in real-life attacks, according to a cybersecurity firm.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 578,
-      "source": "techcrunch_rss",
-      "title": "Zoom teams up with World to verify humans in meetings",
-      "url": "https://techcrunch.com/2026/04/17/zoom-teams-up-with-world-to-verify-humans-in-meeting/",
-      "content": "Meeting platform Zoom has announced a partnership with World, Sam Altman's human ID verification company, to ensure that the people attending meetings are actually human and not AI-generated imposters. Zoom will show a badge on verified participants' tile.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 579,
-      "source": "techcrunch_rss",
-      "title": "Gigs turns your concert history into a personal live music archive",
-      "url": "https://techcrunch.com/2026/04/17/gigs-turns-your-concert-history-into-a-personal-live-music-archive/",
-      "content": "New iPhone app Gigs uses AI to turn old tickets, screenshots, and emails into a personal concert archive with stats, memories, and more.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 580,
-      "source": "techcrunch_rss",
-      "title": "Chef Robotics escaped the robot cooking graveyard and says it’s thriving — here’s why",
-      "url": "https://techcrunch.com/2026/04/17/chef-robotics-escaped-the-robot-cooking-graveyard-and-says-its-thriving-heres-why/",
-      "content": "The company, which deploys AI-guided robot arms for food production, says it is looking to expand its services to provide for a broader array of customers.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 581,
-      "source": "techcrunch_rss",
-      "title": "Uber will now pick up your returns from your doorstep",
-      "url": "https://techcrunch.com/2026/04/17/uber-will-now-pick-up-your-returns-from-your-doorstep/",
-      "content": "The new returns feature is the company's latest effort to become an everything app. There are limitations to the new service, and there is, of course, a courier fee.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 582,
-      "source": "techcrunch_rss",
-      "title": "Anthropic launches Claude Design, a new product for creating quick visuals",
-      "url": "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/",
-      "content": "The company says Claude Design is intended to help people like founders and product managers without a design background share their ideas more easily.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 583,
-      "source": "techcrunch_rss",
-      "title": "With US spy laws set to expire, lawmakers are split over protecting Americans from warrantless surveillance",
-      "url": "https://techcrunch.com/2026/04/17/with-us-spy-laws-set-to-expire-lawmakers-are-split-over-protecting-americans-from-warrantless-surveillance/",
-      "content": "Some lawmakers are calling for widespread reforms following years of surveillance scandals and abuses across successive U.S. administrations. But even if the spy law known as Section 702 expires in April, the government's spy powers will not automatically lapse.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 584,
-      "source": "techcrunch_rss",
-      "title": "Google’s AI Mode can now help you find products in stock nearby",
-      "url": "https://techcrunch.com/2026/04/17/googles-ai-mode-can-now-help-you-find-products-in-stock-nearby/",
-      "content": "Although you can already track hotel prices at the city level, the new update lets you do so for a specific hotel that you're interested in.",
-      "score": null,
-      "category": "seo",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 585,
-      "source": "techcrunch_rss",
-      "title": "Bluesky confirms DDoS attack is cause of continued app outages",
-      "url": "https://techcrunch.com/2026/04/17/its-not-just-you-bluesky-is-sorta-down/",
-      "content": "Bluesky has been experiencing ongoing service disruptions since just before 3 a.m. ET on April 15.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 586,
-      "source": "techcrunch_rss",
-      "title": "Netflix plans to add a vertical video feed, use AI for recommendations",
-      "url": "https://techcrunch.com/2026/04/17/netflix-plans-to-add-a-vertical-video-feed-use-ai-for-recommendations/",
-      "content": "Netflix is going to launch a TikTok-like vertical video feed within its apps this month, and plans to use AI broadly for content creation and recommendations.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 587,
-      "source": "techcrunch_rss",
-      "title": "SaySo is a new short-form video app that aims to restore users’ trust in news",
-      "url": "https://techcrunch.com/2026/04/17/sayso-is-a-new-short-form-video-app-that-aims-to-restore-users-trust-in-news/",
-      "content": "Users are fed up with misinformation and AI slop cluttering their feeds. SaySo is a new short-form video app that delivers news from vetted creators and journalists.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 588,
-      "source": "techcrunch_rss",
-      "title": "Loop raises $95M to build supply chain AI that predicts disruptions",
-      "url": "https://techcrunch.com/2026/04/17/loop-raises-95m-to-build-supply-chain-ai-that-predicts-disruptions/",
-      "content": "The San Francisco startup closed a Series C funding round led by Antonio Gracias' firm Valor, which is a major backer of xAI.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 589,
-      "source": "techcrunch_rss",
-      "title": "Are we tokenmaxxing our way to nowhere?",
-      "url": "https://techcrunch.com/video/are-we-tokenmaxxing-our-way-to-nowhere/",
-      "content": "The gap between AI insiders and everyone else&#160;is widening, and the spending, suspicion, and even new vocabulary are starting to show it. While OpenAI is busy buying up everything from&#160;finance apps&#160;to&#160;talk shows, a certain shoe company just&#160;rebranded as an AI infrastructure play, and Anthropic unveiled a model it says is&#160;too powerful to release publicly&#160;&#8230;but&#160;apparently not&#160;too [&#8230;]",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 590,
-      "source": "techcrunch_rss",
-      "title": "New leaders, new fund: Sequoia has raised $7B to expand its AI bets",
-      "url": "https://techcrunch.com/2026/04/16/new-leaders-new-fund-sequoia-has-raised-7b-to-expand-its-ai-bets/",
-      "content": "The fundraise is the first major capital raise under Sequoia's new leadership, with Alfred Lin and Pat Grady now serving as co-stewards of the 54-year-old firm.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 591,
-      "source": "techcrunch_rss",
-      "title": "Factory hits $1.5B valuation to build AI coding for enterprises",
-      "url": "https://techcrunch.com/2026/04/16/factory-hits-1-5b-valuation-to-build-ai-coding-for-enterprises/",
-      "content": "The three-year-old startup raised $150 million led by Khosla Ventures.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
-    },
-    {
-      "id": 592,
-      "source": "techcrunch_rss",
-      "title": "Luma launches AI-powered production studio with faith-focused Wonder Project",
-      "url": "https://techcrunch.com/2026/04/16/luma-launches-ai-powered-production-studio-with-faith-focused-wonder-project/",
-      "content": "The studio's first project will be about Moses and star Academy Award-winner Ben Kingsley, to be released this spring on Prime Video.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-17 21:50:04"
     }
   ]
 }
