@@ -1,7 +1,307 @@
 {
-  "exported_at": "2026-04-25T21:42:30.222694+00:00",
-  "count": 443,
+  "exported_at": "2026-04-26T21:44:06.447154+00:00",
+  "count": 378,
   "items": [
+    {
+      "id": 1224,
+      "source": "hackernews",
+      "title": "Sawe smashes two-hour mark to 'move goalposts for marathon running'",
+      "url": "https://www.bbc.com/sport/athletics/articles/crm1m7e0zwzo",
+      "content": null,
+      "score": 63,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1225,
+      "source": "hackernews",
+      "title": "Butterflies are in decline across North America, a look at the Western Monarch",
+      "url": "https://www.smithsonianmag.com/science-nature/butterflies-are-in-dramatic-decline-across-north-america-a-close-look-at-the-western-monarch-shows-why-180988582/",
+      "content": null,
+      "score": 22,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1226,
+      "source": "hackernews",
+      "title": "Fast16: Cyberweapon that predates Stuxnet by five years",
+      "url": "https://hackingpassion.com/fast16-pre-stuxnet-cyber-sabotage/",
+      "content": null,
+      "score": 58,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1227,
+      "source": "hackernews",
+      "title": "1:59:30: Sabastian Sawe Shatters the 2-Hour Barrier at 2026 London Marathon",
+      "url": "https://www.letsrun.com/news/2026/04/15930-sabastian-sawe-shatters-the-2-hour-barrier-at-2026-london-marathon/",
+      "content": null,
+      "score": 28,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1228,
+      "source": "hackernews",
+      "title": "The 1944 Warsaw Uprising, in Color",
+      "url": "https://www.barwypowstania.pl/",
+      "content": null,
+      "score": 51,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1229,
+      "source": "techcrunch_rss",
+      "title": "Amazon’s new podcast strategy: Monetize everything",
+      "url": "https://techcrunch.com/2026/04/26/amazons-new-podcast-strategy-monetize-everything/",
+      "content": "Amazon's podcasting business seems to have transformed over the past six months.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1230,
+      "source": "techcrunch_rss",
+      "title": "What Tim Cook built",
+      "url": "https://techcrunch.com/2026/04/26/what-tim-cook-built/",
+      "content": "On the latest episode of Equity, we discuss how Apple has changed since Cook became CEO in 2011, and what challenges incoming CEO John Ternus will be facing.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1231,
+      "source": "techcrunch_rss",
+      "title": "TechCrunch Mobility: Elon’s admission",
+      "url": "https://techcrunch.com/2026/04/26/techcrunch-mobility-elons-admission/",
+      "content": "Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1232,
+      "source": "techcrunch_rss",
+      "title": "To buy this Bay Area home, you’ll need Anthropic equity",
+      "url": "https://techcrunch.com/2026/04/26/to-buy-this-bay-area-home-youll-need-anthropic-equity/",
+      "content": "Someone’s offering an unusual deal for a 13-acre property in Mill Valley, just north of South Francisco.",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1233,
+      "source": "techcrunch_rss",
+      "title": "SpeakOn’s dictation device is a good idea marred by platform limitations",
+      "url": "https://techcrunch.com/2026/04/26/speakons-dictation-device-is-a-good-idea-marred-by-platform-limitations/",
+      "content": "This $129 device uses MagSafe to stick on the back of an iPhone to power transcription across apps",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1234,
+      "source": "producthunt",
+      "title": "Pica",
+      "url": "https://www.producthunt.com/products/pica",
+      "content": "<p>\n            Fully native app for managing your fonts on MacOS\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/pica?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1131870?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1235,
+      "source": "producthunt",
+      "title": "Edgee Team",
+      "url": "https://www.producthunt.com/products/edgee",
+      "content": "<p>\n            Strava for your coding assistants\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/edgee?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1131530?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1236,
+      "source": "producthunt",
+      "title": "Free chart generator by Embedful",
+      "url": "https://www.producthunt.com/products/embedful",
+      "content": "<p>\n            Turn CSV & Excel files into charts in seconds\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/embedful?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1123147?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1237,
+      "source": "producthunt",
+      "title": "Claude Connectors",
+      "url": "https://www.producthunt.com/products/claude-connectors",
+      "content": "<p>\n            New connectors in Claude for everyday life\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/claude-connectors?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1131914?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1238,
+      "source": "producthunt",
+      "title": "QuickCompare by Trismik",
+      "url": "https://www.producthunt.com/products/quickcompare-by-trismik",
+      "content": "<p>\n            Compare LLMs on your data, measure, and pick the best.\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/quickcompare-by-trismik?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1131574?app_id=339\">Link</a>\n          </p>",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1239,
+      "source": "github_trending",
+      "title": "tw93/Kami",
+      "url": "https://github.com/tw93/Kami",
+      "content": "👩‍🚒 Good content deserves good paper.",
+      "score": 3444,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1240,
+      "source": "github_trending",
+      "title": "op7418/guizang-ppt-skill",
+      "url": "https://github.com/op7418/guizang-ppt-skill",
+      "content": "A Claude Code Skill that turns prompts into horizontal-swipe magazine-style HTML decks — 10 layouts, 5 curated themes, WebGL hero backgrounds, single-file output.",
+      "score": 2970,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1241,
+      "source": "github_trending",
+      "title": "cosmicstack-labs/mercury-agent",
+      "url": "https://github.com/cosmicstack-labs/mercury-agent",
+      "content": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram.",
+      "score": 1392,
+      "category": "saas",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1242,
+      "source": "github_trending",
+      "title": "Einsia/OpenChronicle",
+      "url": "https://github.com/Einsia/OpenChronicle",
+      "content": null,
+      "score": 1390,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1243,
+      "source": "github_trending",
+      "title": "masterking32/MasterHttpRelayVPN",
+      "url": "https://github.com/masterking32/MasterHttpRelayVPN",
+      "content": "Domain-fronted HTTP/SOCKS5 proxy tunneling traffic through Google Apps Script with MITM TLS interception, HTTP/1-2 multiplexing, and DPI evasion.",
+      "score": 1374,
+      "category": "seo",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1244,
+      "source": "qiita_trending",
+      "title": "Claude CodeのVSCode拡張が使いやすいよ",
+      "url": "https://qiita.com/moritalous/items/3c5269610f26e23c5b04?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "皆様、Claude Code使ってますか？\nCLIで利用されている方が大多数だと思いますが、VSCodeの拡張も悪くないよ、というお話です。\nいつのころからか、左右にパネルが出るような構成になっています。\n\n右側が通常（？）のチャット欄で左が過去のセッション一覧みたいな感じ...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1245,
+      "source": "qiita_trending",
+      "title": "WSL2からWindowsのブラウザやネイティブアプリをシームレスに起動する(xdg-open / wslu の活用)",
+      "url": "https://qiita.com/mfunaki/items/37dca9fdb5db427dfd7c?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "はじめに\nWindows 11上のWSL2にUbuntuなどのLinuxをインストールして開発環境を構築している方は多いと思います(便利ですよね)。\nその際、ブラウザの運用方針は人によって分かれるかと思います。\n\nWSL2上のLinux側にブラウザをインストールして完結さ...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1246,
+      "source": "qiita_trending",
+      "title": "その“親切な設計”、たぶん無駄です  - エンジニアがハマる「やりすぎ問題」-",
+      "url": "https://qiita.com/prum_hitomi/items/f94803dd326ef7c3eb25?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "はじめまして。株式会社PRUMでエンジニアをしている ひとみ です。\n日々、プログラミング学習や実務の中で、つまずきやすいポイントや\n考え方を整理して発信しています。\nPRUMについて気になった方は、コーポレートサイトもぜひご覧ください。\n▶コーポレートサイト\n\nその“親切...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1247,
+      "source": "qiita_trending",
+      "title": "Codex Automations × 公式プラグイン 90 個で「AI 秘書」を組む — 朝 9 時 Issue トリアージ、17 時 Slack 要約",
+      "url": "https://qiita.com/nogataka/items/139148b11e416e23722b?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "この記事の対象読者と得られること\n\n対象読者\nこの記事で得られること\n\n1 人運営・個人事業主\n月 $25〜$80 の AI 秘書の作り方\n\nバックオフィス兼務エンジニア\nCodex Automations × 公式プラグインの実装例\n\nGitHub Iss...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1248,
+      "source": "qiita_trending",
+      "title": "Claude Code が途中で議論を忘れる問題 — auto-compact を PreCompact Hook で制御し、Discord から遠隔操作する",
+      "url": "https://qiita.com/nogataka/items/95efda0c7c9ea2405139?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "この記事の対象読者と得られること\n\n対象読者\nこの記事で得られること\n\n長時間セッションで論点が消える方\nPreCompact Hook で auto-compact を制御する手順\n\nClaude Code Hooks を深く使いたい方\n26 種類の hoo...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1249,
+      "source": "qiita_trending",
+      "title": "コードを1行も読ませずに、AIに脆弱性を100%特定させる方法（理論編）",
+      "url": "https://qiita.com/harupython/items/ed256553d10578cfec2a?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "🚀 TL;DR\n\nAI（LLM）に生のソースコードを読ませるのは、実は効率の悪い「情報の暴力」である。\n\nAST（抽象構文木）から「構造」だけを抽出したマップこそが、AIのIQを極限まで引き出す。\nデータの流入から破綻までをグラフ理論で定義すれば、理論上、脆弱性は100%...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1250,
+      "source": "qiita_trending",
+      "title": "個人的にjQuery メソッドチートシートまとめた",
+      "url": "https://qiita.com/ryo_sh/items/4a1c1f97932e190db333?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "はじめに\n最近、レガシーなプロジェクトで jQuery を触る機会があって、いろいろとわからないことがあったため、個人的なチートシートをまとめることにしました。\n\nバージョン: jQuery 3.x 系を前提にしています\n\n基本構文\n// DOM 読み込み完了後に実行\n...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1251,
+      "source": "qiita_trending",
+      "title": "GPTとClaudeはどっちがいいのか、Microsoft 365 Copilot（Researcher）に考えてもらった",
+      "url": "https://qiita.com/Oyu3m/items/4ce133a69433d386507d?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "前提\nこの記事は2026/4/26時点での公開情報や動作を私なりにまとめたものとなります。\n正確な情報はご自身でご確認もしくはMicrosoftへお問い合わせください。\nまた、本機能はFrontier(プレビュー)であるため、今後変わる可能性があります。\n管理者により制御...",
+      "score": null,
+      "category": "seo",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1252,
+      "source": "qiita_trending",
+      "title": "売上予測WebアプリをFastAPI + Prophet + Reactで個人開発してリリースした話",
+      "url": "https://qiita.com/Mecharhythm/items/71f9e7c92d7ee0892a10?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "はじめに\n売上・需要予測ができるWebアプリ「SalesCast」を個人で作りました。\n\n機械学習（Prophet）をバックエンドに持ち、CSVを貼り付けるだけで予測グラフが出るシンプルなツールです。技術構成・開発の流れ・詰まったところをまとめます。\n\n背景\n需要予...",
+      "score": null,
+      "category": "saas",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
+    {
+      "id": 1253,
+      "source": "qiita_trending",
+      "title": "ブラウザだけで完結するCSIRT訓練プラットフォーム「CSIRT Ready」を作った話",
+      "url": "https://qiita.com/masa_py/items/70ddd373616e55ad929f?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "content": "はじめに\n「インシデント対応手順書を整備している企業は多い。でも、それを使ってチームが実際に動いたことがある企業は少ない。」\nこれはセキュリティ業界でよく言われることですが、実際にその差を埋めるツールを探すと選択肢が非常に限られています。大手SIerの訓練は1回100〜50...",
+      "score": null,
+      "category": "general",
+      "fetched_at": "2026-04-26 21:43:03"
+    },
     {
       "id": 1194,
       "source": "hackernews",
@@ -3481,956 +3781,6 @@
       "score": null,
       "category": "general",
       "fetched_at": "2026-04-20 21:52:46"
-    },
-    {
-      "id": 781,
-      "source": "hackernews",
-      "title": "The Bromine Chokepoint: How Strife Could Halt Production of World’s Memory Chips",
-      "url": "https://warontherocks.com/cogs-of-war/the-bromine-chokepoint-how-strife-in-the-middle-east-could-halt-production-of-the-worlds-memory-chips/",
-      "content": null,
-      "score": 98,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 782,
-      "source": "hackernews",
-      "title": "Vercel April 2026 security incident",
-      "url": "https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/",
-      "content": "<a href=\"https:&#x2F;&#x2F;vercel.com&#x2F;kb&#x2F;bulletin&#x2F;vercel-april-2026-security-incident\" rel=\"nofollow\">https:&#x2F;&#x2F;vercel.com&#x2F;kb&#x2F;bulletin&#x2F;vercel-april-2026-security-in...</a>",
-      "score": 373,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 783,
-      "source": "hackernews",
-      "title": "A. J. Ayer – ‘What I Saw When I Was Dead’ (1988)",
-      "url": "https://www.philosopher.eu/others-writings/a-j-ayer-what-i-saw-when-i-was-dead/",
-      "content": null,
-      "score": 36,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 784,
-      "source": "hackernews",
-      "title": "Swiss authorities want to reduce dependency on Microsoft",
-      "url": "https://www.swissinfo.ch/eng/swiss-ai/swiss-authorities-want-to-reduce-dependency-on-microsoft/91280532",
-      "content": null,
-      "score": 79,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 785,
-      "source": "hackernews",
-      "title": "Show HN: Faceoff – A terminal UI for following NHL games",
-      "url": "https://www.vincentgregoire.com/faceoff/",
-      "content": "Faceoff is a TUI app written in Python to follow live NHL games and browse standings and stats. I got the inspiration from Playball, a similar TUI app for MLB games that was featured on HN.<p>The app was mostly vibe-coded with Claude Code, but not one-shot. I added features and fixed bugs by using it, as I spent way too much time in the terminal over the last few months.<p>Try it out with `uvx faceoff` (requires uv).",
-      "score": 62,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 786,
-      "source": "hackernews",
-      "title": "I learned Unity the wrong way",
-      "url": "https://darkounity.com/blog/how-i-learned-unity-the-wrong-way",
-      "content": null,
-      "score": 54,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 787,
-      "source": "hackernews",
-      "title": "I wrote a CHIP-8 emulator in my own programming language",
-      "url": "https://github.com/navid-m/chip8emu",
-      "content": null,
-      "score": 27,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 788,
-      "source": "hackernews",
-      "title": "Changes in the system prompt between Claude Opus 4.6 and 4.7",
-      "url": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/",
-      "content": null,
-      "score": 113,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 789,
-      "source": "hackernews",
-      "title": "Archive of BYTE magazine, starting with issue #1 in 1975",
-      "url": "https://archive.org/details/byte-magazine-1975-09",
-      "content": null,
-      "score": 496,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 790,
-      "source": "hackernews",
-      "title": "Game devs explain the tricks involved with letting you pause a game",
-      "url": "https://kotaku.com/video-game-devs-explain-how-pausing-works-and-sometimes-it-gets-weird-2000686339",
-      "content": null,
-      "score": 381,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 791,
-      "source": "hackernews",
-      "title": "The seven programming ur-languages (2022)",
-      "url": "https://madhadron.com/programming/seven_ur_languages.html",
-      "content": null,
-      "score": 241,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 792,
-      "source": "hackernews",
-      "title": "Notion leaks email addresses of all editors of any public page",
-      "url": "https://twitter.com/weezerOSINT/status/2045849358462222720",
-      "content": null,
-      "score": 268,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 793,
-      "source": "hackernews",
-      "title": "Nanopass Framework: Clean Compiler Creation Language",
-      "url": "https://nanopass.org/",
-      "content": null,
-      "score": 103,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 794,
-      "source": "hackernews",
-      "title": "The RAM shortage could last years",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/914672/the-ram-shortage-could-last-years",
-      "content": null,
-      "score": 110,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 795,
-      "source": "hackernews",
-      "title": "SPEAKE(a)R: Turn Speakers to Microphones for Fun and Profit [pdf] (2017)",
-      "url": "https://www.usenix.org/system/files/conference/woot17/woot17-paper-guri.pdf",
-      "content": null,
-      "score": 146,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 796,
-      "source": "hackernews",
-      "title": "KTaO3-Based Supercurrent Diode",
-      "url": "https://pubs.acs.org/doi/10.1021/acs.nanolett.5c05590",
-      "content": null,
-      "score": 22,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 797,
-      "source": "hackernews",
-      "title": "Reverse Engineering ME2's USB with a Heat Gun and a Knife",
-      "url": "https://github.com/coremaze/ME2-Writeup",
-      "content": null,
-      "score": 40,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 798,
-      "source": "hackernews",
-      "title": "College instructor turns to typewriters to curb AI-written work",
-      "url": "https://sentinelcolorado.com/uncategorized/a-college-instructor-turns-to-typewriters-to-curb-ai-written-work-and-teach-life-lessons/",
-      "content": null,
-      "score": 447,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 799,
-      "source": "hackernews",
-      "title": "Show HN: Shader Lab, like Photoshop but for shaders",
-      "url": "https://eng.basement.studio/tools/shader-lab",
-      "content": null,
-      "score": 124,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 800,
-      "source": "hackernews",
-      "title": "What are skiplists good for?",
-      "url": "https://antithesis.com/blog/2026/skiptrees/",
-      "content": null,
-      "score": 241,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 801,
-      "source": "hackernews",
-      "title": "NIST scientists create 'any wavelength' lasers",
-      "url": "https://www.nist.gov/news-events/news/2026/04/any-color-you-nist-scientists-create-any-wavelength-lasers-tiny-circuits",
-      "content": null,
-      "score": 401,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 802,
-      "source": "hackernews",
-      "title": "Eliza a Play by Tom Holloway",
-      "url": "https://www.mtc.com.au/plays-and-tickets/whats-on/season-2026/eliza",
-      "content": null,
-      "score": 8,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 803,
-      "source": "hackernews",
-      "title": "Show HN: Prompt-to-Excalidraw demo with Gemma 4 E2B in the browser (3.1GB)",
-      "url": "https://teamchong.github.io/turboquant-wasm/draw.html",
-      "content": null,
-      "score": 76,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 804,
-      "source": "hackernews",
-      "title": "Blue Origin's rocket reuse achievement marred by upper stage failure",
-      "url": "https://arstechnica.com/space/2026/04/errant-upper-stage-spoils-blue-origins-success-in-reusing-new-glenn-booster/",
-      "content": null,
-      "score": 25,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 805,
-      "source": "hackernews",
-      "title": "Anonymous request-token comparisons from Opus 4.6 and Opus 4.7",
-      "url": "https://tokens.billchambers.me/leaderboard",
-      "content": null,
-      "score": 598,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 806,
-      "source": "hackernews",
-      "title": "The electromechanical angle computer inside the B-52 bomber's star tracker",
-      "url": "https://www.righto.com/2026/04/B-52-star-tracker-angle-computer.html",
-      "content": null,
-      "score": 410,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 807,
-      "source": "hackernews",
-      "title": "4-bit floating point FP4",
-      "url": "https://www.johndcook.com/blog/2026/04/17/fp4/",
-      "content": null,
-      "score": 62,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 808,
-      "source": "hackernews",
-      "title": "Why Japan has such good railways",
-      "url": "https://worksinprogress.co/issue/why-japan-has-such-good-railways/",
-      "content": null,
-      "score": 539,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 809,
-      "source": "hackernews",
-      "title": "Reading Input from an USB RFID Card Reader",
-      "url": "https://kevwe.com/blog/usb-rfid-reader",
-      "content": null,
-      "score": 23,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 810,
-      "source": "hackernews",
-      "title": "The world in which IPv6 was a good design (2017)",
-      "url": "https://apenwarr.ca/log/20170810",
-      "content": null,
-      "score": 188,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 811,
-      "source": "techcrunch_rss",
-      "title": "OpenAI’s existential questions",
-      "url": "https://techcrunch.com/2026/04/19/openais-existential-questions/",
-      "content": "On the latest episode of Equity, we discuss OpenAI's latest acquisitions and whether they address \"two big existential problems\" for the company.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 812,
-      "source": "techcrunch_rss",
-      "title": "The 12-month window",
-      "url": "https://techcrunch.com/2026/04/19/the-12-month-window/",
-      "content": "A lot of AI startups exist partly because the foundation models haven't expanded into their category yet. As many jokingly acknowledge, that won't last forever.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 813,
-      "source": "techcrunch_rss",
-      "title": "Blue Origin’s New Glenn put a customer satellite in the wrong orbit during its third launch",
-      "url": "https://techcrunch.com/2026/04/19/blue-origins-new-glenn-put-a-customer-satellite-in-the-wrong-orbit-during-its-third-launch/",
-      "content": "The first major failure of Blue Origin's new heavy-launch system could create delays to its ambition to help NASA and the Trump administration return to the Moon.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 814,
-      "source": "techcrunch_rss",
-      "title": "Robots beat human records at Beijing half-marathon",
-      "url": "https://techcrunch.com/2026/04/19/robots-beat-human-records-at-beijing-half-marathon/",
-      "content": "The winning time is a massive improvement over last year’s race, when the fastest robot finished in two hours and 40 minutes.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 815,
-      "source": "techcrunch_rss",
-      "title": "Palantir posts mini-manifesto denouncing inclusivity and ‘regressive’ cultures",
-      "url": "https://techcrunch.com/2026/04/19/palantir-posts-mini-manifesto-denouncing-regressive-and-harmful-cultures/",
-      "content": "Palantir's ideological bent has come under more scrutiny as it's worked with ICE and positioned itself as a defender of \"the West.\"",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 816,
-      "source": "techcrunch_rss",
-      "title": "TechCrunch Mobility: Uber enters its assetmaxxing era",
-      "url": "https://techcrunch.com/2026/04/19/techcrunch-mobility-uber-enters-its-assetmaxxing-era/",
-      "content": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, how AI is playing a part.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 817,
-      "source": "techcrunch_rss",
-      "title": "Cracks are starting to form on fusion energy’s funding boom",
-      "url": "https://techcrunch.com/2026/04/19/cracks-are-starting-to-form-on-fusion-energys-funding-boom/",
-      "content": "Fusion startups and investors risk deepening fissures if some key disagreements aren't settled amicably.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 818,
-      "source": "techcrunch_rss",
-      "title": "Blue Origin successfully re-uses a New Glenn rocket for the first time ever",
-      "url": "https://techcrunch.com/2026/04/19/blue-origin-successfully-re-uses-a-new-glenn-rocket-for-the-first-time-ever/",
-      "content": "It's a major milestone for the company's new mega-rocket system, putting it in position to challenge SpaceX's dominance of the global launch market.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 819,
-      "source": "techcrunch_rss",
-      "title": "Tesla brings its robotaxi service to Dallas and Houston",
-      "url": "https://techcrunch.com/2026/04/18/tesla-brings-its-robotaxi-service-to-dallas-and-houston/",
-      "content": "The company now offers robotaxi service in three cities, all of them in Texas, after launching in Austin last year and starting to offer rides without safety drivers in January 2026.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 820,
-      "source": "techcrunch_rss",
-      "title": "VC Ron Conway says he has a ‘rare form of cancer’",
-      "url": "https://techcrunch.com/2026/04/18/vc-ron-conway-says-he-has-a-rare-form-of-cancer/",
-      "content": "Conway wrote that he “will be stepping back from some of my usual activities,” but he will “continue to support” founders backed by his firm SV Angel.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 821,
-      "source": "techcrunch_rss",
-      "title": "AI chip startup Cerebras files for IPO",
-      "url": "https://techcrunch.com/2026/04/18/ai-chip-startup-cerebras-files-for-ipo/",
-      "content": "In recent months, the company announced an agreement with Amazon Web Services to use Cerebras chips in Amazon data centers, as well as a deal with OpenAI reportedly worth more than $10 billion.",
-      "score": null,
-      "category": "saas",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 822,
-      "source": "techcrunch_rss",
-      "title": "Anthropic’s relationship with the Trump administration seems to be thawing",
-      "url": "https://techcrunch.com/2026/04/18/anthropics-relationship-with-the-trump-administration-seems-to-be-thawing/",
-      "content": "Despite recently being designated a supply-chain risk by the Pentagon, Anthropic is still talking to high-level members of the Trump administration.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 823,
-      "source": "techcrunch_rss",
-      "title": "The App Store is booming again, and AI may be why",
-      "url": "https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/",
-      "content": "New data from Appfigures shows a swell of new app launches in 2026, suggesting AI tools could be fueling a mobile software boom.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 824,
-      "source": "techcrunch_rss",
-      "title": "Once close enough for an acquisition, Stripe and Airwallex are now going after each other",
-      "url": "https://techcrunch.com/2026/04/17/once-close-enough-for-an-acquisition-stripe-and-airwallex-are-now-going-after-each-other/",
-      "content": "For most of its life, Airwallex and Stripe have mostly operated in different geographies, selling to different buyers. That's changing.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 825,
-      "source": "techcrunch_rss",
-      "title": "Sam Altman’s project World looks to scale its human verification empire. First stop: Tinder.",
-      "url": "https://techcrunch.com/2026/04/17/sam-altmans-project-world-looks-to-scale-its-human-verification-empire-first-stop-tinder/",
-      "content": "World, which has raised eyebrows (but also a lot of interest) with its Orb-centered anonymous verification project, is looking to expand its influence via a bevy of new partnerships.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 826,
-      "source": "techcrunch_rss",
-      "title": "Kevin Weil and Bill Peebles exit OpenAI as company continues to shed ‘side quests’",
-      "url": "https://techcrunch.com/2026/04/17/kevin-weil-and-bill-peebles-exit-openai-as-company-continues-to-shed-side-quests/",
-      "content": "Kevin Weil and Bill Peebles are leaving OpenAI as the company shuts down Sora and folds its science team, signaling a sharp pivot away from consumer moonshots toward enterprise AI.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 827,
-      "source": "techcrunch_rss",
-      "title": "Man who hacked US Supreme Court filing system sentenced to probation",
-      "url": "https://techcrunch.com/2026/04/17/man-who-hacked-us-supreme-court-filing-system-sentenced-to-probation/",
-      "content": "Nicholas Moore hacked into three U.S. government networks using stolen credentials, and then bragged about it and posted victims' personal data on Instagram under the handle @ihackedthegovernment.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 828,
-      "source": "techcrunch_rss",
-      "title": "Sources: Cursor in talks to raise $2B+ at $50B valuation as enterprise growth surges",
-      "url": "https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/",
-      "content": "Returning backers a16z and Thrive are expected to lead the round.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 829,
-      "source": "techcrunch_rss",
-      "title": "‘Tokenmaxxing’ is making developers less productive than they think",
-      "url": "https://techcrunch.com/2026/04/17/tokenmaxxing-is-making-developers-less-productive-than-they-think/",
-      "content": "There's a lot more code — but it's a lot more expensive and requires a lot more rewriting.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 830,
-      "source": "techcrunch_rss",
-      "title": "Hackers are abusing unpatched Windows security flaws to hack into organizations",
-      "url": "https://techcrunch.com/2026/04/17/hackers-are-abusing-unpatched-windows-security-flaws-to-hack-into-organizations/",
-      "content": "A security researcher published details of three security vulnerabilities in Windows Defender, and the code used to exploit them. Now, hackers are taking advantage of the vulnerabilities in real-life attacks, according to a cybersecurity firm.",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 831,
-      "source": "producthunt",
-      "title": "Vantage in Google Labs",
-      "url": "https://www.producthunt.com/products/google",
-      "content": "<p>\n            Practice & assess future-ready skills with AI-simulated team\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/google?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1123197?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "seo",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 832,
-      "source": "producthunt",
-      "title": "Avina",
-      "url": "https://www.producthunt.com/products/avina-2",
-      "content": "<p>\n            GTM Agents to Find and Reach Your Next Customer\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/avina-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1122798?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 833,
-      "source": "producthunt",
-      "title": "Verdent 2.0",
-      "url": "https://www.producthunt.com/products/verdent-deck",
-      "content": "<p>\n            Your AI Technical Cofounder\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/verdent-deck?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1124916?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 834,
-      "source": "producthunt",
-      "title": "Gemini app for Mac",
-      "url": "https://www.producthunt.com/products/gemini-6",
-      "content": "<p>\n            Option + Space and Gemini is right there\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/gemini-6?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126161?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 835,
-      "source": "producthunt",
-      "title": "Perplexity Personal Computer",
-      "url": "https://www.producthunt.com/products/perplexity-ai",
-      "content": "<p>\n            Local files. Native apps. Voice control. Always on.\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/perplexity-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1125462?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 836,
-      "source": "producthunt",
-      "title": "Fixa.dev",
-      "url": "https://www.producthunt.com/products/fixa-dev",
-      "content": "<p>\n            A cloud-native AI agent that can build literally anything\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/fixa-dev?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1127045?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 837,
-      "source": "producthunt",
-      "title": "Wyndo",
-      "url": "https://www.producthunt.com/products/wyndo",
-      "content": "<p>\n            Weather app that tells you when to walk, bike or eat outside\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/wyndo?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1119133?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 838,
-      "source": "producthunt",
-      "title": "Paperweight",
-      "url": "https://www.producthunt.com/products/paperweight",
-      "content": "<p>\n            Cleanup your email and manage your digital footprint\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/paperweight?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1119706?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 839,
-      "source": "producthunt",
-      "title": "Tell",
-      "url": "https://www.producthunt.com/products/tell-2",
-      "content": "<p>\n            Mac widgets, made fun. \n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/tell-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1127088?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 840,
-      "source": "producthunt",
-      "title": "AGG Loop",
-      "url": "https://www.producthunt.com/products/agg-loop",
-      "content": "<p>\n            Secure, forever-free localhost tunnels (ex-Deposure).\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/agg-loop?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1123061?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 841,
-      "source": "producthunt",
-      "title": "Assemble",
-      "url": "https://www.producthunt.com/products/assemble-2",
-      "content": "<p>\n            One /go command for AI work that remembers — zero runtime\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/assemble-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1122018?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 842,
-      "source": "producthunt",
-      "title": "Nibbo",
-      "url": "https://www.producthunt.com/products/nibbo",
-      "content": "<p>\n            Family hub with a 3D pet that grows as you get things done\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/nibbo?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126625?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 843,
-      "source": "producthunt",
-      "title": "Creator OS",
-      "url": "https://www.producthunt.com/products/creator-os-3",
-      "content": "<p>\n            Stop missing comments on Instagram.\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/creator-os-3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126603?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 844,
-      "source": "producthunt",
-      "title": "Hipocampus",
-      "url": "https://www.producthunt.com/products/hipocampus",
-      "content": "<p>\n            AI operators that own team workflows\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/hipocampus?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126115?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 845,
-      "source": "producthunt",
-      "title": "ChatGPT Shopping",
-      "url": "https://www.producthunt.com/products/chatgpt-shopping",
-      "content": "<p>\n            Richer, more visually immersive shopping experiences\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/chatgpt-shopping?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1106266?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 846,
-      "source": "producthunt",
-      "title": "Claude Design by Anthropic Labs",
-      "url": "https://www.producthunt.com/products/claude",
-      "content": "<p>\n            Make prototypes, slides & one-pagers by talking to Claude\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/claude?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126180?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 847,
-      "source": "producthunt",
-      "title": "Is Your Site Agent-Ready? by Cloudflare",
-      "url": "https://www.producthunt.com/products/is-your-site-agent-ready",
-      "content": "<p>\n            Scan your website to see how ready it is for AI agents. \n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/is-your-site-agent-ready?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126098?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 848,
-      "source": "producthunt",
-      "title": ".MD This Page",
-      "url": "https://www.producthunt.com/products/md-this-page",
-      "content": "<p>\n            Convert any page to clean Markdown instantly\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/md-this-page?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1125963?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 849,
-      "source": "producthunt",
-      "title": "CapyPlan",
-      "url": "https://www.producthunt.com/products/gentle-daily-planner-capyplan",
-      "content": "<p>\n            Your no stress chearleader for tiny tasks\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/gentle-daily-planner-capyplan?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1126062?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 850,
-      "source": "producthunt",
-      "title": "Notebooks in Gemini",
-      "url": "https://www.producthunt.com/products/google",
-      "content": "<p>\n            Keep every project, chat, and file in one focused space\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/google?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1124025?app_id=339\">Link</a>\n          </p>",
-      "score": null,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 851,
-      "source": "github_trending",
-      "title": "getagentseal/codeburn",
-      "url": "https://github.com/getagentseal/codeburn",
-      "content": "See where your AI coding tokens go. Interactive TUI dashboard for Claude Code, Codex, and Cursor cost observability.",
-      "score": 2844,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 852,
-      "source": "github_trending",
-      "title": "Robbyant/lingbot-map",
-      "url": "https://github.com/Robbyant/lingbot-map",
-      "content": "A feed-forward 3D foundation model for reconstructing scenes from streaming data",
-      "score": 2588,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 853,
-      "source": "github_trending",
-      "title": "vercel-labs/wterm",
-      "url": "https://github.com/vercel-labs/wterm",
-      "content": "A terminal emulator for the web",
-      "score": 2044,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 854,
-      "source": "github_trending",
-      "title": "browser-use/browser-harness",
-      "url": "https://github.com/browser-use/browser-harness",
-      "content": "Self-healing browser harness that enables LLMs to complete any task.",
-      "score": 2013,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 855,
-      "source": "github_trending",
-      "title": "Nightmare-Eclipse/RedSun",
-      "url": "https://github.com/Nightmare-Eclipse/RedSun",
-      "content": "The Red Sun vulnerability repository",
-      "score": 1564,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 856,
-      "source": "github_trending",
-      "title": "lewislulu/html-ppt-skill",
-      "url": "https://github.com/lewislulu/html-ppt-skill",
-      "content": "HTML PPT Studio — AgentSkill with 24 themes, 31 layouts, 20+ animations for building professional HTML presentations",
-      "score": 1395,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 857,
-      "source": "github_trending",
-      "title": "alchaincyf/darwin-skill",
-      "url": "https://github.com/alchaincyf/darwin-skill",
-      "content": "达尔文.skill —— 一个让你的Skill无限进化的系统：评估→改进→测试→保留或回滚 | Autoresearch-inspired autonomous skill optimization for Claude Code. Evaluate, improve, test, keep or revert.",
-      "score": 1280,
-      "category": "seo",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 858,
-      "source": "github_trending",
-      "title": "kyegomez/OpenMythos",
-      "url": "https://github.com/kyegomez/OpenMythos",
-      "content": "A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research literature.",
-      "score": 1096,
-      "category": "seo",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 859,
-      "source": "github_trending",
-      "title": "Manavarya09/design-extract",
-      "url": "https://github.com/Manavarya09/design-extract",
-      "content": "Extract any website's complete design system with one command. DTCG tokens, semantic+primitive+composite, MCP server for Claude Code/Cursor/Windsurf, multi-platform emitters (iOS SwiftUI, Android Compose, Flutter, WordPress), Tailwind v4, Figma variables, shadcn/ui, CSS health audit, WCAG remediation, Chrome extension. MIT, Playwright, Node 20+.",
-      "score": 1083,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 860,
-      "source": "github_trending",
-      "title": "BuilderPulse/BuilderPulse",
-      "url": "https://github.com/BuilderPulse/BuilderPulse",
-      "content": "AI-powered daily intelligence for indie hackers and builders. 20 questions, 10+ sources, every morning.",
-      "score": 963,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 861,
-      "source": "github_trending",
-      "title": "sogonov/anubis",
-      "url": "https://github.com/sogonov/anubis",
-      "content": "Android app manager with VPN integration. Manages groups of apps by freezing/unfreezing them based on VPN connection state.",
-      "score": 944,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 862,
-      "source": "github_trending",
-      "title": "WeaveMindAI/weft",
-      "url": "https://github.com/WeaveMindAI/weft",
-      "content": "A programming language for AI systems",
-      "score": 873,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 863,
-      "source": "github_trending",
-      "title": "yaojingang/GEOFlow",
-      "url": "https://github.com/yaojingang/GEOFlow",
-      "content": "Open-source GEO content production system with AI tasks, review workflow, and publishing.",
-      "score": 849,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 864,
-      "source": "github_trending",
-      "title": "wbh604/UZI-Skill",
-      "url": "https://github.com/wbh604/UZI-Skill",
-      "content": "冰冷的钱就这样流进我温暖的口袋-游资（UZI）Skills — 51位投资大佬帮你看盘 · 22维数据 × 180条量化规则 × 17种机构分析方法 · A股/港股/美股 ",
-      "score": 797,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 865,
-      "source": "github_trending",
-      "title": "Lazarus-AI/clearwing",
-      "url": "https://github.com/Lazarus-AI/clearwing",
-      "content": null,
-      "score": 726,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 866,
-      "source": "github_trending",
-      "title": "bwjoke/BTC-Trading-Since-2020",
-      "url": "https://github.com/bwjoke/BTC-Trading-Since-2020",
-      "content": "Public BTC trading context since 2020.",
-      "score": 686,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 867,
-      "source": "github_trending",
-      "title": "andrewjiang/palantir-for-family-trips",
-      "url": "https://github.com/andrewjiang/palantir-for-family-trips",
-      "content": "A Palantir-ish dashboard for family trip planning.",
-      "score": 661,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 868,
-      "source": "github_trending",
-      "title": "xataio/xata",
-      "url": "https://github.com/xataio/xata",
-      "content": "Open source, cloud native, Postgres platform with copy-on-write branching and scale-to-zero",
-      "score": 634,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 869,
-      "source": "github_trending",
-      "title": "op7418/logo-generator-skill",
-      "url": "https://github.com/op7418/logo-generator-skill",
-      "content": "logo-generator-skill",
-      "score": 634,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 870,
-      "source": "github_trending",
-      "title": "cathrynlavery/diagram-design",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "content": "Thirteen editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
-      "score": 618,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 871,
-      "source": "github_trending",
-      "title": "NikolayS/pgque",
-      "url": "https://github.com/NikolayS/pgque",
-      "content": "PgQue – Zero-bloat Postgres queue. One SQL file to install, pg_cron to tick.",
-      "score": 591,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 872,
-      "source": "github_trending",
-      "title": "poteto/how",
-      "url": "https://github.com/poteto/how",
-      "content": "skill for explaining architecture",
-      "score": 586,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 873,
-      "source": "github_trending",
-      "title": "codejunkie99/agentic-stack",
-      "url": "https://github.com/codejunkie99/agentic-stack",
-      "content": "One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols) that plugs into Claude Code, Cursor, Windsurf, OpenCode, OpenClaw, Hermes, or DIY Python — and keeps its knowledge when you switch.",
-      "score": 570,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 874,
-      "source": "github_trending",
-      "title": "stanford-iris-lab/meta-harness",
-      "url": "https://github.com/stanford-iris-lab/meta-harness",
-      "content": "Reference code for the Meta-Harness paper.",
-      "score": 492,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
-    },
-    {
-      "id": 875,
-      "source": "github_trending",
-      "title": "EvoLinkAI/awesome-gpt-image-2-prompts",
-      "url": "https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts",
-      "content": "Curated GPT-Image-2 prompts and image examples across portraits, posters, UI mockups, character sheets, and community experiments.",
-      "score": 492,
-      "category": "general",
-      "fetched_at": "2026-04-19 21:40:59"
     }
   ]
 }
